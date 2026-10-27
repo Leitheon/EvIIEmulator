@@ -1,0 +1,8517 @@
+{
+ "beans": {
+  "AcademyResearchUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "researchBean": {
+     "type": "AvailableResearchListBean"
+    }
+   }
+  },
+  "AllProduceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allProduceQueue": {
+     "array": true,
+     "type": "ProduceBean"
+    },
+    "positionId": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceAddPlayerByLeaderInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allianceName": {
+     "type": "String"
+    },
+    "memberCount": {
+     "type": "int"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceAddPlayerByUserInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "castleCount": {
+     "type": "int"
+    },
+    "inviteTime": {
+     "type": "Number"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    },
+    "userName": {
+     "type": "String"
+    }
+   }
+  },
+  "AllianceAddPlayerInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "invitePerson": {
+     "type": "String"
+    },
+    "inviteTime": {
+     "type": "Number"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    },
+    "state": {
+     "type": "String"
+    },
+    "userName": {
+     "type": "String"
+    }
+   }
+  },
+  "AllianceArmyResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armyInfoBean": {
+     "type": "BettleResultBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceChatMsg": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "fromUser": {
+     "type": "String"
+    },
+    "languageType": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ownitemid": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceEvent": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "eventName": {
+     "type": "String"
+    },
+    "time": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceEventListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "events": {
+     "array": true,
+     "type": "AllianceEvent"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceFriendshipResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "enemyList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "friendlyList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "middleList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allinaceInfo": {
+     "type": "String"
+    },
+    "creator": {
+     "type": "String"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "leader": {
+     "type": "String"
+    },
+    "memberCount": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "prestigeCount": {
+     "type": "int"
+    },
+    "ranking": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceInviteBeanResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceAddPlayerInfoBeanList": {
+     "array": true,
+     "type": "AllianceAddPlayerInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceInviteOnClientBeanResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceAddPlayerByLeaderInfoBeanList": {
+     "array": true,
+     "type": "AllianceAddPlayerByLeaderInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceListResponse": {
+   "consts": {
+    "ALLIANCE_LIST_NOT_IN_ALLI": "-1"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "alliances": {
+     "array": true,
+     "type": "AllianceQueryBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceManagementResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "waitIntoAllianceName": {
+     "type": "String"
+    }
+   }
+  },
+  "AllianceMembersResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "members": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AlliancePowerLevelResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "level": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AllianceQueryBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "bulletin": {
+     "type": "String"
+    },
+    "creatorName": {
+     "type": "String"
+    },
+    "curNum": {
+     "type": "int"
+    },
+    "desc": {
+     "type": "String"
+    },
+    "leaderName": {
+     "type": "String"
+    },
+    "limit": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "ranking": {
+     "type": "int"
+    }
+   }
+  },
+  "AllianceUserAddResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceAddPlayerByUserInfoBeanList": {
+     "array": true,
+     "type": "AllianceAddPlayerByUserInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ArmyBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "alliance": {
+     "type": "String"
+    },
+    "armyId": {
+     "type": "int"
+    },
+    "direction": {
+     "type": "int"
+    },
+    "hero": {
+     "type": "String"
+    },
+    "heroLevel": {
+     "type": "int"
+    },
+    "heroid": {
+     "type": "int"
+    },
+    "king": {
+     "type": "String"
+    },
+    "missionType": {
+     "type": "int"
+    },
+    "reachTime": {
+     "type": "Number"
+    },
+    "resource": {
+     "type": "ResourceBean"
+    },
+    "restTime": {
+     "type": "Number"
+    },
+    "selected": {
+     "type": "Boolean"
+    },
+    "startFieldId": {
+     "type": "int"
+    },
+    "startPosName": {
+     "type": "String"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "targetFieldId": {
+     "type": "int"
+    },
+    "targetPosName": {
+     "type": "String"
+    },
+    "troop": {
+     "type": "TroopStrBean"
+    }
+   }
+  },
+  "ArmyPracticeResponse": {
+   "consts": {
+    "ARMY_PRACTICE_RESULT_ATTACK_WIN": "1",
+    "ARMY_PRACTICE_RESULT_GUARD_WIN": "-1"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "attackLostTroop": {
+     "type": "TroopBean"
+    },
+    "defendLostTroop": {
+     "type": "TroopBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "result": {
+     "type": "int"
+    },
+    "round": {
+     "type": "int"
+    }
+   }
+  },
+  "AvailableBuildingListBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "conditionBean": {
+     "type": "ConditionBean"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "AvailableBuilingListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "builingList": {
+     "array": true,
+     "type": "AvailableBuildingListBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "AvailableResearchListBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "avalevel": {
+     "type": "int"
+    },
+    "castleId": {
+     "type": "Number"
+    },
+    "conditionBean": {
+     "type": "ConditionBean"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "enhancedstarlv": {
+     "type": "int"
+    },
+    "help": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "permition": {
+     "type": "Boolean"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "typeId": {
+     "type": "int"
+    },
+    "upgradeing": {
+     "type": "Boolean"
+    }
+   }
+  },
+  "AvailableResearchListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "academyCount": {
+     "type": "int"
+    },
+    "acailableResearchBeans": {
+     "array": true,
+     "type": "AvailableResearchListBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "BettleResultBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {}
+  },
+  "BuffBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "descName": {
+     "type": "String"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "typeId": {
+     "type": "String"
+    }
+   }
+  },
+  "BuildComplate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buildingBean": {
+     "type": "BuildingBean"
+    },
+    "castleId": {
+     "type": "int"
+    }
+   }
+  },
+  "BuildingBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "appearance": {
+     "type": "int"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "help": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "positionId": {
+     "type": "int"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "status": {
+     "type": "int"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "BuildingQueueBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "costTime": {
+     "type": "Number"
+    },
+    "id": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "positionId": {
+     "type": "int"
+    },
+    "queueType": {
+     "type": "int"
+    },
+    "status": {
+     "type": "int"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "BuildingQueueUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buildingQueueBean": {
+     "type": "BuildingQueueBean"
+    },
+    "castleId": {
+     "type": "int"
+    }
+   }
+  },
+  "BuyResourceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "foodRemain": {
+     "type": "int"
+    },
+    "forFood": {
+     "type": "int"
+    },
+    "forIron": {
+     "type": "int"
+    },
+    "forStone": {
+     "type": "int"
+    },
+    "forWood": {
+     "type": "int"
+    },
+    "ironRemain": {
+     "type": "int"
+    },
+    "stoneRemain": {
+     "type": "int"
+    },
+    "woodRemain": {
+     "type": "int"
+    }
+   }
+  },
+  "BuyResourceInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buyResourceBean": {
+     "type": "BuyResourceBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CapitalCommandResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "amount": {
+     "type": "int"
+    },
+    "armyType": {
+     "type": "String"
+    },
+    "castleId": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "targetFieldId": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allowAlliance": {
+     "type": "Boolean"
+    },
+    "buffs": {
+     "array": true,
+     "type": "BuffBean"
+    },
+    "buildingQueues": {
+     "array": true,
+     "type": "BuildingQueueBean"
+    },
+    "buildings": {
+     "array": true,
+     "type": "BuildingBean"
+    },
+    "canChangeIcon": {
+     "type": "Boolean"
+    },
+    "colonization": {
+     "type": "int"
+    },
+    "colonyBeans": {
+     "array": true,
+     "type": "ColonyBean"
+    },
+    "fieldId": {
+     "type": "int"
+    },
+    "fields": {
+     "array": true,
+     "type": "FieldBean"
+    },
+    "fortification": {
+     "type": "FortificationsBean"
+    },
+    "goOutForBattle": {
+     "type": "Boolean"
+    },
+    "hasEnemy": {
+     "type": "Boolean"
+    },
+    "heros": {
+     "array": true,
+     "type": "HeroBean"
+    },
+    "icon": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "logUrl": {
+     "type": "String"
+    },
+    "mercenaryBeans": {
+     "array": true,
+     "type": "MercenaryBean"
+    },
+    "name": {
+     "type": "String"
+    },
+    "powerlevel": {
+     "type": "int"
+    },
+    "resource": {
+     "type": "CastleResourceBean"
+    },
+    "status": {
+     "type": "int"
+    },
+    "strTroop": {
+     "type": "TroopStrBean"
+    },
+    "trades": {
+     "array": true,
+     "type": "TradeBean"
+    },
+    "transingTrades": {
+     "array": true,
+     "type": "TransingTradeBean"
+    },
+    "troop": {
+     "type": "TroopBean"
+    },
+    "usePACIFY_SUCCOUR_OR_PACIFY_PRAY": {
+     "type": "int"
+    },
+    "zoneId": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleBuffUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buffBean": {
+     "type": "BuffBean"
+    },
+    "castleid": {
+     "type": "int"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleFieldInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "fields": {
+     "array": true,
+     "type": "FieldBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CastleFieldUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "bean": {
+     "type": "FieldBean"
+    },
+    "castleId": {
+     "type": "int"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleResourceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "buildPeople": {
+     "type": "int"
+    },
+    "colonyFood": {
+     "type": "Number"
+    },
+    "colonyGold": {
+     "type": "Number"
+    },
+    "colonyIron": {
+     "type": "Number"
+    },
+    "colonyStone": {
+     "type": "Number"
+    },
+    "colonyWood": {
+     "type": "Number"
+    },
+    "complaint": {
+     "type": "int"
+    },
+    "curPopulation": {
+     "type": "int"
+    },
+    "food": {
+     "type": "ResourceInfoBean"
+    },
+    "gold": {
+     "type": "Number"
+    },
+    "herosSalary": {
+     "type": "int"
+    },
+    "iron": {
+     "type": "ResourceInfoBean"
+    },
+    "maxPopulation": {
+     "type": "int"
+    },
+    "populationDirection": {
+     "type": "int"
+    },
+    "stone": {
+     "type": "ResourceInfoBean"
+    },
+    "supplyFood": {
+     "type": "Number"
+    },
+    "support": {
+     "type": "int"
+    },
+    "taxIncome": {
+     "type": "int"
+    },
+    "texRate": {
+     "type": "int"
+    },
+    "troopCostFood": {
+     "type": "Number"
+    },
+    "wood": {
+     "type": "ResourceInfoBean"
+    },
+    "workPeople": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleSignInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "id": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "x": {
+     "type": "int"
+    },
+    "y": {
+     "type": "int"
+    }
+   }
+  },
+  "CastleSignResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleSignInfoArr": {
+     "array": true,
+     "type": "CastleSignInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CastleUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleBean": {
+     "type": "CastleBean"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "CbUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "text": {
+     "type": "String"
+    },
+    "tp": {
+     "type": "int"
+    }
+   }
+  },
+  "CelebRankCompleteTipResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "name": {
+     "type": "String"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "CelebResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceBean": {
+     "array": true,
+     "type": "RankAllianceBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "playerBean": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    }
+   }
+  },
+  "ChangeName": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "changeType": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "nowName": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ChangeNameResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "changeType": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "nowName": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ChangeUserFaceResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ChannelChatMsg": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "channel": {
+     "type": "String"
+    },
+    "fromUser": {
+     "type": "String"
+    },
+    "languageType": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ownitemid": {
+     "type": "int"
+    }
+   }
+  },
+  "ChatResponse": {
+   "consts": {
+    "ERROR_MISSING_SPEAKER": "-1",
+    "ERROR_NO_ALLIANCE": "-2",
+    "ERROR_NO_USER": "-3"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CheckOutBuildingResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "conditionBean": {
+     "type": "ConditionBean"
+    },
+    "desConditionBean": {
+     "type": "ConditionBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CoinsNeedResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "coinsNeed": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ColonialArmyResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armyBeans": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ColonialCastlesRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "colonyBeans": {
+     "array": true,
+     "type": "ColonyBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ColonialDeployResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "reduceCoolDown": {
+     "type": "Number"
+    },
+    "troopBean": {
+     "type": "TroopBean"
+    }
+   }
+  },
+  "ColonyBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allianceName": {
+     "type": "String"
+    },
+    "castleId": {
+     "type": "int"
+    },
+    "cityName": {
+     "type": "String"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "isCanLevy": {
+     "type": "Boolean"
+    },
+    "isCanOverview": {
+     "type": "Boolean"
+    },
+    "logoUrl": {
+     "type": "String"
+    },
+    "lordName": {
+     "type": "String"
+    },
+    "position": {
+     "type": "String"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "relation": {
+     "type": "int"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "status": {
+     "type": "int"
+    },
+    "time": {
+     "type": "String"
+    }
+   }
+  },
+  "ColonyLevyeRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "amount": {
+     "type": "int"
+    },
+    "armyType": {
+     "type": "String"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ColonyUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "colonyBeans": {
+     "array": true,
+     "type": "ColonyBean"
+    }
+   }
+  },
+  "CommandResponse": {
+   "consts": {
+    "OK_DEFAULT": "1",
+    "OK_INVALID_REQUEST": "-99"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CommissionQuestArmyInfoRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armyBean": {
+     "type": "ArmyBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CommissionQuestArmyRankBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "experience": {
+     "type": "Number"
+    },
+    "playerId": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "CommissionQuestArmyRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armyRankBean": {
+     "array": true,
+     "type": "CommissionQuestArmyRankBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CommissionQuestBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "endtime": {
+     "type": "String"
+    },
+    "id": {
+     "type": "int"
+    },
+    "isAccepted": {
+     "type": "Boolean"
+    },
+    "isFinish": {
+     "type": "Boolean"
+    },
+    "isMyIssue": {
+     "type": "Boolean"
+    },
+    "name": {
+     "type": "String"
+    },
+    "playerCount": {
+     "type": "int"
+    },
+    "position": {
+     "type": "String"
+    },
+    "reward": {
+     "type": "int"
+    },
+    "target": {
+     "type": "String"
+    },
+    "timeout": {
+     "type": "Number"
+    },
+    "type": {
+     "type": "int"
+    }
+   }
+  },
+  "CommissionQuestRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "commissionQuestBean": {
+     "array": true,
+     "type": "CommissionQuestBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "ConditionBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "buildings": {
+     "array": true,
+     "type": "ConditionDependBuildingBean"
+    },
+    "destructTime": {
+     "type": "Number"
+    },
+    "food": {
+     "type": "int"
+    },
+    "gold": {
+     "type": "int"
+    },
+    "iron": {
+     "type": "int"
+    },
+    "items": {
+     "array": true,
+     "type": "ConditionDependItemBean"
+    },
+    "population": {
+     "type": "int"
+    },
+    "stone": {
+     "type": "int"
+    },
+    "techs": {
+     "array": true,
+     "type": "ConditionDependTechBean"
+    },
+    "time": {
+     "type": "Number"
+    },
+    "wood": {
+     "type": "int"
+    }
+   }
+  },
+  "ConditionDependBuildingBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "curLevel": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "successFlag": {
+     "type": "Boolean"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "ConditionDependItemBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "curNum": {
+     "type": "int"
+    },
+    "id": {
+     "type": "String"
+    },
+    "num": {
+     "type": "int"
+    },
+    "successFlag": {
+     "type": "Boolean"
+    }
+   }
+  },
+  "ConditionDependTechBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "curLevel": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "successFlag": {
+     "type": "Boolean"
+    }
+   }
+  },
+  "ConnectionLost": {
+   "consts": {
+    "ILLEGAL_NAME": "5",
+    "KICK_BY_OTHER": "3",
+    "KICK_BY_SERVER": "0",
+    "LOGIN_FREQUENTLY": "6",
+    "SERVER_MAINTAIN": "4",
+    "SERVER_SHUTDOWN": "2",
+    "SERVER_START": "1"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "msg": {
+     "type": "String"
+    },
+    "reasonCode": {
+     "type": "int"
+    }
+   }
+  },
+  "CreateHeroResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "heroId": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "CreatePlayerResponse": {
+   "consts": {
+    "CREATE_RESULT_HAVE_CREATED": "-3",
+    "CREATE_RESULT_NAME_DUP": "-1",
+    "CREATE_RESULT_ZONE_FULL": "-2"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "player": {
+     "type": "PlayerBean"
+    }
+   }
+  },
+  "DeclaredWarStatusChange": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "status": {
+     "type": "int"
+    },
+    "userName": {
+     "type": "String"
+    }
+   }
+  },
+  "DeclaredWarUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "declaredWarBeans": {
+     "array": true,
+     "type": "PlayerDeclaredWarBean"
+    }
+   }
+  },
+  "DisappearHeroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "disppeartime": {
+     "type": "String"
+    },
+    "id": {
+     "type": "String"
+    },
+    "level": {
+     "type": "int"
+    },
+    "management": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "power": {
+     "type": "int"
+    },
+    "stratagem": {
+     "type": "int"
+    }
+   }
+  },
+  "DisappearHeroResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "heros": {
+     "array": true,
+     "type": "DisappearHeroBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "EffortListBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "effortListInfo": {
+     "type": "String"
+    },
+    "effortTypeid": {
+     "type": "int"
+    }
+   }
+  },
+  "EffortListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "effortcomplete": {
+     "type": "String"
+    },
+    "effortlistbean": {
+     "array": true,
+     "type": "EffortListBean"
+    },
+    "effortpoint": {
+     "type": "String"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "EnemyArmysUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armys": {
+     "array": true,
+     "type": "ArmyBean"
+    }
+   }
+  },
+  "EquipmentBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "addAttribute": {
+     "type": "int"
+    },
+    "addAttributeType": {
+     "type": "int"
+    },
+    "equipmenttech": {
+     "type": "int"
+    },
+    "euipmenttechStarLv": {
+     "type": "int"
+    },
+    "heroPos": {
+     "type": "int"
+    },
+    "lv": {
+     "type": "int"
+    }
+   }
+  },
+  "EquipmentResearchCompleteUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "EquipmenttechBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "equipmenttechid": {
+     "type": "int"
+    },
+    "lv": {
+     "type": "int"
+    }
+   }
+  },
+  "FieldBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "armys": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "id": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "statu": {
+     "type": "int"
+    },
+    "type": {
+     "type": "int"
+    }
+   }
+  },
+  "FleeTroopUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "goldNeed": {
+     "type": "int"
+    },
+    "troop": {
+     "type": "TroopBean"
+    }
+   }
+  },
+  "FortProduceListBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "conditionBean": {
+     "type": "ConditionBean"
+    },
+    "permition": {
+     "type": "Boolean"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "FortProduceListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "fortList": {
+     "array": true,
+     "type": "FortProduceListBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "FortificationsBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "abatis": {
+     "type": "int"
+    },
+    "arrowTower": {
+     "type": "int"
+    },
+    "rockfall": {
+     "type": "int"
+    },
+    "rollingLogs": {
+     "type": "int"
+    },
+    "trap": {
+     "type": "int"
+    }
+   }
+  },
+  "FortificationsUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "fortification": {
+     "type": "FortificationsBean"
+    }
+   }
+  },
+  "FriendArmysUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armys": {
+     "array": true,
+     "type": "ArmyBean"
+    }
+   }
+  },
+  "FriendResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "blockArr": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "friendArr": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "FurloughResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "playerBean": {
+     "type": "PlayerBean"
+    }
+   }
+  },
+  "GamblingItemBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "count": {
+     "type": "int"
+    },
+    "id": {
+     "type": "String"
+    },
+    "kind": {
+     "type": "int"
+    }
+   }
+  },
+  "GamblingRankingBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "count": {
+     "type": "int"
+    },
+    "isReward": {
+     "type": "int"
+    },
+    "itemsBeans": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "playerName": {
+     "type": "String"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "GamblingRankingRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "gamblingRankingBeans": {
+     "array": true,
+     "type": "GamblingRankingBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "GamblingRankingRewardRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "itemBeans": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GemStoneBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "gemstoneid": {
+     "type": "String"
+    }
+   }
+  },
+  "GemStoneInPosBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "infro": {
+     "array": true,
+     "type": "GemStoneLvInfroBean"
+    },
+    "pos": {
+     "type": "int"
+    }
+   }
+  },
+  "GemStoneLvInfroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "gemstoneids": {
+     "array": true,
+     "type": "GemStoneBean"
+    },
+    "lv": {
+     "type": "int"
+    }
+   }
+  },
+  "GemstoneRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "enhancedstarlv": {
+     "type": "int"
+    },
+    "equipmenttechid": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetAllVisitorCommentsResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "commentBeans": {
+     "array": true,
+     "type": "VisitorCommentBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "total": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "GetCanDeclaredWarAgainstPlayerRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "isCanDeclaredWar": {
+     "type": "Boolean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetDeclaredWarResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "status": {
+     "type": "int"
+    }
+   }
+  },
+  "GetHelpedPlayerBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "playerFBID": {
+     "type": "String"
+    }
+   }
+  },
+  "GetHelpedPlayersResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "players": {
+     "array": true,
+     "type": "GetHelpedPlayerBean"
+    }
+   }
+  },
+  "GetIsSecurityCodeSettedResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "isSetSecurityCode": {
+     "type": "Boolean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetItemDefResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "itemXml": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetPackageListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "packages": {
+     "array": true,
+     "type": "PackageBean"
+    }
+   }
+  },
+  "GetPackageNumberResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "number": {
+     "type": "int"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetPackageResponse": {
+   "consts": {
+    "ERROR_PACKAGE_EXPIRED": "-3",
+    "ERROR_PACKAGE_NOT_EXISTS": "-1",
+    "ERROR_REQUIRMENT_NOT_MET": "-2"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetPlayerVoteInfro": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "curdayvotes": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetProtectOptionResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "option": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetRelationshipRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceRelation": {
+     "type": "int"
+    },
+    "canDeclaredWar": {
+     "type": "Boolean"
+    },
+    "declaredWarStatus": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "freshman": {
+     "type": "Boolean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "GetTopVotesPlayer": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "getvotes": {
+     "type": "Number"
+    }
+   }
+  },
+  "HasAllianceResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "enemyList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "friendlyList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "indexAllianceInfoBean": {
+     "type": "IndexAllianceInfoBean"
+    },
+    "middleList": {
+     "array": true,
+     "type": "UnitAlliance"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "serialVersionUID": {
+     "type": "Number"
+    }
+   }
+  },
+  "HeroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "ability": {
+     "type": "int"
+    },
+    "attack": {
+     "type": "Number"
+    },
+    "buffs": {
+     "array": true,
+     "type": "BuffBean"
+    },
+    "defence": {
+     "type": "int"
+    },
+    "equipmentbean": {
+     "array": true,
+     "type": "EquipmentBean"
+    },
+    "experience": {
+     "type": "Number"
+    },
+    "facebook_id": {
+     "type": "String"
+    },
+    "fbFriendName": {
+     "type": "String"
+    },
+    "fieldtype": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "infro": {
+     "type": "String"
+    },
+    "intelligence": {
+     "type": "Number"
+    },
+    "isHero": {
+     "type": "int"
+    },
+    "itemAmount": {
+     "type": "int"
+    },
+    "itemId": {
+     "type": "String"
+    },
+    "leadership": {
+     "type": "int"
+    },
+    "leadershipAdded": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "logoUrl": {
+     "type": "String"
+    },
+    "loyalty": {
+     "type": "int"
+    },
+    "management": {
+     "type": "int"
+    },
+    "managementAdded": {
+     "type": "int"
+    },
+    "managementBuffAdded": {
+     "type": "int"
+    },
+    "maxStrength": {
+     "type": "int"
+    },
+    "morale": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "npc_id": {
+     "type": "int"
+    },
+    "politics": {
+     "type": "Number"
+    },
+    "power": {
+     "type": "int"
+    },
+    "powerAdded": {
+     "type": "int"
+    },
+    "powerBuffAdded": {
+     "type": "int"
+    },
+    "remainPoint": {
+     "type": "int"
+    },
+    "sex": {
+     "type": "Boolean"
+    },
+    "speed": {
+     "type": "int"
+    },
+    "stamina": {
+     "type": "int"
+    },
+    "status": {
+     "type": "int"
+    },
+    "stratagem": {
+     "type": "int"
+    },
+    "stratagemAdded": {
+     "type": "int"
+    },
+    "stratagemBuffAdded": {
+     "type": "int"
+    },
+    "upgradeExp": {
+     "type": "int"
+    }
+   }
+  },
+  "HeroListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "heros": {
+     "array": true,
+     "type": "HeroBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "posCount": {
+     "type": "int"
+    }
+   }
+  },
+  "HeroUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "hero": {
+     "type": "HeroBean"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "IndexAllianceInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allianceInfo": {
+     "type": "String"
+    },
+    "allianceName": {
+     "type": "String"
+    },
+    "allianceNote": {
+     "type": "String"
+    },
+    "creatorName": {
+     "type": "String"
+    },
+    "leaderName": {
+     "type": "String"
+    },
+    "memberCount": {
+     "type": "int"
+    },
+    "memberLimit": {
+     "type": "int"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "InjuredTroopUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "goldNeed": {
+     "type": "int"
+    },
+    "troop": {
+     "type": "TroopBean"
+    }
+   }
+  },
+  "ItemBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "count": {
+     "type": "int"
+    },
+    "id": {
+     "type": "String"
+    },
+    "maxCount": {
+     "type": "int"
+    },
+    "minCount": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    }
+   }
+  },
+  "ItemBuff": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {}
+  },
+  "ItemUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "items": {
+     "array": true,
+     "type": "ItemBean"
+    }
+   }
+  },
+  "KickedOut": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "ip": {
+     "type": "String"
+    }
+   }
+  },
+  "LoginResponse": {
+   "consts": {
+    "LOGIN_RESULT_ERROR_USERNAME": "-2",
+    "LOGIN_RESULT_NEED_CREATE_PLAYER": "-4",
+    "LOGIN_RESULT_SERVER_FULL": "-3"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "player": {
+     "type": "PlayerBean"
+    }
+   }
+  },
+  "MailBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "isRead": {
+     "type": "int"
+    },
+    "mailid": {
+     "type": "int"
+    },
+    "playerId": {
+     "type": "int"
+    },
+    "receiveTime": {
+     "type": "String"
+    },
+    "receiver": {
+     "type": "String"
+    },
+    "selected": {
+     "type": "Boolean"
+    },
+    "sender": {
+     "type": "String"
+    },
+    "targetId": {
+     "type": "int"
+    },
+    "title": {
+     "type": "String"
+    },
+    "type_id": {
+     "type": "int"
+    }
+   }
+  },
+  "MailListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "mails": {
+     "array": true,
+     "type": "MailBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "MailResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "content": {
+     "type": "String"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "isRead": {
+     "type": "int"
+    },
+    "mailid": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "playerId": {
+     "type": "int"
+    },
+    "receiveTime": {
+     "type": "String"
+    },
+    "receiver": {
+     "type": "String"
+    },
+    "sender": {
+     "type": "String"
+    },
+    "targetId": {
+     "type": "int"
+    },
+    "title": {
+     "type": "String"
+    },
+    "type_id": {
+     "type": "int"
+    }
+   }
+  },
+  "MapCastleBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "allianceName": {
+     "type": "String"
+    },
+    "canColonize": {
+     "type": "Boolean"
+    },
+    "canDeclaredWar": {
+     "type": "Boolean"
+    },
+    "canLoot": {
+     "type": "Boolean"
+    },
+    "canOccupy": {
+     "type": "Boolean"
+    },
+    "canScout": {
+     "type": "Boolean"
+    },
+    "canSend": {
+     "type": "Boolean"
+    },
+    "canTrans": {
+     "type": "Boolean"
+    },
+    "castleIcon": {
+     "type": "int"
+    },
+    "castleId": {
+     "type": "int"
+    },
+    "changeface": {
+     "type": "int"
+    },
+    "colonialRelation": {
+     "type": "int"
+    },
+    "colonialStatus": {
+     "type": "int"
+    },
+    "declaredWarStartTime": {
+     "type": "Number"
+    },
+    "declaredWarStatus": {
+     "type": "int"
+    },
+    "flag": {
+     "type": "String"
+    },
+    "freshMan": {
+     "type": "Boolean"
+    },
+    "furlough": {
+     "type": "Boolean"
+    },
+    "honor": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "npc": {
+     "type": "Boolean"
+    },
+    "ownerPlayerId": {
+     "type": "int"
+    },
+    "playerLogoUrl": {
+     "type": "String"
+    },
+    "powerLevel": {
+     "type": "int"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "relation": {
+     "type": "int"
+    },
+    "state": {
+     "type": "int"
+    },
+    "suzerain": {
+     "type": "String"
+    },
+    "type": {
+     "type": "int"
+    },
+    "userName": {
+     "type": "String"
+    },
+    "zoneName": {
+     "type": "String"
+    }
+   }
+  },
+  "MapCastleResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleArray": {
+     "array": true,
+     "type": "MapCastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "MapInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castles": {
+     "array": true,
+     "type": "MapCastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "mapStr": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "x1": {
+     "type": "int"
+    },
+    "x2": {
+     "type": "int"
+    },
+    "y1": {
+     "type": "int"
+    },
+    "y2": {
+     "type": "int"
+    }
+   }
+  },
+  "MapInfoSimpleResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castles": {
+     "array": true,
+     "type": "MapCastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "mapStr": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "x1": {
+     "type": "int"
+    },
+    "x2": {
+     "type": "int"
+    },
+    "y1": {
+     "type": "int"
+    },
+    "y2": {
+     "type": "int"
+    }
+   }
+  },
+  "MarketTradeBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "amount": {
+     "type": "int"
+    },
+    "price": {
+     "type": "Number"
+    }
+   }
+  },
+  "MercenaryBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "status": {
+     "type": "int"
+    },
+    "targetPosName": {
+     "type": "String"
+    }
+   }
+  },
+  "MercenaryUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "mercenaryBean": {
+     "type": "MercenaryBean"
+    }
+   }
+  },
+  "MilitarySituation": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "attack": {
+     "type": "Boolean"
+    },
+    "eventName": {
+     "type": "String"
+    },
+    "id": {
+     "type": "int"
+    },
+    "otherAllianceName": {
+     "type": "String"
+    },
+    "startPos": {
+     "type": "String"
+    },
+    "targetPos": {
+     "type": "String"
+    },
+    "time": {
+     "type": "String"
+    },
+    "type": {
+     "type": "int"
+    },
+    "xml_data": {
+     "type": "String"
+    }
+   }
+  },
+  "MilitarySituationListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "situations": {
+     "array": true,
+     "type": "MilitarySituation"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "NewFinishedQuest": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {}
+  },
+  "NewMail": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "count": {
+     "type": "int"
+    },
+    "count_inbox": {
+     "type": "int"
+    },
+    "count_system": {
+     "type": "int"
+    }
+   }
+  },
+  "NewReport": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "army_count": {
+     "type": "int"
+    },
+    "count": {
+     "type": "int"
+    },
+    "other_count": {
+     "type": "int"
+    },
+    "scout_cout": {
+     "type": "int"
+    },
+    "trade_count": {
+     "type": "int"
+    }
+   }
+  },
+  "NpcHeroBean": {
+   "consts": {
+    "CATCH_STATUS": "1",
+    "FREE_STATUS": "0",
+    "GENERAL_NPC_HERO": "0",
+    "HIRED_STATUS": "2"
+   },
+   "extends": null,
+   "fields": {
+    "ability": {
+     "type": "int"
+    },
+    "affairs_base": {
+     "type": "int"
+    },
+    "bravery_base": {
+     "type": "int"
+    },
+    "catchQuestId": {
+     "type": "int"
+    },
+    "face": {
+     "type": "int"
+    },
+    "field": {
+     "type": "int"
+    },
+    "hireQuestId": {
+     "type": "int"
+    },
+    "introduce": {
+     "type": "String"
+    },
+    "leadership": {
+     "type": "int"
+    },
+    "leadership_Added": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "logoimage": {
+     "type": "String"
+    },
+    "loyalty": {
+     "type": "int"
+    },
+    "management": {
+     "type": "int"
+    },
+    "management_Added": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "npcid": {
+     "type": "int"
+    },
+    "power": {
+     "type": "int"
+    },
+    "power_Added": {
+     "type": "int"
+    },
+    "province": {
+     "type": "String"
+    },
+    "questType": {
+     "type": "int"
+    },
+    "sex": {
+     "type": "int"
+    },
+    "status": {
+     "type": "int"
+    },
+    "stratagem": {
+     "type": "int"
+    },
+    "stratagem_Added": {
+     "type": "int"
+    },
+    "taskitemid": {
+     "type": "String"
+    },
+    "type": {
+     "type": "int"
+    },
+    "uid": {
+     "type": "int"
+    },
+    "wisdom_base": {
+     "type": "int"
+    },
+    "zi": {
+     "type": "String"
+    }
+   }
+  },
+  "NpcHeroListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "npcHeros": {
+     "array": true,
+     "type": "NpcHeroBean"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "simpleNpcHeros": {
+     "array": true,
+     "type": "SimpleNpcHeroBean"
+    }
+   }
+  },
+  "OtherFieldInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "bean": {
+     "type": "MapCastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "OverviewColonyCastleRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleBean": {
+     "type": "CastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "PackageBean": {
+   "consts": {
+    "PACKAGE_TYPE_NORMAL": "3",
+    "PACKAGE_TYPE_SCORES": "2",
+    "PACKAGE_TYPE_SERIAL": "1"
+   },
+   "extends": null,
+   "fields": {
+    "claimedTime": {
+     "type": "String"
+    },
+    "desc": {
+     "type": "String"
+    },
+    "expiredTime": {
+     "type": "Number"
+    },
+    "id": {
+     "type": "int"
+    },
+    "isUseNow": {
+     "type": "int"
+    },
+    "itemList": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "maxMedal": {
+     "type": "int"
+    },
+    "minMedal": {
+     "type": "int"
+    },
+    "packageName": {
+     "type": "String"
+    },
+    "provideTime": {
+     "type": "Number"
+    },
+    "scores": {
+     "type": "int"
+    },
+    "status": {
+     "type": "int"
+    },
+    "type": {
+     "type": "int"
+    }
+   }
+  },
+  "PackageList": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {}
+  },
+  "PlayerBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "autoFurlough": {
+     "type": "Boolean"
+    },
+    "autoHeal": {
+     "type": "Boolean"
+    },
+    "blockBeans": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "buffs": {
+     "array": true,
+     "type": "BuffBean"
+    },
+    "castleSignBean": {
+     "array": true,
+     "type": "CastleSignInfoBean"
+    },
+    "castles": {
+     "array": true,
+     "type": "CastleBean"
+    },
+    "changedFace": {
+     "type": "Boolean"
+    },
+    "currentDateTime": {
+     "type": "String"
+    },
+    "currentTime": {
+     "type": "Number"
+    },
+    "declaredWarBeans": {
+     "array": true,
+     "type": "PlayerDeclaredWarBean"
+    },
+    "digiId": {
+     "type": "String"
+    },
+    "disconnectvotes": {
+     "type": "Number"
+    },
+    "effortPoint": {
+     "type": "int"
+    },
+    "emailAddress": {
+     "type": "String"
+    },
+    "enemyArmys": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "equipments": {
+     "array": true,
+     "type": "EquipmenttechBean"
+    },
+    "finishedQuestCount": {
+     "type": "int"
+    },
+    "freshMan": {
+     "type": "Boolean"
+    },
+    "friendArmys": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "friendBeans": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "furlough": {
+     "type": "Boolean"
+    },
+    "furloughDay": {
+     "type": "int"
+    },
+    "gamblingItemIndex": {
+     "type": "int"
+    },
+    "gameSpeed": {
+     "type": "int"
+    },
+    "gemstoneinpos": {
+     "array": true,
+     "type": "GemStoneInPosBean"
+    },
+    "headline": {
+     "type": "String"
+    },
+    "isEvonyMember": {
+     "type": "Boolean"
+    },
+    "isReceiveIncomingAttack": {
+     "type": "Boolean"
+    },
+    "isSetSecurityCode": {
+     "type": "Boolean"
+    },
+    "items": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "mapSizeX": {
+     "type": "int"
+    },
+    "mapSizeY": {
+     "type": "int"
+    },
+    "newMailCount": {
+     "type": "int"
+    },
+    "newMaileCount_inbox": {
+     "type": "int"
+    },
+    "newMaileCount_system": {
+     "type": "int"
+    },
+    "newReportCount": {
+     "type": "int"
+    },
+    "newReportCount_army": {
+     "type": "int"
+    },
+    "newReportCount_other": {
+     "type": "int"
+    },
+    "newReportCount_scout": {
+     "type": "int"
+    },
+    "newReportCount_trade": {
+     "type": "int"
+    },
+    "packageBean": {
+     "array": true,
+     "type": "PackageBean"
+    },
+    "playerInfo": {
+     "type": "PlayerInfoBean"
+    },
+    "randomEvents": {
+     "array": true,
+     "type": "RandomEventBean"
+    },
+    "redCount": {
+     "type": "int"
+    },
+    "returnReport": {
+     "type": "Boolean"
+    },
+    "saleItemBeans": {
+     "array": true,
+     "type": "SaleItemBean"
+    },
+    "saleTypeBeans": {
+     "array": true,
+     "type": "SaleTypeBean"
+    },
+    "selfArmys": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "setshowinfro": {
+     "array": true,
+     "type": "SetShowInfro"
+    },
+    "troopConfigBeans": {
+     "array": true,
+     "type": "TroopConfigBean"
+    },
+    "tutorialStepId": {
+     "type": "int"
+    }
+   }
+  },
+  "PlayerBuffUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buffBean": {
+     "type": "BuffBean"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "PlayerDeclaredWarBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "endTime": {
+     "type": "Number"
+    },
+    "playerName": {
+     "type": "String"
+    },
+    "startTime": {
+     "type": "Number"
+    },
+    "status": {
+     "type": "int"
+    }
+   }
+  },
+  "PlayerInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "accountName": {
+     "type": "String"
+    },
+    "alliance": {
+     "type": "String"
+    },
+    "allianceLevel": {
+     "type": "String"
+    },
+    "bdenyotherplayer": {
+     "type": "int"
+    },
+    "castleCount": {
+     "type": "int"
+    },
+    "createrTime": {
+     "type": "Number"
+    },
+    "date": {
+     "type": "String"
+    },
+    "effortPoint": {
+     "type": "int"
+    },
+    "faceUrl": {
+     "type": "String"
+    },
+    "facebookId": {
+     "type": "String"
+    },
+    "flag": {
+     "type": "String"
+    },
+    "getvotes": {
+     "type": "Number"
+    },
+    "historygetvotes": {
+     "type": "Number"
+    },
+    "honor": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "lastLoginTime": {
+     "type": "Number"
+    },
+    "levelId": {
+     "type": "int"
+    },
+    "medal": {
+     "type": "int"
+    },
+    "office": {
+     "type": "String"
+    },
+    "population": {
+     "type": "int"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "prweekvotes": {
+     "type": "Number"
+    },
+    "ranking": {
+     "type": "int"
+    },
+    "sex": {
+     "type": "int"
+    },
+    "starlv": {
+     "type": "int"
+    },
+    "term": {
+     "type": "String"
+    },
+    "titleId": {
+     "type": "int"
+    },
+    "topvotes": {
+     "type": "Number"
+    },
+    "userId": {
+     "type": "int"
+    },
+    "userName": {
+     "type": "String"
+    }
+   }
+  },
+  "PlayerInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "playerInfo": {
+     "type": "PlayerInfoBean"
+    }
+   }
+  },
+  "PlayerInfoUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "playerInfo": {
+     "type": "PlayerInfoBean"
+    }
+   }
+  },
+  "PrivateChatMessage": {
+   "consts": {
+    "GM_CHAT": "1",
+    "NORMAL_CHAT": "0"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "chatType": {
+     "type": "int"
+    },
+    "fromUser": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ownitemid": {
+     "type": "int"
+    }
+   }
+  },
+  "ProduceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "costTime": {
+     "type": "Number"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "num": {
+     "type": "int"
+    },
+    "queueId": {
+     "type": "int"
+    },
+    "type": {
+     "type": "int"
+    }
+   }
+  },
+  "ProduceQueueResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allProduceQueue": {
+     "array": true,
+     "type": "AllProduceBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "QuestBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "award": {
+     "type": "String"
+    },
+    "description": {
+     "type": "String"
+    },
+    "isCard": {
+     "type": "Boolean"
+    },
+    "isFinish": {
+     "type": "Boolean"
+    },
+    "islast": {
+     "type": "Boolean"
+    },
+    "manual": {
+     "type": "String"
+    },
+    "name": {
+     "type": "String"
+    },
+    "questId": {
+     "type": "int"
+    },
+    "recommend": {
+     "type": "Boolean"
+    },
+    "targets": {
+     "array": true,
+     "type": "QuestTargetBean"
+    },
+    "version": {
+     "type": "int"
+    }
+   }
+  },
+  "QuestCompleteTipResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "name": {
+     "type": "String"
+    },
+    "quest": {
+     "type": "QuestBean"
+    },
+    "questId": {
+     "type": "int"
+    }
+   }
+  },
+  "QuestFinished": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "finishedQuest": {
+     "type": "int"
+    }
+   }
+  },
+  "QuestListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "quests": {
+     "array": true,
+     "type": "QuestBean"
+    }
+   }
+  },
+  "QuestRewardRespone": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "itemBeans": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "QuestTargetBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "finished": {
+     "type": "Boolean"
+    },
+    "name": {
+     "type": "String"
+    }
+   }
+  },
+  "QuestTypeBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "description": {
+     "type": "String"
+    },
+    "isFinish": {
+     "type": "Boolean"
+    },
+    "mainId": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "recommend": {
+     "type": "Boolean"
+    },
+    "typeId": {
+     "type": "int"
+    },
+    "version": {
+     "type": "int"
+    }
+   }
+  },
+  "QuestTypeResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "types": {
+     "array": true,
+     "type": "QuestTypeBean"
+    }
+   }
+  },
+  "RandomEventBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "id": {
+     "type": "int"
+    },
+    "time": {
+     "type": "Number"
+    }
+   }
+  },
+  "RandomHeroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "id": {
+     "type": "Number"
+    },
+    "lockmanagement": {
+     "type": "Boolean"
+    },
+    "lockpower": {
+     "type": "Boolean"
+    },
+    "lockstratagem": {
+     "type": "Boolean"
+    },
+    "management": {
+     "type": "int"
+    },
+    "player_id": {
+     "type": "int"
+    },
+    "power": {
+     "type": "int"
+    },
+    "resetcount": {
+     "type": "int"
+    },
+    "resettime": {
+     "type": "Number"
+    },
+    "stratagem": {
+     "type": "int"
+    }
+   }
+  },
+  "RandomHeroResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "randomherobean": {
+     "type": "RandomHeroBean"
+    }
+   }
+  },
+  "RankAllianceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "city": {
+     "type": "int"
+    },
+    "createrName": {
+     "type": "String"
+    },
+    "date": {
+     "type": "String"
+    },
+    "description": {
+     "type": "String"
+    },
+    "honor": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "member": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "playerName": {
+     "type": "String"
+    },
+    "prestige": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "RankAllianceResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "RankAllianceBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "pageSize": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "RankCastleBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "alliance": {
+     "type": "String"
+    },
+    "grade": {
+     "type": "String"
+    },
+    "kind": {
+     "type": "String"
+    },
+    "level": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "population": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "RankCastleResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "RankCastleBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "pageSize": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "RankHeroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "grade": {
+     "type": "int"
+    },
+    "isHero": {
+     "type": "int"
+    },
+    "kind": {
+     "type": "String"
+    },
+    "management": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "power": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    },
+    "stratagem": {
+     "type": "int"
+    }
+   }
+  },
+  "RankHeroResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "RankHeroBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "pageSize": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "RankPlayerResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "pageSize": {
+     "type": "int"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "RankPlayerVotesResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "pageSize": {
+     "type": "int"
+    },
+    "preweekterm": {
+     "type": "String"
+    },
+    "totalPage": {
+     "type": "int"
+    },
+    "voteendtime": {
+     "type": "Number"
+    },
+    "votestoal": {
+     "type": "Number"
+    }
+   }
+  },
+  "RegisterResponse": {
+   "consts": {
+    "CREATE_RESULT_HAVE_CREATED": "-3",
+    "CREATE_RESULT_NAME_DUP": "-1",
+    "CREATE_RESULT_ZONE_FULL": "-2"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "player": {
+     "type": "PlayerBean"
+    }
+   }
+  },
+  "ReportBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "armyType": {
+     "type": "int"
+    },
+    "attack": {
+     "type": "Boolean"
+    },
+    "back": {
+     "type": "Boolean"
+    },
+    "content": {
+     "type": "String"
+    },
+    "eventTime": {
+     "type": "String"
+    },
+    "id": {
+     "type": "int"
+    },
+    "isRead": {
+     "type": "int"
+    },
+    "selected": {
+     "type": "Boolean"
+    },
+    "startPos": {
+     "type": "String"
+    },
+    "targetPos": {
+     "type": "String"
+    },
+    "title": {
+     "type": "String"
+    },
+    "type": {
+     "type": "int"
+    }
+   }
+  },
+  "ReportListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "pageNo": {
+     "type": "int"
+    },
+    "reports": {
+     "array": true,
+     "type": "ReportBean"
+    },
+    "totalPage": {
+     "type": "int"
+    }
+   }
+  },
+  "ReportResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "report": {
+     "type": "ReportBean"
+    }
+   }
+  },
+  "ResearchCompleteUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "level": {
+     "type": "int"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "ResearchResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "tech": {
+     "type": "AvailableResearchListBean"
+    }
+   }
+  },
+  "ResourceBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "food": {
+     "type": "Number"
+    },
+    "gold": {
+     "type": "Number"
+    },
+    "iron": {
+     "type": "Number"
+    },
+    "stone": {
+     "type": "Number"
+    },
+    "wood": {
+     "type": "Number"
+    }
+   }
+  },
+  "ResourceInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "amount": {
+     "type": "Number"
+    },
+    "increaseRate": {
+     "type": "Number"
+    },
+    "max": {
+     "type": "int"
+    },
+    "storeRercent": {
+     "type": "int"
+    },
+    "workPeople": {
+     "type": "int"
+    }
+   }
+  },
+  "ResourceProduceDataBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "armyPercentage": {
+     "type": "Number"
+    },
+    "basicOutput": {
+     "type": "int"
+    },
+    "cimeliaPercentage": {
+     "type": "int"
+    },
+    "commenceDemands": {
+     "type": "int"
+    },
+    "commenceRate": {
+     "type": "int"
+    },
+    "fieldPercentage": {
+     "type": "int"
+    },
+    "heroPercentage": {
+     "type": "int"
+    },
+    "maxLabour": {
+     "type": "int"
+    },
+    "naturalPercentage": {
+     "type": "int"
+    },
+    "productionCapacity": {
+     "type": "int"
+    },
+    "technologicalPercentage": {
+     "type": "int"
+    },
+    "totalOutput": {
+     "type": "int"
+    },
+    "typeid": {
+     "type": "int"
+    }
+   }
+  },
+  "ResourceProduceDataResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "resourceProduceDataBean": {
+     "array": true,
+     "type": "ResourceProduceDataBean"
+    }
+   }
+  },
+  "ResourceUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "resource": {
+     "type": "CastleResourceBean"
+    }
+   }
+  },
+  "SaleItemBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "items": {
+     "type": "String"
+    },
+    "saleType": {
+     "type": "int"
+    }
+   }
+  },
+  "SaleTypeBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "items": {
+     "type": "String"
+    },
+    "typeName": {
+     "type": "String"
+    }
+   }
+  },
+  "SearchTradesResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "buyers": {
+     "array": true,
+     "type": "MarketTradeBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "sellers": {
+     "array": true,
+     "type": "MarketTradeBean"
+    }
+   }
+  },
+  "SecurityCodeRemovedEvent": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "isSetSecurityCode": {
+     "type": "Boolean"
+    }
+   }
+  },
+  "SelfArmysUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "armys": {
+     "array": true,
+     "type": "ArmyBean"
+    }
+   }
+  },
+  "SetShowInfro": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "selectshowheroid": {
+     "type": "int"
+    }
+   }
+  },
+  "SetShowInfroResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "selectheroids": {
+     "array": true,
+     "type": "SetShowInfro"
+    }
+   }
+  },
+  "ShareReportResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "reportId": {
+     "type": "int"
+    },
+    "reportUrl": {
+     "type": "String"
+    }
+   }
+  },
+  "SimpleNpcHeroBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "introduce": {
+     "type": "String"
+    },
+    "introduce2": {
+     "type": "String"
+    },
+    "logourl": {
+     "type": "String"
+    },
+    "name": {
+     "type": "String"
+    },
+    "npcid": {
+     "type": "int"
+    }
+   }
+  },
+  "StayAllianceReponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceArmys": {
+     "array": true,
+     "type": "ArmyBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "StoreBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "magnitude": {
+     "type": "int"
+    },
+    "resLimt": {
+     "type": "int"
+    },
+    "storage": {
+     "type": "int"
+    },
+    "storePercent": {
+     "type": "int"
+    },
+    "storeTypeId": {
+     "type": "int"
+    },
+    "unstorage": {
+     "type": "int"
+    },
+    "warehourseCapacity": {
+     "type": "int"
+    }
+   }
+  },
+  "StoreListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "storeBeans": {
+     "array": true,
+     "type": "StoreBean"
+    },
+    "totalCap": {
+     "type": "int"
+    }
+   }
+  },
+  "StrategyBuff": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {}
+  },
+  "SystemInfoMsg": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "alliance": {
+     "type": "Boolean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "noSenderSystemInfo": {
+     "type": "Boolean"
+    },
+    "sender": {
+     "type": "String"
+    },
+    "tV": {
+     "type": "Boolean"
+    },
+    "tVContext": {
+     "type": "String"
+    }
+   }
+  },
+  "TVResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "tvBeans": {
+     "array": true,
+     "type": "TVmsgBean"
+    }
+   }
+  },
+  "TVmsgBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "msg": {
+     "type": "String"
+    },
+    "time": {
+     "type": "Number"
+    }
+   }
+  },
+  "TopVotesPlayersResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "beans": {
+     "array": true,
+     "type": "PlayerInfoBean"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "TradeBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "amount": {
+     "type": "int"
+    },
+    "dealedAmount": {
+     "type": "int"
+    },
+    "dealedTotal": {
+     "type": "Number"
+    },
+    "id": {
+     "type": "int"
+    },
+    "price": {
+     "type": "Number"
+    },
+    "resType": {
+     "type": "int"
+    },
+    "resourceName": {
+     "type": "String"
+    },
+    "tradeType": {
+     "type": "int"
+    },
+    "tradeTypeName": {
+     "type": "String"
+    }
+   }
+  },
+  "TradeListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "trades": {
+     "array": true,
+     "type": "TradeBean"
+    }
+   }
+  },
+  "TradesUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "castleId": {
+     "type": "int"
+    },
+    "tradeBean": {
+     "type": "TradeBean"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "TransingTradeBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "amount": {
+     "type": "int"
+    },
+    "endTime": {
+     "type": "Number"
+    },
+    "id": {
+     "type": "int"
+    },
+    "price": {
+     "type": "Number"
+    },
+    "resType": {
+     "type": "int"
+    },
+    "resourceName": {
+     "type": "String"
+    },
+    "total": {
+     "type": "int"
+    }
+   }
+  },
+  "TransingTradeListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "transingTrades": {
+     "array": true,
+     "type": "TransingTradeBean"
+    }
+   }
+  },
+  "TransingTradeUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "bean": {
+     "type": "TransingTradeBean"
+    },
+    "castleId": {
+     "type": "int"
+    },
+    "updateType": {
+     "type": "int"
+    }
+   }
+  },
+  "TroopBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "archer": {
+     "type": "int"
+    },
+    "ballista": {
+     "type": "int"
+    },
+    "batteringRam": {
+     "type": "int"
+    },
+    "carriage": {
+     "type": "int"
+    },
+    "catapult": {
+     "type": "int"
+    },
+    "heavyCavalry": {
+     "type": "int"
+    },
+    "lightCavalry": {
+     "type": "int"
+    },
+    "militia": {
+     "type": "int"
+    },
+    "peasants": {
+     "type": "int"
+    },
+    "pikemen": {
+     "type": "int"
+    },
+    "scouter": {
+     "type": "int"
+    },
+    "swordsmen": {
+     "type": "int"
+    }
+   }
+  },
+  "TroopConfigBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "name": {
+     "type": "String"
+    },
+    "time": {
+     "type": "Number"
+    },
+    "troop": {
+     "type": "TroopBean"
+    }
+   }
+  },
+  "TroopConfigResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "troopConfigBeans": {
+     "array": true,
+     "type": "TroopConfigBean"
+    }
+   }
+  },
+  "TroopParamResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "driveSkillParam": {
+     "type": "int"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "loadSkillParam": {
+     "type": "int"
+    },
+    "marchSkillParam": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "transportStationParam": {
+     "type": "int"
+    }
+   }
+  },
+  "TroopProduceListBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "conditionBean": {
+     "type": "ConditionBean"
+    },
+    "permition": {
+     "type": "Boolean"
+    },
+    "typeId": {
+     "type": "int"
+    }
+   }
+  },
+  "TroopProduceListResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "troopList": {
+     "array": true,
+     "type": "TroopProduceListBean"
+    }
+   }
+  },
+  "TroopStrBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "archer": {
+     "type": "String"
+    },
+    "ballista": {
+     "type": "String"
+    },
+    "batteringRam": {
+     "type": "String"
+    },
+    "carriage": {
+     "type": "String"
+    },
+    "catapult": {
+     "type": "String"
+    },
+    "heavyCavalry": {
+     "type": "String"
+    },
+    "lightCavalry": {
+     "type": "String"
+    },
+    "militia": {
+     "type": "String"
+    },
+    "peasants": {
+     "type": "String"
+    },
+    "pikemen": {
+     "type": "String"
+    },
+    "scouter": {
+     "type": "String"
+    },
+    "swordsmen": {
+     "type": "String"
+    }
+   }
+  },
+  "TroopUpdate": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "caslteId": {
+     "type": "int"
+    },
+    "troop": {
+     "type": "TroopBean"
+    }
+   }
+  },
+  "UnitAlliance": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "aPrestigeCount": {
+     "type": "int"
+    },
+    "allianceName": {
+     "type": "String"
+    },
+    "honor": {
+     "type": "int"
+    },
+    "leaderName": {
+     "type": "String"
+    },
+    "memberCount": {
+     "type": "int"
+    },
+    "rank": {
+     "type": "int"
+    }
+   }
+  },
+  "UnregisteredCreatePlayerResponse": {
+   "consts": {
+    "CREATE_RESULT_HAVE_CREATED": "-3",
+    "CREATE_RESULT_NAME_DUP": "-1",
+    "CREATE_RESULT_ZONE_FULL": "-2"
+   },
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "player": {
+     "type": "PlayerBean"
+    }
+   }
+  },
+  "UseItemResultResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "gamblingItemsBeans": {
+     "array": true,
+     "type": "GamblingItemBean"
+    },
+    "itemBeans": {
+     "array": true,
+     "type": "ItemBean"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "VisitorCommentBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "comment": {
+     "type": "String"
+    },
+    "id": {
+     "type": "int"
+    },
+    "read": {
+     "type": "Boolean"
+    },
+    "time": {
+     "type": "String"
+    },
+    "visitorid": {
+     "type": "String"
+    }
+   }
+  },
+  "VisitorHelpEvent": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "visitorID": {
+     "type": "String"
+    },
+    "visitorName": {
+     "type": "String"
+    }
+   }
+  },
+  "WantedAllianceResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "allianceName": {
+     "type": "String"
+    },
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    }
+   }
+  },
+  "WorldChatMsg": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "channel": {
+     "type": "String"
+    },
+    "fromUser": {
+     "type": "String"
+    },
+    "languageType": {
+     "type": "int"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ownitemid": {
+     "type": "int"
+    }
+   }
+  },
+  "ZoneInfoBean": {
+   "consts": {},
+   "extends": null,
+   "fields": {
+    "castleCount": {
+     "type": "int"
+    },
+    "id": {
+     "type": "int"
+    },
+    "name": {
+     "type": "String"
+    },
+    "playerCount": {
+     "type": "int"
+    },
+    "rate": {
+     "type": "int"
+    }
+   }
+  },
+  "ZoneInfoResponse": {
+   "consts": {},
+   "extends": "BaseBean",
+   "fields": {
+    "errorMsg": {
+     "type": "String"
+    },
+    "msg": {
+     "type": "String"
+    },
+    "ok": {
+     "type": "int"
+    },
+    "packageId": {
+     "type": "Number"
+    },
+    "zones": {
+     "array": true,
+     "type": "ZoneInfoBean"
+    }
+   }
+  }
+ },
+ "client": "EvonyClient1921.swf",
+ "replies": {
+  "alliance.addUsertoAlliance": "AllianceManagementResponse",
+  "alliance.addUsertoAllianceList": "AllianceInviteBeanResponse",
+  "alliance.agreeComeinAllianceByLeader": "AllianceManagementResponse",
+  "alliance.agreeComeinAllianceByUser": "AllianceUserAddResponse",
+  "alliance.agreeComeinAllianceList": "AllianceUserAddResponse",
+  "alliance.cancelUserWantInAlliance": "AllianceManagementResponse",
+  "alliance.canceladdUsertoAlliance": "AllianceInviteBeanResponse",
+  "alliance.cancelagreeComeinAlliance": "AllianceUserAddResponse",
+  "alliance.createAlliance": "AllianceManagementResponse",
+  "alliance.dropAllianceFriendshipRelation": "AllianceFriendshipResponse",
+  "alliance.getAllianceArmyReport": "AllianceArmyResponse",
+  "alliance.getAllianceEventList": "AllianceEventListResponse",
+  "alliance.getAllianceFriendshipList": "AllianceFriendshipResponse",
+  "alliance.getAllianceInfo": "AllianceInfoResponse",
+  "alliance.getAllianceList": "AllianceListResponse",
+  "alliance.getAllianceMembers": "AllianceMembersResponse",
+  "alliance.getAllianceWanted": "WantedAllianceResponse",
+  "alliance.getMilitarySituationList": "MilitarySituationListResponse",
+  "alliance.getPowerFromAlliance": "AlliancePowerLevelResponse",
+  "alliance.isHasAlliance": "HasAllianceResponse",
+  "alliance.kickOutMemberfromAlliance": "AllianceManagementResponse",
+  "alliance.leaderWantUserInAllianceList": "AllianceInviteOnClientBeanResponse",
+  "alliance.messagesForAllianceMember": "AllianceManagementResponse",
+  "alliance.rejectComeinAlliance": "AllianceUserAddResponse",
+  "alliance.resetTopPowerForAlliance": "AllianceManagementResponse",
+  "alliance.resignForAlliance": "AllianceManagementResponse",
+  "alliance.sayByetoAlliance": "AllianceManagementResponse",
+  "alliance.setAllInfoForAlliance": "AllianceManagementResponse",
+  "alliance.setAllianceFriendship": "AllianceManagementResponse",
+  "alliance.setPowerForUserByAlliance": "AllianceManagementResponse",
+  "alliance.userWantInAlliance": "AllianceManagementResponse",
+  "army.IsDropItemInCastle": "CommandResponse",
+  "army.callBackArmy": "CommandResponse",
+  "army.cureInjuredTroop": "CommandResponse",
+  "army.disbandFleeTroop": "CommandResponse",
+  "army.disbandInjuredTroop": "CommandResponse",
+  "army.exerciseArmy": "ArmyPracticeResponse",
+  "army.getFleeTroop": "CommandResponse",
+  "army.getInjuredTroop": "CommandResponse",
+  "army.getStayAllianceArmys": "StayAllianceReponse",
+  "army.getTroopParam": "TroopParamResponse",
+  "army.newArmy": "CommandResponse",
+  "army.recruitFleeTroop": "CommandResponse",
+  "army.setAllowAllianceArmy": "CommandResponse",
+  "army.setArmyGoOut": "CommandResponse",
+  "capital.getLeftPoliciesTimes": "CapitalCommandResponse",
+  "capital.getUsedPoliciesTimes": "CapitalCommandResponse",
+  "capital.levyArmy": "CapitalCommandResponse",
+  "capital.levyFood": "CapitalCommandResponse",
+  "capital.levyPopulation": "CapitalCommandResponse",
+  "capital.levyTaxes": "CapitalCommandResponse",
+  "capital.reduceArmaments": "CapitalCommandResponse",
+  "castle.UpdateCastleResources": "AvailableBuilingListResponse",
+  "castle.cancelBuildingQueue": "CommandResponse",
+  "castle.cancleBuildCommand": "CommandResponse",
+  "castle.checkOutUpgrade": "CheckOutBuildingResponse",
+  "castle.deleteCastleSign": "CastleSignResponse",
+  "castle.demolishBuildingQueue": "CommandResponse",
+  "castle.destructBuilding": "CommandResponse",
+  "castle.getAvailableBuildingBean": "AvailableBuilingListResponse",
+  "castle.getAvailableBuildingListInside": "AvailableBuilingListResponse",
+  "castle.getAvailableBuildingListOutside": "AvailableBuilingListResponse",
+  "castle.getBuildingQueueCoinsNeed": "CoinsNeedResponse",
+  "castle.getCoinsNeed": "CoinsNeedResponse",
+  "castle.getDestructBuildBean": "AvailableBuilingListResponse",
+  "castle.newBuilding": "CommandResponse",
+  "castle.newBuildingQueue": "CommandResponse",
+  "castle.saveCastleSignList": "CastleSignResponse",
+  "castle.speedUpBuildCommand": "CommandResponse",
+  "castle.speedupBuildingQueue": "CommandResponse",
+  "castle.upgradeBuilding": "CommandResponse",
+  "celeb.findAllianceByPrestige": "CelebResponse",
+  "celeb.findPlayerByPrestige": "CelebResponse",
+  "celeb.findPlayerByStar": "CelebResponse",
+  "celeb.findPlayerByTitle": "CelebResponse",
+  "city.WarMoveCastle": "CommandResponse",
+  "city.advMoveCastle": "CommandResponse",
+  "city.constructCastle": "CommandResponse",
+  "city.getStoreList": "StoreListResponse",
+  "city.giveupCastle": "CommandResponse",
+  "city.modifyCastleIcon": "CommandResponse",
+  "city.modifyCastleName": "CommandResponse",
+  "city.modifyFlag": "CommandResponse",
+  "city.modifyStorePercent": "CommandResponse",
+  "city.modifyUserName": "CommandResponse",
+  "city.moveCastle": "CommandResponse",
+  "city.setStopWarState": "CommandResponse",
+  "city.uniteAdvMoveCastle": "CommandResponse",
+  "colony.abandonColony": "CommandResponse",
+  "colony.getColonialArmyInfo": "ColonialArmyResponse",
+  "colony.getColonialCastlesInfo": "ColonialCastlesRespone",
+  "colony.getDeployTroopsInfo": "ColonialDeployResponse",
+  "colony.getSuzerainColonialCastlesInfo": "ColonialCastlesRespone",
+  "colony.levyArmy": "ColonyLevyeRespone",
+  "colony.levyFood": "ColonyLevyeRespone",
+  "colony.levyPopulation": "ColonyLevyeRespone",
+  "colony.levyTaxes": "ColonyLevyeRespone",
+  "colony.overviewColonialCastle": "OverviewColonyCastleRespone",
+  "colony.reduceArmaments": "ColonyLevyeRespone",
+  "colony.setDeployTroops": "CommandResponse",
+  "colony.sowDiscord": "CommandResponse",
+  "colony.speedUpAbandonColony": "CommandResponse",
+  "colony.uprise": "CommandResponse",
+  "commission.acceptCommissionQuest": "CommandResponse",
+  "commission.addCommissionQuestArmy": "CommandResponse",
+  "commission.declineCommissionQuest": "CommandResponse",
+  "commission.getAllCommissionQuest": "CommissionQuestRespone",
+  "commission.getCommissionQuestArmyInfo": "CommissionQuestArmyInfoRespone",
+  "commission.getCommissionQuestArmyRanking": "CommissionQuestArmyRespone",
+  "commission.getMyAcceptedCommissionQuest": "CommissionQuestRespone",
+  "commission.getMyCommissionQuest": "CommissionQuestRespone",
+  "commission.issueCommissionQuest": "CommandResponse",
+  "common.addToFavorites": "CommandResponse",
+  "common.allianceChat": "ChatResponse",
+  "common.authSecurityCode": "CommandResponse",
+  "common.cancelRemovingSecurityCodeProcess": "CommandResponse",
+  "common.changeHeadline": "CommandResponse",
+  "common.changeName": "ChangeNameResponse",
+  "common.changeSecurityCode": "CommandResponse",
+  "common.changeUserFace": "ChangeUserFaceResponse",
+  "common.channelChat": "ChatResponse",
+  "common.createNewPlayer": "CreatePlayerResponse",
+  "common.declaredWarAgainstPlayer": "CommandResponse",
+  "common.delUniteServerPeaceStatus": "CommandResponse",
+  "common.deleteUserAndRestart": "CommandResponse",
+  "common.denyPlayerSpeak": "CommandResponse",
+  "common.facebookConnect": "CommandResponse",
+  "common.getCanDeclaredWarAgainstPlayer": "GetCanDeclaredWarAgainstPlayerRespone",
+  "common.getIsSecurityCodeSetted": "GetIsSecurityCodeSettedResponse",
+  "common.getItemDefXml": "GetItemDefResponse",
+  "common.getPackage": "GetPackageResponse",
+  "common.getPackageList": "GetPackageListResponse",
+  "common.getPackageNumber": "GetPackageNumberResponse",
+  "common.getPlayerDeclaredWarStatus": "GetDeclaredWarResponse",
+  "common.getPlayerInfoByName": "PlayerInfoResponse",
+  "common.getProtectOption": "GetProtectOptionResponse",
+  "common.getRelationship": "GetRelationshipRespone",
+  "common.mapCastle": "MapCastleResponse",
+  "common.mapInfo": "MapInfoResponse",
+  "common.mapInfoSimple": "MapInfoSimpleResponse",
+  "common.privateChat": "ChatResponse",
+  "common.removeSecurityCode": "CommandResponse",
+  "common.saveUnregisteredPlayer": "CommandResponse",
+  "common.setAutoHeal": "CommandResponse",
+  "common.setEovnyMember": "CommandResponse",
+  "common.setEventDone": "CommandResponse",
+  "common.setEvonyMemberEMail": "CommandResponse",
+  "common.setProtectOption": "CommandResponse",
+  "common.setReceiveIncomingAttack": "CommandResponse",
+  "common.setReturnReport": "CommandResponse",
+  "common.setSecurityCode": "CommandResponse",
+  "common.setTroopConfig": "TroopConfigResponse",
+  "common.setUnlockOption": "CommandResponse",
+  "common.step": "CommandResponse",
+  "common.worldChat": "ChatResponse",
+  "common.zoneInfo": "ZoneInfoResponse",
+  "equipment.EnhancedByGemStone": "GemstoneRespone",
+  "equipment.EnhancedStarByGemStone": "GemstoneRespone",
+  "equipment.TakeOffAllEquipmenttech": "CommandResponse",
+  "equipment.TakeOffEquipmenttech": "CommandResponse",
+  "equipment.WearAllEquipmenttech": "CommandResponse",
+  "equipment.WearEquipmenttech": "CommandResponse",
+  "equipmenttech.cancelResearch": "CommandResponse",
+  "equipmenttech.getCoinsNeed": "CoinsNeedResponse",
+  "equipmenttech.getResearchList": "AvailableResearchListResponse",
+  "equipmenttech.research": "ResearchResponse",
+  "equipmenttech.speedUpResearch": "ResearchResponse",
+  "field.getCastleFieldInfo": "CastleFieldInfoResponse",
+  "field.getOtherFieldInfo": "OtherFieldInfoResponse",
+  "field.giveUpField": "CommandResponse",
+  "fortifications.accTroopProduce": "CommandResponse",
+  "fortifications.cancelFortificationProduce": "CommandResponse",
+  "fortifications.destructWallProtect": "CommandResponse",
+  "fortifications.getFortificationsProduceList": "FortProduceListResponse",
+  "fortifications.getProduceQueue": "ProduceQueueResponse",
+  "fortifications.produceWallProtect": "CommandResponse",
+  "friend.addBlock": "FriendResponse",
+  "friend.addFriend": "FriendResponse",
+  "friend.deleteBlock": "FriendResponse",
+  "friend.deleteFriend": "FriendResponse",
+  "friend.isBlockMailPlayer": "FriendResponse",
+  "furlough.cancelFurlought": "FurloughResponse",
+  "furlough.isFurlought": "FurloughResponse",
+  "gamblingranking.getGamblingRankingReward": "GamblingRankingRewardRespone",
+  "gamblingranking.getGamblingRankingToday": "GamblingRankingRespone",
+  "gamblingranking.getGamblingRankingYesterday": "GamblingRankingRespone",
+  "gamemaster.addBuilding": "CommandResponse",
+  "gamemaster.addHero": "CreateHeroResponse",
+  "gamemaster.addItems": "CommandResponse",
+  "gamemaster.removeBuilding": "CommandResponse",
+  "gamemaster.removeHero": "CommandResponse",
+  "gamemaster.removeItem": "CommandResponse",
+  "gamemaster.setResources": "CommandResponse",
+  "gamemaster.setTechnology": "CommandResponse",
+  "hero.GenSaveRandomHero": "CommandResponse",
+  "hero.GetDisappearHeros": "DisappearHeroResponse",
+  "hero.GetRandomHero": "RandomHeroResponse",
+  "hero.RecoverDisappearHero": "CommandResponse",
+  "hero.RetSetHeroAttri": "RandomHeroResponse",
+  "hero.SetShowHeroId": "SetShowInfroResponse",
+  "hero.ShowPlayerHerosByUserName": "HeroListResponse",
+  "hero.addPoint": "CommandResponse",
+  "hero.addPoint2": "CommandResponse",
+  "hero.awardGold": "CommandResponse",
+  "hero.callBackHero": "CommandResponse",
+  "hero.changeName": "CommandResponse",
+  "hero.dischargeChief": "CommandResponse",
+  "hero.fireHero": "CommandResponse",
+  "hero.getFleeHeroList": "HeroListResponse",
+  "hero.getHerosListFromTavern": "HeroListResponse",
+  "hero.hireFacebookFriendHero": "CommandResponse",
+  "hero.hireHero": "CommandResponse",
+  "hero.levelUp": "CommandResponse",
+  "hero.promoteToChief": "CommandResponse",
+  "hero.recruitFleeHero": "CommandResponse",
+  "hero.refreshHerosListFromTavern": "HeroListResponse",
+  "hero.releaseHero": "CommandResponse",
+  "hero.resetPoint": "CommandResponse",
+  "hero.setHeroFacebookId": "CommandResponse",
+  "hero.tryGetSeizedHero": "CommandResponse",
+  "hero.useItem": "CommandResponse",
+  "interior.getResourceProduceData": "ResourceProduceDataResponse",
+  "interior.modifyCommenceRate": "CommandResponse",
+  "interior.modifyTaxRate": "CommandResponse",
+  "interior.pacifyPeople": "CommandResponse",
+  "interior.taxation": "CommandResponse",
+  "mail.deleteMail": "CommandResponse",
+  "mail.getAllTVMsg": "TVResponse",
+  "mail.readMail": "MailResponse",
+  "mail.readOverMailList": "MailResponse",
+  "mail.receiveMailList": "MailListResponse",
+  "mail.reportBug": "CommandResponse",
+  "mail.reportPlayer": "CommandResponse",
+  "mail.sendMail": "CommandResponse",
+  "npchero.getNpcHeroInfroByID": "NpcHeroListResponse",
+  "npchero.getNpcHerosList": "NpcHeroListResponse",
+  "npchero.getNpcHerosListByFilter": "NpcHeroListResponse",
+  "npchero.getNpcHerosListByMoney": "NpcHeroListResponse",
+  "quest.AllowRegister": "CommandResponse",
+  "quest.abandon": "CommandResponse",
+  "quest.accept": "QuestListResponse",
+  "quest.award": "CommandResponse",
+  "quest.awardPacket": "CommandResponse",
+  "quest.donate": "CommandResponse",
+  "quest.getAwardItems": "QuestRewardRespone",
+  "quest.getEffortList": "EffortListResponse",
+  "quest.getEffortListByTargeTypeid": "QuestListResponse",
+  "quest.getQuestList": "QuestListResponse",
+  "quest.getQuestType": "QuestTypeResponse",
+  "rank.getAllianceRank": "RankAllianceResponse",
+  "rank.getCastleRank": "RankCastleResponse",
+  "rank.getHeroRank": "RankHeroResponse",
+  "rank.getPlayerRank": "RankPlayerResponse",
+  "rank.getTopVotesPlayer": "TopVotesPlayersResponse",
+  "rank.getVoteRank": "RankPlayerVotesResponse",
+  "report.deleteAllReports": "CommandResponse",
+  "report.deleteReport": "CommandResponse",
+  "report.markAsRead": "ReportResponse",
+  "report.readOverReport": "ReportResponse",
+  "report.receiveReportList": "ReportListResponse",
+  "report.shareReport": "ShareReportResponse",
+  "server.AcademyResearchUpdate": "AcademyResearchUpdate",
+  "server.AllianceChatMsg": "AllianceChatMsg",
+  "server.BuildComplate": "BuildComplate",
+  "server.BuildingQueueUpdate": "BuildingQueueUpdate",
+  "server.CastleBuffUpdate": "CastleBuffUpdate",
+  "server.CastleFieldUpdate": "CastleFieldUpdate",
+  "server.CastleUpdate": "CastleUpdate",
+  "server.CbUpdate": "CbUpdate",
+  "server.CelebRankCompleteTipResponse": "CelebRankCompleteTipResponse",
+  "server.ChangeName": "ChangeName",
+  "server.ChannelChatMsg": "ChannelChatMsg",
+  "server.ColonyUpdate": "ColonyUpdate",
+  "server.ConnectionLost": "ConnectionLost",
+  "server.DeclaredWarStatusChange": "DeclaredWarStatusChange",
+  "server.DeclaredWarUpdate": "DeclaredWarUpdate",
+  "server.EnemyArmysUpdate": "EnemyArmysUpdate",
+  "server.EquipmentResearchCompleteUpdate": "EquipmentResearchCompleteUpdate",
+  "server.FleeTroopUpdate": "FleeTroopUpdate",
+  "server.FortificationsUpdate": "FortificationsUpdate",
+  "server.FriendArmysUpdate": "FriendArmysUpdate",
+  "server.GetPlayerVoteInfro": "GetPlayerVoteInfro",
+  "server.GetTopVotesPlayer": "GetTopVotesPlayer",
+  "server.HeroUpdate": "HeroUpdate",
+  "server.InjuredTroopUpdate": "InjuredTroopUpdate",
+  "server.ItemBuff": "ItemBuff",
+  "server.ItemUpdate": "ItemUpdate",
+  "server.KickedOut": "KickedOut",
+  "server.LoginResponse": "LoginResponse",
+  "server.MercenaryUpdate": "MercenaryUpdate",
+  "server.NewFinishedQuest": "NewFinishedQuest",
+  "server.NewMail": "NewMail",
+  "server.NewReport": "NewReport",
+  "server.PackageList": "PackageList",
+  "server.PlayerBuffUpdate": "PlayerBuffUpdate",
+  "server.PlayerInfoUpdate": "PlayerInfoUpdate",
+  "server.PrivateChatMessage": "PrivateChatMessage",
+  "server.QuestCompleteTipResponse": "QuestCompleteTipResponse",
+  "server.QuestFinished": "QuestFinished",
+  "server.RegisterResponse": "RegisterResponse",
+  "server.ResearchCompleteUpdate": "ResearchCompleteUpdate",
+  "server.ResourceUpdate": "ResourceUpdate",
+  "server.SecurityCodeRemovedEvent": "SecurityCodeRemovedEvent",
+  "server.SelfArmysUpdate": "SelfArmysUpdate",
+  "server.StrategyBuff": "StrategyBuff",
+  "server.SystemInfoMsg": "SystemInfoMsg",
+  "server.TradesUpdate": "TradesUpdate",
+  "server.TransingTradeUpdate": "TransingTradeUpdate",
+  "server.TroopUpdate": "TroopUpdate",
+  "server.UnregisteredCreatePlayerResponse": "UnregisteredCreatePlayerResponse",
+  "server.VisitorHelpEvent": "VisitorHelpEvent",
+  "server.WorldChatMsg": "WorldChatMsg",
+  "shop.Gem_Smelting": "CommandResponse",
+  "shop.buy": "CommandResponse",
+  "shop.buyResource": "CommandResponse",
+  "shop.getBuyResourceInfo": "BuyResourceInfoResponse",
+  "shop.useAngelItem": "CommandResponse",
+  "shop.useCastleGoods": "CommandResponse",
+  "shop.useDevilItem": "CommandResponse",
+  "shop.useGoods": "UseItemResultResponse",
+  "shop.useTrickItem": "CommandResponse",
+  "stratagem.useStratagem": "CommandResponse",
+  "tech.cancelResearch": "CommandResponse",
+  "tech.getCoinsNeed": "CoinsNeedResponse",
+  "tech.getResearchList": "AvailableResearchListResponse",
+  "tech.research": "ResearchResponse",
+  "tech.speedUpResearch": "ResearchResponse",
+  "trade.cancelTrade": "CommandResponse",
+  "trade.getMyTradeList": "TradeListResponse",
+  "trade.getTransingTradeList": "TransingTradeListResponse",
+  "trade.newTrade": "CommandResponse",
+  "trade.searchTrades": "SearchTradesResponse",
+  "trade.speedUpTrans": "CommandResponse",
+  "troop.accTroopProduce": "CommandResponse",
+  "troop.cancelTroopProduce": "CommandResponse",
+  "troop.checkIdleBarrack": "CommandResponse",
+  "troop.disbandTroop": "CommandResponse",
+  "troop.getProduceQueue": "ProduceQueueResponse",
+  "troop.getTroopProduceList": "TroopProduceListResponse",
+  "troop.produceTroop": "CommandResponse",
+  "truce.cancelDreamTruce": "CommandResponse",
+  "truce.changeDreamTruceTime": "CommandResponse",
+  "truce.setDreamTruce": "CommandResponse",
+  "visit.deleteComment": "CommandResponse",
+  "visit.getAllVisitorComments": "GetAllVisitorCommentsResponse",
+  "visit.getHelpedPlayers": "GetHelpedPlayersResponse",
+  "visit.getVisitorComments": "GetAllVisitorCommentsResponse",
+  "visit.helpIncreaseProduction": "CommandResponse",
+  "visit.markCommentAsRead": "CommandResponse",
+  "visit.visitorComment": "CommandResponse",
+  "vote.voteToPlayerById": "CommandResponse",
+  "vote.voteToPlayerByName": "CommandResponse"
+ },
+ "requests": {
+  "alliance.addUsertoAlliance": {
+   "method": "addUsertoAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.addUsertoAllianceList": {
+   "method": "addUsertoAllianceList",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceInviteBeanResponse"
+  },
+  "alliance.agreeComeinAllianceByLeader": {
+   "method": "agreeComeinAllianceByLeader",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.agreeComeinAllianceByUser": {
+   "method": "agreeComeinAllianceByUser",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String",
+    "castleId": "int"
+   },
+   "reply": "AllianceUserAddResponse"
+  },
+  "alliance.agreeComeinAllianceList": {
+   "method": "agreeComeinAllianceList",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceUserAddResponse"
+  },
+  "alliance.cancelUserWantInAlliance": {
+   "method": "cancelUserWantInAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.canceladdUsertoAlliance": {
+   "method": "canceladdUsertoAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceInviteBeanResponse"
+  },
+  "alliance.cancelagreeComeinAlliance": {
+   "method": "cancelagreeComeinAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceUserAddResponse"
+  },
+  "alliance.createAlliance": {
+   "method": "createAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String",
+    "castleId": "int"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.dropAllianceFriendshipRelation": {
+   "method": "dropAllianceFriendshipRelation",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "targetAllianceName": "String"
+   },
+   "reply": "AllianceFriendshipResponse"
+  },
+  "alliance.getAllianceArmyReport": {
+   "method": "getAllianceArmyReport",
+   "module": "AllianceCommands",
+   "params": {
+    "armyId": "int"
+   },
+   "reply": "AllianceArmyResponse"
+  },
+  "alliance.getAllianceEventList": {
+   "method": "getAllianceEventList",
+   "module": "AllianceCommands",
+   "params": {
+    "pageNo": "int"
+   },
+   "reply": "AllianceEventListResponse"
+  },
+  "alliance.getAllianceFriendshipList": {
+   "method": "getAllianceFriendshipList",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceFriendshipResponse"
+  },
+  "alliance.getAllianceInfo": {
+   "method": "getAllianceInfo",
+   "module": "AllianceCommands",
+   "params": {
+    "allianceName": "String"
+   },
+   "reply": "AllianceInfoResponse"
+  },
+  "alliance.getAllianceList": {
+   "method": "getAllianceList",
+   "module": "AllianceCommands",
+   "params": {
+    "name": "String",
+    "pageNum": "int",
+    "pageSize": "int",
+    "ranking": "int"
+   },
+   "reply": "AllianceListResponse"
+  },
+  "alliance.getAllianceMembers": {
+   "method": "getAllianceMembers",
+   "module": "AllianceCommands",
+   "params": {},
+   "reply": "AllianceMembersResponse"
+  },
+  "alliance.getAllianceWanted": {
+   "method": "getAllianceWanted",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "WantedAllianceResponse"
+  },
+  "alliance.getMilitarySituationList": {
+   "method": "getMilitarySituationList",
+   "module": "AllianceCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int"
+   },
+   "reply": "MilitarySituationListResponse"
+  },
+  "alliance.getPowerFromAlliance": {
+   "method": "getPowerFromAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AlliancePowerLevelResponse"
+  },
+  "alliance.isHasAlliance": {
+   "method": "isHasAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "HasAllianceResponse"
+  },
+  "alliance.kickOutMemberfromAlliance": {
+   "method": "kickOutMemberfromAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.leaderWantUserInAllianceList": {
+   "method": "leaderWantUserInAllianceList",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceInviteOnClientBeanResponse"
+  },
+  "alliance.messagesForAllianceMember": {
+   "method": "messagesForAllianceMember",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "message": "String",
+    "title": "String",
+    "type": "int"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.rejectComeinAlliance": {
+   "method": "rejectComeinAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String"
+   },
+   "reply": "AllianceUserAddResponse"
+  },
+  "alliance.resetTopPowerForAlliance": {
+   "method": "resetTopPowerForAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.resignForAlliance": {
+   "method": "resignForAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.sayByetoAlliance": {
+   "method": "sayByetoAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {},
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.setAllInfoForAlliance": {
+   "method": "setAllInfoForAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String",
+    "infoText": "String",
+    "noteText": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.setAllianceFriendship": {
+   "method": "setAllianceFriendship",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "targetAllianceName": "String",
+    "type": "int"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.setPowerForUserByAlliance": {
+   "method": "setPowerForUserByAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "typeId": "int",
+    "userName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "alliance.userWantInAlliance": {
+   "method": "userWantInAlliance",
+   "module": "AllianceManagementCommands",
+   "params": {
+    "allianceName": "String"
+   },
+   "reply": "AllianceManagementResponse"
+  },
+  "army.IsDropItemInCastle": {
+   "method": "IsDropItemInCastle",
+   "module": "ArmyCommands",
+   "params": {
+    "x": "int",
+    "y": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.callBackArmy": {
+   "method": "callBackArmy",
+   "module": "ArmyCommands",
+   "params": {
+    "armyId": "int",
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.cureInjuredTroop": {
+   "method": "cureInjuredTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.disbandFleeTroop": {
+   "method": "disbandFleeTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.disbandInjuredTroop": {
+   "method": "disbandInjuredTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.exerciseArmy": {
+   "method": "exerciseArmy",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int",
+    "troopParamAttack": "any",
+    "troopParamDefend": "any"
+   },
+   "reply": "ArmyPracticeResponse"
+  },
+  "army.getFleeTroop": {
+   "method": "getFleeTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.getInjuredTroop": {
+   "method": "getInjuredTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.getStayAllianceArmys": {
+   "method": "getStayAllianceArmys",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "StayAllianceReponse"
+  },
+  "army.getTroopParam": {
+   "method": "getTroopParam",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "TroopParamResponse"
+  },
+  "army.newArmy": {
+   "method": "newArmy",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int",
+    "newArmyBean": "any"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.recruitFleeTroop": {
+   "method": "recruitFleeTroop",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.setAllowAllianceArmy": {
+   "method": "setAllowAllianceArmy",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int",
+    "isAllow": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "army.setArmyGoOut": {
+   "method": "setArmyGoOut",
+   "module": "ArmyCommands",
+   "params": {
+    "castleId": "int",
+    "isArmyGoOut": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "capital.getLeftPoliciesTimes": {
+   "method": "getLeftPoliciesTimes",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.getUsedPoliciesTimes": {
+   "method": "getUsedPoliciesTimes",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.levyArmy": {
+   "method": "levyArmy",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int",
+    "targetFieldId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.levyFood": {
+   "method": "levyFood",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int",
+    "targetFieldId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.levyPopulation": {
+   "method": "levyPopulation",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int",
+    "targetFieldId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.levyTaxes": {
+   "method": "levyTaxes",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int",
+    "targetFieldId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "capital.reduceArmaments": {
+   "method": "reduceArmaments",
+   "module": "CapitalCommands",
+   "params": {
+    "castleId": "int",
+    "targetFieldId": "int"
+   },
+   "reply": "CapitalCommandResponse"
+  },
+  "castle.UpdateCastleResources": {
+   "method": "UpdateCastleResources",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "AvailableBuilingListResponse"
+  },
+  "castle.cancelBuildingQueue": {
+   "method": "cancelBuildingQueue",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.cancleBuildCommand": {
+   "method": "cancleBuildCommand",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.checkOutUpgrade": {
+   "method": "checkOutUpgrade",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CheckOutBuildingResponse"
+  },
+  "castle.deleteCastleSign": {
+   "method": "deleteCastleSign",
+   "module": "CastleSignCommand",
+   "params": {
+    "id": "int"
+   },
+   "reply": "CastleSignResponse"
+  },
+  "castle.demolishBuildingQueue": {
+   "method": "demolishBuildingQueue",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "level": "int",
+    "positionId": "int",
+    "type": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.destructBuilding": {
+   "method": "destructBuilding",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.getAvailableBuildingBean": {
+   "method": "getAvailableBuildingBean",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "typeId": "int"
+   },
+   "reply": "AvailableBuilingListResponse"
+  },
+  "castle.getAvailableBuildingListInside": {
+   "method": "getAvailableBuildingListInside",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "AvailableBuilingListResponse"
+  },
+  "castle.getAvailableBuildingListOutside": {
+   "method": "getAvailableBuildingListOutside",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "AvailableBuilingListResponse"
+  },
+  "castle.getBuildingQueueCoinsNeed": {
+   "method": "getBuildingQueueCoinsNeed",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "queueId": "int"
+   },
+   "reply": "CoinsNeedResponse"
+  },
+  "castle.getCoinsNeed": {
+   "method": "getCoinsNeed",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CoinsNeedResponse"
+  },
+  "castle.getDestructBuildBean": {
+   "method": "getDestructBuildBean",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "AvailableBuilingListResponse"
+  },
+  "castle.newBuilding": {
+   "method": "newBuilding",
+   "module": "CastleCommands",
+   "params": {
+    "buildingType": "int",
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.newBuildingQueue": {
+   "method": "newBuildingQueue",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "level": "int",
+    "positionId": "int",
+    "type": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.saveCastleSignList": {
+   "method": "saveCastleSignList",
+   "module": "CastleSignCommand",
+   "params": {
+    "id": "int",
+    "x": "int",
+    "y": "int"
+   },
+   "reply": "CastleSignResponse"
+  },
+  "castle.speedUpBuildCommand": {
+   "method": "speedUpBuildCommand",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "positionId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.speedupBuildingQueue": {
+   "method": "speedupBuildingQueue",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "castle.upgradeBuilding": {
+   "method": "upgradeBuilding",
+   "module": "CastleCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "celeb.findAllianceByPrestige": {
+   "method": "findAllianceByPrestige",
+   "module": "CelebRankCommands",
+   "params": {
+    "prestige": "String"
+   },
+   "reply": "CelebResponse"
+  },
+  "celeb.findPlayerByPrestige": {
+   "method": "findPlayerByPrestige",
+   "module": "CelebRankCommands",
+   "params": {
+    "prestige": "String"
+   },
+   "reply": "CelebResponse"
+  },
+  "celeb.findPlayerByStar": {
+   "method": "findPlayerByStar",
+   "module": "CelebRankCommands",
+   "params": {
+    "starlv": "int"
+   },
+   "reply": "CelebResponse"
+  },
+  "celeb.findPlayerByTitle": {
+   "method": "findPlayerByTitle",
+   "module": "CelebRankCommands",
+   "params": {
+    "title": "String"
+   },
+   "reply": "CelebResponse"
+  },
+  "city.WarMoveCastle": {
+   "method": "WarMoveCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "targetId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.advMoveCastle": {
+   "method": "advMoveCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "targetId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.constructCastle": {
+   "method": "constructCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "fieldId": "int",
+    "isTroopBack": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.getStoreList": {
+   "method": "getStoreList",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "StoreListResponse"
+  },
+  "city.giveupCastle": {
+   "method": "giveupCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "password": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.modifyCastleIcon": {
+   "method": "modifyCastleIcon",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "icon": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.modifyCastleName": {
+   "method": "modifyCastleName",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "logUrl": "String",
+    "name": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.modifyFlag": {
+   "method": "modifyFlag",
+   "module": "CityCommands",
+   "params": {
+    "newFlag": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.modifyStorePercent": {
+   "method": "modifyStorePercent",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "foodrate": "int",
+    "ironrate": "int",
+    "stonerate": "int",
+    "woodrate": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.modifyUserName": {
+   "method": "modifyUserName",
+   "module": "CityCommands",
+   "params": {
+    "itemId": "String",
+    "userName": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.moveCastle": {
+   "method": "moveCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "zoneId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.setStopWarState": {
+   "method": "setStopWarState",
+   "module": "CityCommands",
+   "params": {
+    "ItemId": "String",
+    "passWord": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "city.uniteAdvMoveCastle": {
+   "method": "uniteAdvMoveCastle",
+   "module": "CityCommands",
+   "params": {
+    "castleId": "int",
+    "targetId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "colony.abandonColony": {
+   "method": "abandonColony",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "colony.getColonialArmyInfo": {
+   "method": "getColonialArmyInfo",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonialArmyResponse"
+  },
+  "colony.getColonialCastlesInfo": {
+   "method": "getColonialCastlesInfo",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "ColonialCastlesRespone"
+  },
+  "colony.getDeployTroopsInfo": {
+   "method": "getDeployTroopsInfo",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonialDeployResponse"
+  },
+  "colony.getSuzerainColonialCastlesInfo": {
+   "method": "getSuzerainColonialCastlesInfo",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "ColonialCastlesRespone"
+  },
+  "colony.levyArmy": {
+   "method": "levyArmy",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonyLevyeRespone"
+  },
+  "colony.levyFood": {
+   "method": "levyFood",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonyLevyeRespone"
+  },
+  "colony.levyPopulation": {
+   "method": "levyPopulation",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonyLevyeRespone"
+  },
+  "colony.levyTaxes": {
+   "method": "levyTaxes",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonyLevyeRespone"
+  },
+  "colony.overviewColonialCastle": {
+   "method": "overviewColonialCastle",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "OverviewColonyCastleRespone"
+  },
+  "colony.reduceArmaments": {
+   "method": "reduceArmaments",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "ColonyLevyeRespone"
+  },
+  "colony.setDeployTroops": {
+   "method": "setDeployTroops",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int",
+    "troopBean": "any"
+   },
+   "reply": "CommandResponse"
+  },
+  "colony.sowDiscord": {
+   "method": "sowDiscord",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "targetCastleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "colony.speedUpAbandonColony": {
+   "method": "speedUpAbandonColony",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "targetCastleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "colony.uprise": {
+   "method": "uprise",
+   "module": "ColonyCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "commission.acceptCommissionQuest": {
+   "method": "acceptCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "castleId": "int",
+    "newArmyBean": "any",
+    "questId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "commission.addCommissionQuestArmy": {
+   "method": "addCommissionQuestArmy",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "castleId": "int",
+    "newArmyBean": "any",
+    "questId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "commission.declineCommissionQuest": {
+   "method": "declineCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "questId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "commission.getAllCommissionQuest": {
+   "method": "getAllCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {},
+   "reply": "CommissionQuestRespone"
+  },
+  "commission.getCommissionQuestArmyInfo": {
+   "method": "getCommissionQuestArmyInfo",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "playerId": "int",
+    "questId": "int"
+   },
+   "reply": "CommissionQuestArmyInfoRespone"
+  },
+  "commission.getCommissionQuestArmyRanking": {
+   "method": "getCommissionQuestArmyRanking",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "questId": "int"
+   },
+   "reply": "CommissionQuestArmyRespone"
+  },
+  "commission.getMyAcceptedCommissionQuest": {
+   "method": "getMyAcceptedCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {},
+   "reply": "CommissionQuestRespone"
+  },
+  "commission.getMyCommissionQuest": {
+   "method": "getMyCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {},
+   "reply": "CommissionQuestRespone"
+  },
+  "commission.issueCommissionQuest": {
+   "method": "issueCommissionQuest",
+   "module": "CommissionQuestCommands",
+   "params": {
+    "castleId": "int",
+    "reward": "int",
+    "targetX": "int",
+    "targetY": "int",
+    "type": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.addToFavorites": {
+   "method": "addToFavorites",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "common.allianceChat": {
+   "method": "allianceChat",
+   "module": "CommonCommands",
+   "params": {
+    "languageType": "int",
+    "msg": "String"
+   },
+   "reply": "ChatResponse"
+  },
+  "common.authSecurityCode": {
+   "method": "authSecurityCode",
+   "module": "SecurityCommands",
+   "params": {
+    "code": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.cancelRemovingSecurityCodeProcess": {
+   "method": "cancelRemovingSecurityCodeProcess",
+   "module": "SecurityCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "common.changeHeadline": {
+   "method": "changeHeadline",
+   "module": "CommonCommands",
+   "params": {
+    "headline": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.changeName": {
+   "method": "changeName",
+   "module": "CommonCommands",
+   "params": {
+    "newName": "String",
+    "nowName": "String",
+    "type": "int"
+   },
+   "reply": "ChangeNameResponse"
+  },
+  "common.changeSecurityCode": {
+   "method": "changeSecurityCode",
+   "module": "SecurityCommands",
+   "params": {
+    "curCode": "String",
+    "newCode": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.changeUserFace": {
+   "method": "changeUserFace",
+   "module": "CommonCommands",
+   "params": {
+    "faceUrl": "String",
+    "sex": "int"
+   },
+   "reply": "ChangeUserFaceResponse"
+  },
+  "common.channelChat": {
+   "method": "channelChat",
+   "module": "CommonCommands",
+   "params": {
+    "channel": "String",
+    "languageType": "int",
+    "sendMsg": "String"
+   },
+   "reply": "ChatResponse"
+  },
+  "common.createNewPlayer": {
+   "method": "createNewPlayer",
+   "module": "CommonCommands",
+   "params": {
+    "accountName": "String",
+    "castleName": "String",
+    "faceUrl": "String",
+    "flag": "String",
+    "sex": "int",
+    "userName": "String",
+    "zone": "int"
+   },
+   "reply": "CreatePlayerResponse"
+  },
+  "common.declaredWarAgainstPlayer": {
+   "method": "declaredWarAgainstPlayer",
+   "module": "CommonCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.delUniteServerPeaceStatus": {
+   "method": "delUniteServerPeaceStatus",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "common.deleteUserAndRestart": {
+   "method": "deleteUserAndRestart",
+   "module": "CommonCommands",
+   "params": {
+    "pwd": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.denyPlayerSpeak": {
+   "method": "denyPlayerSpeak",
+   "module": "CommonCommands",
+   "params": {
+    "playername": "String",
+    "time": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.facebookConnect": {
+   "method": "facebookConnect",
+   "module": "CommonCommands",
+   "params": {
+    "facebookId": "String",
+    "fbsig": "String",
+    "password": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.getCanDeclaredWarAgainstPlayer": {
+   "method": "getCanDeclaredWarAgainstPlayer",
+   "module": "CommonCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "GetCanDeclaredWarAgainstPlayerRespone"
+  },
+  "common.getIsSecurityCodeSetted": {
+   "method": "getIsSecurityCodeSetted",
+   "module": "SecurityCommands",
+   "params": {},
+   "reply": "GetIsSecurityCodeSettedResponse"
+  },
+  "common.getItemDefXml": {
+   "method": "getItemDefXml",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "GetItemDefResponse"
+  },
+  "common.getPackage": {
+   "method": "getPackage",
+   "module": "CommonCommands",
+   "params": {
+    "ruleId": "int",
+    "serial": "String"
+   },
+   "reply": "GetPackageResponse"
+  },
+  "common.getPackageList": {
+   "method": "getPackageList",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "GetPackageListResponse"
+  },
+  "common.getPackageNumber": {
+   "method": "getPackageNumber",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "GetPackageNumberResponse"
+  },
+  "common.getPlayerDeclaredWarStatus": {
+   "method": "getPlayerDeclaredWarStatus",
+   "module": "CommonCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "GetDeclaredWarResponse"
+  },
+  "common.getPlayerInfoByName": {
+   "method": "getPlayerInfoByName",
+   "module": "CommonCommands",
+   "params": {
+    "userName": "String"
+   },
+   "reply": "PlayerInfoResponse"
+  },
+  "common.getProtectOption": {
+   "method": "getProtectOption",
+   "module": "SecurityCommands",
+   "params": {},
+   "reply": "GetProtectOptionResponse"
+  },
+  "common.getRelationship": {
+   "method": "getRelationship",
+   "module": "CommonCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "GetRelationshipRespone"
+  },
+  "common.mapCastle": {
+   "method": "mapCastle",
+   "module": "CommonCommands",
+   "params": {
+    "castleId": "int",
+    "x1": "int",
+    "x2": "int",
+    "y1": "int",
+    "y2": "int"
+   },
+   "reply": "MapCastleResponse"
+  },
+  "common.mapInfo": {
+   "method": "mapInfo",
+   "module": "CommonCommands",
+   "params": {
+    "castleId": "int",
+    "x1": "int",
+    "x2": "int",
+    "y1": "int",
+    "y2": "int"
+   },
+   "reply": "MapInfoResponse"
+  },
+  "common.mapInfoSimple": {
+   "method": "mapInfoSimple",
+   "module": "CommonCommands",
+   "params": {
+    "castleId": "int",
+    "x1": "int",
+    "x2": "int",
+    "y1": "int",
+    "y2": "int"
+   },
+   "reply": "MapInfoSimpleResponse"
+  },
+  "common.privateChat": {
+   "method": "privateChat",
+   "module": "CommonCommands",
+   "params": {
+    "msg": "String",
+    "targetName": "String"
+   },
+   "reply": "ChatResponse"
+  },
+  "common.removeSecurityCode": {
+   "method": "removeSecurityCode",
+   "module": "SecurityCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "common.saveUnregisteredPlayer": {
+   "method": "saveUnregisteredPlayer",
+   "module": "CommonCommands",
+   "params": {
+    "account": "String",
+    "password": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setAutoHeal": {
+   "method": "setAutoHeal",
+   "module": "CommonCommands",
+   "params": {
+    "autoHeal": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setEovnyMember": {
+   "method": "setEovnyMember",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "common.setEventDone": {
+   "method": "setEventDone",
+   "module": "CommonCommands",
+   "params": {
+    "id": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setEvonyMemberEMail": {
+   "method": "setEvonyMemberEMail",
+   "module": "CommonCommands",
+   "params": {
+    "email": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setProtectOption": {
+   "method": "setProtectOption",
+   "module": "SecurityCommands",
+   "params": {
+    "option": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setReceiveIncomingAttack": {
+   "method": "setReceiveIncomingAttack",
+   "module": "CommonCommands",
+   "params": {
+    "isAccept": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setReturnReport": {
+   "method": "setReturnReport",
+   "module": "CommonCommands",
+   "params": {
+    "returnReport": "Boolean"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setSecurityCode": {
+   "method": "setSecurityCode",
+   "module": "SecurityCommands",
+   "params": {
+    "code": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.setTroopConfig": {
+   "method": "setTroopConfig",
+   "module": "CommonCommands",
+   "params": {
+    "config": "any",
+    "name": "String"
+   },
+   "reply": "TroopConfigResponse"
+  },
+  "common.setUnlockOption": {
+   "method": "setUnlockOption",
+   "module": "SecurityCommands",
+   "params": {
+    "option": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.step": {
+   "method": "step",
+   "module": "CommonCommands",
+   "params": {
+    "tutorialStepId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "common.worldChat": {
+   "method": "worldChat",
+   "module": "CommonCommands",
+   "params": {
+    "languageType": "int",
+    "msg": "String"
+   },
+   "reply": "ChatResponse"
+  },
+  "common.zoneInfo": {
+   "method": "zoneInfo",
+   "module": "CommonCommands",
+   "params": {},
+   "reply": "ZoneInfoResponse"
+  },
+  "equipment.EnhancedByGemStone": {
+   "method": "EnhancedByGemStone",
+   "module": "EquipmentCommands",
+   "params": {
+    "gemstoneid": "String",
+    "lv": "int",
+    "pos": "int"
+   },
+   "reply": "GemstoneRespone"
+  },
+  "equipment.EnhancedStarByGemStone": {
+   "method": "EnhancedStarByGemStone",
+   "module": "EquipmentCommands",
+   "params": {
+    "count": "int",
+    "gemstoneid": "String",
+    "pos": "int"
+   },
+   "reply": "GemstoneRespone"
+  },
+  "equipment.TakeOffAllEquipmenttech": {
+   "method": "TakeOffAllEquipmenttech",
+   "module": "EquipmentCommands",
+   "params": {
+    "heroid": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "equipment.TakeOffEquipmenttech": {
+   "method": "TakeOffEquipmenttech",
+   "module": "EquipmentCommands",
+   "params": {
+    "Equipmenttechid": "String",
+    "heroid": "int",
+    "pos": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "equipment.WearAllEquipmenttech": {
+   "method": "WearAllEquipmenttech",
+   "module": "EquipmentCommands",
+   "params": {
+    "AddAttributeType": "int",
+    "heroid": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "equipment.WearEquipmenttech": {
+   "method": "WearEquipmenttech",
+   "module": "EquipmentCommands",
+   "params": {
+    "AddAttributeType": "int",
+    "Equipmenttechid": "String",
+    "heroid": "int",
+    "pos": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "equipmenttech.cancelResearch": {
+   "method": "cancelResearch",
+   "module": "EquipmenttechCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "equipmenttech.getCoinsNeed": {
+   "method": "getCoinsNeed",
+   "module": "EquipmenttechCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CoinsNeedResponse"
+  },
+  "equipmenttech.getResearchList": {
+   "method": "getResearchList",
+   "module": "EquipmenttechCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "AvailableResearchListResponse"
+  },
+  "equipmenttech.research": {
+   "method": "research",
+   "module": "EquipmenttechCommands",
+   "params": {
+    "castleId": "int",
+    "techId": "int"
+   },
+   "reply": "ResearchResponse"
+  },
+  "equipmenttech.speedUpResearch": {
+   "method": "speedUpResearch",
+   "module": "EquipmenttechCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String"
+   },
+   "reply": "ResearchResponse"
+  },
+  "field.getCastleFieldInfo": {
+   "method": "getCastleFieldInfo",
+   "module": "FieldCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CastleFieldInfoResponse"
+  },
+  "field.getOtherFieldInfo": {
+   "method": "getOtherFieldInfo",
+   "module": "FieldCommand",
+   "params": {
+    "castleId": "int",
+    "fieldId": "int"
+   },
+   "reply": "OtherFieldInfoResponse"
+  },
+  "field.giveUpField": {
+   "method": "giveUpField",
+   "module": "FieldCommand",
+   "params": {
+    "fieldId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "fortifications.accTroopProduce": {
+   "method": "accTroopProduce",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "fortifications.cancelFortificationProduce": {
+   "method": "cancelFortificationProduce",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "fortifications.destructWallProtect": {
+   "method": "destructWallProtect",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int",
+    "num": "int",
+    "typeId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "fortifications.getFortificationsProduceList": {
+   "method": "getFortificationsProduceList",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "FortProduceListResponse"
+  },
+  "fortifications.getProduceQueue": {
+   "method": "getProduceQueue",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "ProduceQueueResponse"
+  },
+  "fortifications.produceWallProtect": {
+   "method": "produceWallProtect",
+   "module": "FortificationsCommands",
+   "params": {
+    "castleId": "int",
+    "num": "int",
+    "wallProtectType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "friend.addBlock": {
+   "method": "addBlock",
+   "module": "FriendCommands",
+   "params": {
+    "player": "String"
+   },
+   "reply": "FriendResponse"
+  },
+  "friend.addFriend": {
+   "method": "addFriend",
+   "module": "FriendCommands",
+   "params": {
+    "player": "String"
+   },
+   "reply": "FriendResponse"
+  },
+  "friend.deleteBlock": {
+   "method": "deleteBlock",
+   "module": "FriendCommands",
+   "params": {
+    "player": "String"
+   },
+   "reply": "FriendResponse"
+  },
+  "friend.deleteFriend": {
+   "method": "deleteFriend",
+   "module": "FriendCommands",
+   "params": {
+    "player": "String"
+   },
+   "reply": "FriendResponse"
+  },
+  "friend.isBlockMailPlayer": {
+   "method": "isBlockMailPlayer",
+   "module": "FriendCommands",
+   "params": {
+    "mailId": "int"
+   },
+   "reply": "FriendResponse"
+  },
+  "furlough.cancelFurlought": {
+   "method": "cancelFurlought",
+   "module": "FurloughCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "FurloughResponse"
+  },
+  "furlough.isFurlought": {
+   "method": "isFurlought",
+   "module": "FurloughCommands",
+   "params": {
+    "day": "int",
+    "isAutoFurlough": "Boolean",
+    "password": "String",
+    "playerId": "int"
+   },
+   "reply": "FurloughResponse"
+  },
+  "gamblingranking.getGamblingRankingReward": {
+   "method": "getGamblingRankingReward",
+   "module": "GamblingRankingCommands",
+   "params": {},
+   "reply": "GamblingRankingRewardRespone"
+  },
+  "gamblingranking.getGamblingRankingToday": {
+   "method": "getGamblingRankingToday",
+   "module": "GamblingRankingCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int"
+   },
+   "reply": "GamblingRankingRespone"
+  },
+  "gamblingranking.getGamblingRankingYesterday": {
+   "method": "getGamblingRankingYesterday",
+   "module": "GamblingRankingCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int"
+   },
+   "reply": "GamblingRankingRespone"
+  },
+  "gamemaster.addBuilding": {
+   "method": "addBuilding",
+   "module": "ModifyCommands",
+   "params": {
+    "buildingType": "int",
+    "castleId": "int",
+    "level": "int",
+    "position": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.addHero": {
+   "method": "addHero",
+   "module": "ModifyCommands",
+   "params": {
+    "castleId": "int",
+    "experience": "int",
+    "level": "int",
+    "loyalty": "int",
+    "management": "int",
+    "name": "String",
+    "power": "int",
+    "remain": "int",
+    "status": "int",
+    "stratagem": "int"
+   },
+   "reply": "CreateHeroResponse"
+  },
+  "gamemaster.addItems": {
+   "method": "addItems",
+   "module": "ModifyCommands",
+   "params": {
+    "amount": "int",
+    "type": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.removeBuilding": {
+   "method": "removeBuilding",
+   "module": "ModifyCommands",
+   "params": {
+    "castleId": "int",
+    "position": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.removeHero": {
+   "method": "removeHero",
+   "module": "ModifyCommands",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.removeItem": {
+   "method": "removeItem",
+   "module": "ModifyCommands",
+   "params": {
+    "type": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.setResources": {
+   "method": "setResources",
+   "module": "ModifyCommands",
+   "params": {
+    "castleId": "int",
+    "food": "int",
+    "gold": "int",
+    "iron": "int",
+    "population": "int",
+    "stone": "int",
+    "wood": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "gamemaster.setTechnology": {
+   "method": "setTechnology",
+   "module": "ModifyCommands",
+   "params": {
+    "level": "int",
+    "technologyType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.GenSaveRandomHero": {
+   "method": "GenSaveRandomHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleid": "int",
+    "faceurl": "String",
+    "heroname": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.GetDisappearHeros": {
+   "method": "GetDisappearHeros",
+   "module": "HeroCommand",
+   "params": {},
+   "reply": "DisappearHeroResponse"
+  },
+  "hero.GetRandomHero": {
+   "method": "GetRandomHero",
+   "module": "HeroCommand",
+   "params": {},
+   "reply": "RandomHeroResponse"
+  },
+  "hero.RecoverDisappearHero": {
+   "method": "RecoverDisappearHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleid": "int",
+    "id": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.RetSetHeroAttri": {
+   "method": "RetSetHeroAttri",
+   "module": "HeroCommand",
+   "params": {
+    "busecoin": "Boolean",
+    "lockmanagement": "Boolean",
+    "lockpower": "Boolean",
+    "lockstratagem": "Boolean"
+   },
+   "reply": "RandomHeroResponse"
+  },
+  "hero.SetShowHeroId": {
+   "method": "SetShowHeroId",
+   "module": "HeroCommand",
+   "params": {
+    "bAddOrDel": "Boolean",
+    "heroid": "int"
+   },
+   "reply": "SetShowInfroResponse"
+  },
+  "hero.ShowPlayerHerosByUserName": {
+   "method": "ShowPlayerHerosByUserName",
+   "module": "HeroCommand",
+   "params": {
+    "UserName": "String"
+   },
+   "reply": "HeroListResponse"
+  },
+  "hero.addPoint": {
+   "method": "addPoint",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int",
+    "management": "Number",
+    "power": "Number",
+    "stratagem": "Number"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.addPoint2": {
+   "method": "addPoint2",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int",
+    "management": "int",
+    "power": "int",
+    "stratagem": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.awardGold": {
+   "method": "awardGold",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.callBackHero": {
+   "method": "callBackHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.changeName": {
+   "method": "changeName",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int",
+    "newName": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.dischargeChief": {
+   "method": "dischargeChief",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.fireHero": {
+   "method": "fireHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.getFleeHeroList": {
+   "method": "getFleeHeroList",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "HeroListResponse"
+  },
+  "hero.getHerosListFromTavern": {
+   "method": "getHerosListFromTavern",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "HeroListResponse"
+  },
+  "hero.hireFacebookFriendHero": {
+   "method": "hireFacebookFriendHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "facebookid": "String",
+    "heroName": "String",
+    "newName": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.hireHero": {
+   "method": "hireHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroName": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.levelUp": {
+   "method": "levelUp",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.promoteToChief": {
+   "method": "promoteToChief",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.recruitFleeHero": {
+   "method": "recruitFleeHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroName": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.refreshHerosListFromTavern": {
+   "method": "refreshHerosListFromTavern",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "HeroListResponse"
+  },
+  "hero.releaseHero": {
+   "method": "releaseHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.resetPoint": {
+   "method": "resetPoint",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.setHeroFacebookId": {
+   "method": "setHeroFacebookId",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "facebookId": "String",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.tryGetSeizedHero": {
+   "method": "tryGetSeizedHero",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "hero.useItem": {
+   "method": "useItem",
+   "module": "HeroCommand",
+   "params": {
+    "castleId": "int",
+    "heroId": "int",
+    "itemId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "interior.getResourceProduceData": {
+   "method": "getResourceProduceData",
+   "module": "InteriorCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "ResourceProduceDataResponse"
+  },
+  "interior.modifyCommenceRate": {
+   "method": "modifyCommenceRate",
+   "module": "InteriorCommands",
+   "params": {
+    "castleId": "int",
+    "foodrate": "int",
+    "ironrate": "int",
+    "stonerate": "int",
+    "woodrate": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "interior.modifyTaxRate": {
+   "method": "modifyTaxRate",
+   "module": "InteriorCommands",
+   "params": {
+    "castleId": "int",
+    "tax": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "interior.pacifyPeople": {
+   "method": "pacifyPeople",
+   "module": "InteriorCommands",
+   "params": {
+    "castleId": "int",
+    "typeId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "interior.taxation": {
+   "method": "taxation",
+   "module": "InteriorCommands",
+   "params": {
+    "castleId": "int",
+    "typeId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "mail.deleteMail": {
+   "method": "deleteMail",
+   "module": "MailCommands",
+   "params": {
+    "str_mailid": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "mail.getAllTVMsg": {
+   "method": "getAllTVMsg",
+   "module": "MailCommands",
+   "params": {},
+   "reply": "TVResponse"
+  },
+  "mail.readMail": {
+   "method": "readMail",
+   "module": "MailCommands",
+   "params": {
+    "mailId": "int"
+   },
+   "reply": "MailResponse"
+  },
+  "mail.readOverMailList": {
+   "method": "readOverMailList",
+   "module": "MailCommands",
+   "params": {
+    "mailIds": "String"
+   },
+   "reply": "MailResponse"
+  },
+  "mail.receiveMailList": {
+   "method": "receiveMailList",
+   "module": "MailCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int",
+    "type": "int"
+   },
+   "reply": "MailListResponse"
+  },
+  "mail.reportBug": {
+   "method": "reportBug",
+   "module": "MailCommands",
+   "params": {
+    "content": "String",
+    "subject": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "mail.reportPlayer": {
+   "method": "reportPlayer",
+   "module": "MailCommands",
+   "params": {
+    "content": "String",
+    "subject": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "mail.sendMail": {
+   "method": "sendMail",
+   "module": "MailCommands",
+   "params": {
+    "content": "String",
+    "title": "String",
+    "username": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "npchero.getNpcHeroInfroByID": {
+   "method": "getNpcHeroInfroByID",
+   "module": "NpcHeroCommand",
+   "params": {
+    "castleId": "int",
+    "npcid": "int"
+   },
+   "reply": "NpcHeroListResponse"
+  },
+  "npchero.getNpcHerosList": {
+   "method": "getNpcHerosList",
+   "module": "NpcHeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "NpcHeroListResponse"
+  },
+  "npchero.getNpcHerosListByFilter": {
+   "method": "getNpcHerosListByFilter",
+   "module": "NpcHeroCommand",
+   "params": {
+    "castleId": "int",
+    "filter": "String"
+   },
+   "reply": "NpcHeroListResponse"
+  },
+  "npchero.getNpcHerosListByMoney": {
+   "method": "getNpcHerosListByMoney",
+   "module": "NpcHeroCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "NpcHeroListResponse"
+  },
+  "quest.AllowRegister": {
+   "method": "AllowRegister",
+   "module": "QuestCommands",
+   "params": {},
+   "reply": "CommandResponse"
+  },
+  "quest.abandon": {
+   "method": "abandon",
+   "module": "QuestCommands",
+   "params": {
+    "castleid": "int",
+    "questid": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "quest.accept": {
+   "method": "accept",
+   "module": "QuestCommands",
+   "params": {
+    "castleid": "int",
+    "ncpid": "int"
+   },
+   "reply": "QuestListResponse"
+  },
+  "quest.award": {
+   "method": "award",
+   "module": "QuestCommands",
+   "params": {
+    "castleId": "int",
+    "questId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "quest.awardPacket": {
+   "method": "awardPacket",
+   "module": "QuestCommands",
+   "params": {
+    "castleId": "int",
+    "key": "String",
+    "questId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "quest.donate": {
+   "method": "donate",
+   "module": "QuestCommands",
+   "params": {
+    "castleid": "int",
+    "questid": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "quest.getAwardItems": {
+   "method": "getAwardItems",
+   "module": "QuestCommands",
+   "params": {
+    "questId": "int"
+   },
+   "reply": "QuestRewardRespone"
+  },
+  "quest.getEffortList": {
+   "method": "getEffortList",
+   "module": "QuestCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "EffortListResponse"
+  },
+  "quest.getEffortListByTargeTypeid": {
+   "method": "getEffortListByTargeTypeid",
+   "module": "QuestCommands",
+   "params": {
+    "TargeTypeid": "int",
+    "castleId": "int"
+   },
+   "reply": "QuestListResponse"
+  },
+  "quest.getQuestList": {
+   "method": "getQuestList",
+   "module": "QuestCommands",
+   "params": {
+    "castleId": "int",
+    "typeId": "int"
+   },
+   "reply": "QuestListResponse"
+  },
+  "quest.getQuestType": {
+   "method": "getQuestType",
+   "module": "QuestCommands",
+   "params": {
+    "castleId": "int",
+    "type": "int"
+   },
+   "reply": "QuestTypeResponse"
+  },
+  "rank.getAllianceRank": {
+   "method": "getAllianceRank",
+   "module": "RankCommands",
+   "params": {
+    "key": "String",
+    "pageNo": "int",
+    "pageSize": "int",
+    "sortType": "int"
+   },
+   "reply": "RankAllianceResponse"
+  },
+  "rank.getCastleRank": {
+   "method": "getCastleRank",
+   "module": "RankCommands",
+   "params": {
+    "key": "String",
+    "pageNo": "int",
+    "pageSize": "int",
+    "sortType": "int"
+   },
+   "reply": "RankCastleResponse"
+  },
+  "rank.getHeroRank": {
+   "method": "getHeroRank",
+   "module": "RankCommands",
+   "params": {
+    "key": "String",
+    "pageNo": "int",
+    "pageSize": "int",
+    "sortType": "int"
+   },
+   "reply": "RankHeroResponse"
+  },
+  "rank.getPlayerRank": {
+   "method": "getPlayerRank",
+   "module": "RankCommands",
+   "params": {
+    "key": "String",
+    "pageNo": "int",
+    "pageSize": "int",
+    "sortType": "int"
+   },
+   "reply": "RankPlayerResponse"
+  },
+  "rank.getTopVotesPlayer": {
+   "method": "getTopVotesPlayer",
+   "module": "RankCommands",
+   "params": {},
+   "reply": "TopVotesPlayersResponse"
+  },
+  "rank.getVoteRank": {
+   "method": "getVoteRank",
+   "module": "RankCommands",
+   "params": {
+    "key": "String",
+    "pageNo": "int",
+    "pageSize": "int",
+    "sortType": "int"
+   },
+   "reply": "RankPlayerVotesResponse"
+  },
+  "report.deleteAllReports": {
+   "method": "deleteAllReports",
+   "module": "ReportCommands",
+   "params": {
+    "reportType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "report.deleteReport": {
+   "method": "deleteReport",
+   "module": "ReportCommands",
+   "params": {
+    "idStr": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "report.markAsRead": {
+   "method": "markAsRead",
+   "module": "ReportCommands",
+   "params": {
+    "reportId": "int"
+   },
+   "reply": "ReportResponse"
+  },
+  "report.readOverReport": {
+   "method": "readOverReport",
+   "module": "ReportCommands",
+   "params": {
+    "reportIds": "String"
+   },
+   "reply": "ReportResponse"
+  },
+  "report.receiveReportList": {
+   "method": "receiveReportList",
+   "module": "ReportCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int",
+    "reportType": "int"
+   },
+   "reply": "ReportListResponse"
+  },
+  "report.shareReport": {
+   "method": "shareReport",
+   "module": "ReportCommands",
+   "params": {
+    "reportId": "int"
+   },
+   "reply": "ShareReportResponse"
+  },
+  "shop.Gem_Smelting": {
+   "method": "Gem_Smelting",
+   "module": "ShopCommands",
+   "params": {
+    "bookitemId": "String",
+    "itemId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.buy": {
+   "method": "buy",
+   "module": "ShopCommands",
+   "params": {
+    "amount": "int",
+    "itemId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.buyResource": {
+   "method": "buyResource",
+   "module": "ShopCommands",
+   "params": {
+    "castleId": "int",
+    "foodUse": "int",
+    "ironUse": "int",
+    "stoneUse": "int",
+    "woodUse": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.getBuyResourceInfo": {
+   "method": "getBuyResourceInfo",
+   "module": "ShopCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "BuyResourceInfoResponse"
+  },
+  "shop.useAngelItem": {
+   "method": "useAngelItem",
+   "module": "ShopCommands",
+   "params": {
+    "itemId": "String",
+    "playername": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.useCastleGoods": {
+   "method": "useCastleGoods",
+   "module": "ShopCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.useDevilItem": {
+   "method": "useDevilItem",
+   "module": "ShopCommands",
+   "params": {
+    "itemId": "String",
+    "paramdata": "String",
+    "x": "int",
+    "y": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "shop.useGoods": {
+   "method": "useGoods",
+   "module": "ShopCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "num": "int"
+   },
+   "reply": "UseItemResultResponse"
+  },
+  "shop.useTrickItem": {
+   "method": "useTrickItem",
+   "module": "ShopCommands",
+   "params": {
+    "armyid": "int",
+    "castleId": "int",
+    "itemId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "stratagem.useStratagem": {
+   "method": "useStratagem",
+   "module": "StratagemCommands",
+   "params": {
+    "castleId": "int",
+    "heroId": "int",
+    "straId": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "tech.cancelResearch": {
+   "method": "cancelResearch",
+   "module": "TechCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "tech.getCoinsNeed": {
+   "method": "getCoinsNeed",
+   "module": "TechCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "CoinsNeedResponse"
+  },
+  "tech.getResearchList": {
+   "method": "getResearchList",
+   "module": "TechCommand",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "AvailableResearchListResponse"
+  },
+  "tech.research": {
+   "method": "research",
+   "module": "TechCommand",
+   "params": {
+    "castleId": "int",
+    "techId": "int"
+   },
+   "reply": "ResearchResponse"
+  },
+  "tech.speedUpResearch": {
+   "method": "speedUpResearch",
+   "module": "TechCommand",
+   "params": {
+    "castleId": "int",
+    "itemId": "String"
+   },
+   "reply": "ResearchResponse"
+  },
+  "trade.cancelTrade": {
+   "method": "cancelTrade",
+   "module": "TradeCommands",
+   "params": {
+    "castleId": "int",
+    "tradeId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "trade.getMyTradeList": {
+   "method": "getMyTradeList",
+   "module": "TradeCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "TradeListResponse"
+  },
+  "trade.getTransingTradeList": {
+   "method": "getTransingTradeList",
+   "module": "TradeCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "TransingTradeListResponse"
+  },
+  "trade.newTrade": {
+   "method": "newTrade",
+   "module": "TradeCommands",
+   "params": {
+    "amount": "int",
+    "castleId": "int",
+    "price": "String",
+    "resType": "int",
+    "tradeType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "trade.searchTrades": {
+   "method": "searchTrades",
+   "module": "TradeCommands",
+   "params": {
+    "resType": "int"
+   },
+   "reply": "SearchTradesResponse"
+  },
+  "trade.speedUpTrans": {
+   "method": "speedUpTrans",
+   "module": "TradeCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "transingTradeId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "troop.accTroopProduce": {
+   "method": "accTroopProduce",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "itemId": "String",
+    "positionId": "int",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "troop.cancelTroopProduce": {
+   "method": "cancelTroopProduce",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int",
+    "queueId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "troop.checkIdleBarrack": {
+   "method": "checkIdleBarrack",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "troopType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "troop.disbandTroop": {
+   "method": "disbandTroop",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "num": "int",
+    "troopType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "troop.getProduceQueue": {
+   "method": "getProduceQueue",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int"
+   },
+   "reply": "ProduceQueueResponse"
+  },
+  "troop.getTroopProduceList": {
+   "method": "getTroopProduceList",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "positionId": "int"
+   },
+   "reply": "TroopProduceListResponse"
+  },
+  "troop.produceTroop": {
+   "method": "produceTroop",
+   "module": "TroopCommands",
+   "params": {
+    "castleId": "int",
+    "isShare": "Boolean",
+    "num": "int",
+    "positionId": "int",
+    "toIdle": "Boolean",
+    "troopType": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "truce.cancelDreamTruce": {
+   "method": "cancelDreamTruce",
+   "module": "TruceCommands",
+   "params": {
+    "password": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "truce.changeDreamTruceTime": {
+   "method": "changeDreamTruceTime",
+   "module": "TruceCommands",
+   "params": {
+    "hour": "int",
+    "minute": "int",
+    "password": "String",
+    "second": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "truce.setDreamTruce": {
+   "method": "setDreamTruce",
+   "module": "TruceCommands",
+   "params": {
+    "hour": "int",
+    "minute": "int",
+    "password": "String",
+    "second": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "visit.deleteComment": {
+   "method": "deleteComment",
+   "module": "VisitCommands",
+   "params": {
+    "id": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "visit.getAllVisitorComments": {
+   "method": "getAllVisitorComments",
+   "module": "VisitCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int"
+   },
+   "reply": "GetAllVisitorCommentsResponse"
+  },
+  "visit.getHelpedPlayers": {
+   "method": "getHelpedPlayers",
+   "module": "VisitCommands",
+   "params": {},
+   "reply": "GetHelpedPlayersResponse"
+  },
+  "visit.getVisitorComments": {
+   "method": "getVisitorComments",
+   "module": "VisitCommands",
+   "params": {
+    "pageNo": "int",
+    "pageSize": "int",
+    "visitorId": "String"
+   },
+   "reply": "GetAllVisitorCommentsResponse"
+  },
+  "visit.helpIncreaseProduction": {
+   "method": "helpIncreaseProduction",
+   "module": "VisitCommands",
+   "params": {
+    "fromPlayer": "String",
+    "fromServer": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "visit.markCommentAsRead": {
+   "method": "markCommentAsRead",
+   "module": "VisitCommands",
+   "params": {
+    "id": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "visit.visitorComment": {
+   "method": "visitorComment",
+   "module": "VisitCommands",
+   "params": {
+    "comment": "String"
+   },
+   "reply": "CommandResponse"
+  },
+  "vote.voteToPlayerById": {
+   "method": "voteToPlayerById",
+   "module": "VoteToPlayerCommands",
+   "params": {
+    "playerId": "int"
+   },
+   "reply": "CommandResponse"
+  },
+  "vote.voteToPlayerByName": {
+   "method": "voteToPlayerByName",
+   "module": "VoteToPlayerCommands",
+   "params": {
+    "name": "String"
+   },
+   "reply": "CommandResponse"
+  }
+ },
+ "version": "091103_11"
+}

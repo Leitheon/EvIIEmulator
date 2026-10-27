@@ -1,0 +1,12 @@
+{
+  "name": "evony-local-server",
+  "version": "0.3.77",
+  "private": true,
+  "description": "Local server for the Evony Flash client (EvonyClient1921.swf)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/run.js"
+  },
+  "engines": { "node": ">=18" }
+}

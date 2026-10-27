@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Evony (local server, Ruffle)</title>
+<style>
+  html, body { height: 100%; margin: 0; background: #000; color: #ccc; font: 13px Arial, sans-serif; }
+  #game { position: absolute; inset: 0; }
+  #game ruffle-player, #game ruffle-object, #game ruffle-embed { width: 100%; height: 100%; display: block; }
+  #msg { padding: 40px; max-width: 640px; }
+</style>
+<script>
+  // The same page functions as index.html: the client calls these through ExternalInterface.
+  function getGuid(){ return null; }
+  function isShowFlashLogin(){ return false; }
+  function getPageUrl(){ return window.location.href; }
+  function setFlashIsReady(){}
+  function SetIeTitle(t){ document.title = t + ' (local server)'; }
+  function getClientSize(){ return document.body.clientWidth + ',' + document.body.clientHeight; }
+  function adt_log(){} function log_user_action(){} function TrackPageView(){} function _FLL(){}
+  function tour_by_flash(){} function socialBar(){} function addFavorite(){} function processHandler(){}
+  function loadUPScript(){} function displayUP(){} function promptSaveGame(){} function showScreenShotString(){}
+  function callByIngameUse(){} function callByIngameBuy(){} function openmail(){} function facebook(){}
+  function getFbReturnValue(){ return ''; } function getFbFriendListByJs(){ return 'connection timeout'; }
+</script>
+</head>
+<body>
+<div id="game"></div>
+<script>
+  // Runs the client in Ruffle, the Flash Player emulator (ruffle.rs), so no Flash is needed. Ruffle is loaded from
+  // public/ruffle/ if you put its self-hosted build there, otherwise from the npm CDN. Browsers can't open raw
+  // sockets, so Ruffle sends the client's game socket to /ws on this web server, which passes it to the game port.
+  const RUFFLE_CDN = 'https://unpkg.com/@ruffle-rs/ruffle@0.7.1/';
+  const say = html => { document.getElementById('game').innerHTML = '<div id="msg">' + html + '</div>'; };
+  const script = src => new Promise((resolve, reject) => {
+    const s = document.createElement('script'); s.src = src; s.onload = resolve; s.onerror = reject; document.head.appendChild(s);
+  });
+  (async () => {
+    let publicPath = '/ruffle/';
+    try { await script('/ruffle/ruffle.js'); }
+    catch (e){
+      publicPath = RUFFLE_CDN;
+      try { await script(RUFFLE_CDN + 'ruffle.js'); }
+      catch (e2){ return say('Could not load Ruffle. Put Ruffle\'s self-hosted build (ruffle.js and its .wasm files) in the server\'s public/ruffle folder, or check the internet connection.'); }
+    }
+    let server = location.hostname, port = 9443;
+    try {
+      const x = new DOMParser().parseFromString(await (await fetch('/config2.xml')).text(), 'text/xml');
+      server = x.querySelector('server')?.textContent || server; port = Number(x.querySelector('port')?.textContent) || port;
+    } catch (e){}
+    const proxyUrl = (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws';
+    const hosts = [...new Set([server, location.hostname, '127.0.0.1', 'localhost'])];
+    window.RufflePlayer.config = {
+      publicPath, autoplay: 'on', unmuteOverlay: 'hidden', splashScreen: false, letterbox: 'off', allowScriptAccess: true, logLevel: 'warn',
+      socketProxy: hosts.map(host => ({ host, port, proxyUrl })),
+    };
+    const player = window.RufflePlayer.newest().createPlayer();
+    player.id = 'EvonyClient';
+    document.getElementById('game').appendChild(player);
+    const opts = { url: '/EvonyClient1921.swf', allowScriptAccess: true };
+    await (typeof player.load === 'function' ? player.load(opts) : player.ruffle().load(opts));
+  })();
+</script>
+</body>
+</html>

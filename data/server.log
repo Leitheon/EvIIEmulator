@@ -1,0 +1,2099 @@
+2026-10-20 16:23:43 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-20 16:23:43 INFO  Socket policy server listening on 843
+2026-10-20 16:23:43 INFO  Game server listening on 9443
+2026-10-20 16:23:43 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-20 16:24:18 INFO  Created account Leitheon
+2026-10-20 16:24:18 INFO  New lord Leitheon founded Leitheon's City at (392, 489)
+2026-10-20 16:24:18 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-20 16:24:19 WARN  Not implemented yet: quest.getQuestType {"castleId":102,"type":1}
+2026-10-20 16:24:19 WARN  Not implemented yet: common.getItemDefXml {}
+2026-10-20 16:24:19 WARN  Not implemented yet: tech.getResearchList {"castleId":102}
+2026-10-20 16:24:19 WARN  Not implemented yet: common.getPackageNumber {}
+2026-10-20 16:24:19 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-20 16:25:07 WARN  Not implemented yet: common.mapInfoSimple {"y1":474,"castleId":102,"x2":412,"y2":504,"x1":372}
+2026-10-20 16:25:33 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-20 16:26:02 WARN  Not implemented yet: rank.getPlayerRank {"pageSize":10,"pageNo":1,"sortType":0,"key":null}
+2026-10-20 16:26:03 WARN  Not implemented yet: rank.getAllianceRank {"pageSize":10,"pageNo":1,"sortType":0,"key":null}
+2026-10-20 16:26:04 WARN  Not implemented yet: rank.getHeroRank {"pageSize":10,"pageNo":1,"sortType":0,"key":null}
+2026-10-20 16:26:04 WARN  Not implemented yet: rank.getCastleRank {"pageSize":10,"pageNo":1,"sortType":0,"key":null}
+2026-10-20 16:30:04 WARN  Not implemented yet: common.getPackageList {}
+2026-10-20 16:30:16 WARN  Not implemented yet: commission.getMyAcceptedCommissionQuest {}
+2026-10-20 16:30:16 WARN  Not implemented yet: commission.getAllCommissionQuest {}
+2026-10-20 16:30:18 WARN  Not implemented yet: commission.getMyCommissionQuest {}
+2026-10-20 16:30:37 WARN  Not implemented yet: interior.getResourceProduceData {"castleId":102}
+2026-10-20 16:37:57 WARN  Not implemented yet: army.getTroopParam {"castleId":102}
+2026-10-20 16:37:57 WARN  Not implemented yet: army.IsDropItemInCastle {"x":0,"y":0}
+2026-10-20 16:38:03 WARN  Not implemented yet: troop.getTroopProduceList {"castleId":102,"positionId":14}
+2026-10-20 16:38:03 WARN  Not implemented yet: troop.getProduceQueue {"castleId":102}
+2026-10-20 16:38:11 INFO  Leitheon disconnected
+2026-10-20 16:57:51 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-20 16:57:51 INFO  Socket policy server listening on 843
+2026-10-20 16:57:51 INFO  Game server listening on 9443
+2026-10-20 16:57:51 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-20 16:58:51 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-20 16:58:52 WARN  Not implemented yet: quest.getQuestType {"castleId":102,"type":1}
+2026-10-20 16:58:53 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-20 17:01:07 INFO  Coins page: added 100000 coins to Leitheon
+2026-10-20 17:04:57 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-20 17:05:23 WARN  Not implemented yet: field.getOtherFieldInfo {"castleId":102,"fieldId":0}
+2026-10-20 17:06:02 WARN  Not implemented yet: commission.getMyAcceptedCommissionQuest {}
+2026-10-20 17:06:02 WARN  Not implemented yet: commission.getAllCommissionQuest {}
+2026-10-20 17:06:20 WARN  Not implemented yet: alliance.getAllianceWanted {}
+2026-10-20 17:06:20 WARN  Not implemented yet: alliance.leaderWantUserInAllianceList {}
+2026-10-20 17:06:40 INFO  Leitheon disconnected
+2026-10-20 17:07:02 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-20 17:07:02 INFO  Socket policy server listening on 843
+2026-10-20 17:07:02 INFO  Game server listening on 9443
+2026-10-20 17:07:02 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-20 17:09:09 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-20 17:09:10 WARN  Not implemented yet: quest.getQuestType {"castleId":102,"type":1}
+2026-10-20 17:09:11 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-20 17:09:24 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-20 17:09:26 INFO  Owner page: added 100000 coins to Leitheon
+2026-10-20 17:15:00 WARN  Not implemented yet: hero.getHerosListFromTavern {"castleId":102}
+2026-10-20 17:15:29 WARN  Not implemented yet: hero.refreshHerosListFromTavern {"castleId":102}
+2026-10-20 17:16:31 WARN  Not implemented yet: army.getStayAllianceArmys {"castleId":102}
+2026-10-20 17:17:25 WARN  Not implemented yet: city.getStoreList {"castleId":102}
+2026-10-20 17:17:52 WARN  Not implemented yet: trade.searchTrades {"resType":0}
+2026-10-20 17:19:46 WARN  Not implemented yet: shop.useCastleGoods {"castleId":102,"itemId":"player.pop.1.a"}
+2026-10-20 17:22:20 WARN  Not implemented yet: fortifications.getFortificationsProduceList {"castleId":102}
+2026-10-20 17:22:20 WARN  Not implemented yet: fortifications.getProduceQueue {"castleId":102}
+2026-10-20 17:25:36 WARN  Not implemented yet: interior.pacifyPeople {"castleId":102,"typeId":4}
+2026-10-20 17:25:53 WARN  Not implemented yet: interior.taxation {"castleId":102,"typeId":1}
+2026-10-20 17:26:26 WARN  Not implemented yet: field.getOtherFieldInfo {"castleId":102,"fieldId":391593}
+2026-10-20 17:26:28 WARN  Not implemented yet: colony.uprise {"castleId":102}
+2026-10-20 17:26:33 WARN  Not implemented yet: army.newArmy {"castleId":102,"newArmyBean":{"useFlag":false,"missionType":3,"resource":{"wood":0,"iron":0,"food":0,"stone":0,"gold":0},"heroId":-1,"targetPoint":391593,"restTime":0,"backAfterConstruct":false,"useItem":false,"troops":{"heavyCavalry":0,"militia":10,"batteringRam":0,"carriage":0,"peasants":0,"balli
+2026-10-20 17:26:37 WARN  Not implemented yet: colony.getColonialCastlesInfo {"castleId":102}
+2026-10-20 17:35:13 INFO  Leitheon disconnected
+2026-10-20 22:27:35 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-20 22:27:35 INFO  Placed 2,081 Historic Cities on the map
+2026-10-20 22:27:35 INFO  Socket policy server listening on 843
+2026-10-20 22:27:35 INFO  Game server listening on 9443
+2026-10-20 22:27:35 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-20 22:28:03 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-20 22:28:04 WARN  Not implemented yet: quest.getQuestType {"castleId":102,"type":1}
+2026-10-20 22:28:05 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-20 22:29:06 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-20 22:29:09 WARN  Not implemented yet: npchero.getNpcHerosList {"castleId":102}
+2026-10-20 22:29:12 WARN  Not implemented yet: city.getStoreList {"castleId":102}
+2026-10-20 22:30:48 INFO  Leitheon hired Lothar Greaves (level 22)
+2026-10-21 05:18:10 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-21 05:18:10 INFO  Placed 1,938 Historic Cities on the map
+2026-10-21 05:18:10 INFO  Socket policy server listening on 843
+2026-10-21 05:18:10 INFO  Game server listening on 9443
+2026-10-21 05:18:10 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-21 05:18:20 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 05:18:21 WARN  Not implemented yet: quest.getQuestType {"castleId":102,"type":1}
+2026-10-21 05:18:21 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-21 05:21:03 WARN  Not implemented yet: npchero.getNpcHerosList {"castleId":102}
+2026-10-21 05:21:32 WARN  Not implemented yet: npchero.getNpcHerosListByFilter {"castleId":102,"filter":"Catherine"}
+2026-10-21 05:21:54 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-21 05:26:16 INFO  Leitheon sent an army (mission 3) to Grassland Lv.1(393,489), arriving in 1s
+2026-10-21 05:26:37 INFO  Leitheon sent an army (mission 3) to Desert Lv.10(391,491), arriving in 1s
+2026-10-21 06:25:26 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-21 06:25:26 INFO  Placed 639 historic heroes in NPC cities
+2026-10-21 06:25:26 INFO  Placed 1,938 Historic Cities on the map
+2026-10-21 06:25:26 INFO  Socket policy server listening on 843
+2026-10-21 06:25:26 INFO  Game server listening on 9443
+2026-10-21 06:25:26 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-21 06:25:39 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 06:25:41 WARN  Not implemented yet: equipmenttech.getResearchList {"castleId":102}
+2026-10-21 06:28:45 WARN  Not implemented yet: city.advMoveCastle {"castleId":102,"targetId":271876}
+2026-10-21 06:33:06 WARN  Not implemented yet: quest.getEffortList {"castleId":102}
+2026-10-21 06:33:14 WARN  Not implemented yet: mail.receiveMailList {"pageSize":10,"pageNo":0,"type":1}
+2026-10-21 17:29:55 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-21 17:29:55 INFO  Placed 1,938 Historic Cities on the map
+2026-10-21 17:29:55 INFO  Socket policy server listening on 843
+2026-10-21 17:29:55 INFO  Game server listening on 9443
+2026-10-21 17:29:55 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-21 17:30:04 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 17:30:55 INFO  Leitheon sent an army (mission 3) to Hill Lv.10(390,490), arriving in 1s
+2026-10-21 17:32:45 INFO  Leitheon sent an army (mission 3) to Grevenbroich(387,495), arriving in 1s
+2026-10-21 17:34:53 INFO  Leitheon teleported Leitheon's City from (392,489) to (676,339)
+2026-10-21 17:38:56 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-21 17:39:10 INFO  Leitheon hired Conrad (level 6)
+2026-10-21 17:39:14 INFO  Leitheon hired Radulf (level 75)
+2026-10-21 17:39:16 INFO  Leitheon hired Humbert (level 13)
+2026-10-21 17:39:25 INFO  Leitheon hired Leofric (level 27)
+2026-10-21 17:40:44 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:40:45 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 24 rounds, loot 432900
+2026-10-21 17:51:42 WARN  Not implemented yet: colony.getColonialCastlesInfo {"castleId":102}
+2026-10-21 17:51:57 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:51:59 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 28 rounds, loot 47375
+2026-10-21 17:52:01 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:03 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 17 rounds, loot 60200
+2026-10-21 17:52:05 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:06 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 17 rounds, loot 62100
+2026-10-21 17:52:07 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:09 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:10 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:12 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:13 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:15 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:16 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:18 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:19 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:21 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:23 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:24 INFO  Leitheon won Gao Guiying over at Barbarian City Lv.3(676,338)
+2026-10-21 17:52:24 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:26 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:27 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:28 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:52:29 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 1 round, loot 62500
+2026-10-21 17:52:59 INFO  Leitheon sent an army (mission 5) to Barbarian City Lv.3(676,338), arriving in 1s
+2026-10-21 17:53:00 INFO  Leitheon attacked Barbarian City Lv.3(676,338): won in 19 rounds, loot 62100
+2026-10-21 17:53:28 INFO  Leitheon hired Gao Guiying (level 30)
+2026-10-21 17:55:46 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:55:49 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:55:51 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:55:54 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:55:57 INFO  Leitheon used Iron Ore Box: 2 Iron Ore
+2026-10-21 17:56:01 INFO  Leitheon used Iron Ore Box: 2 Iron Ore
+2026-10-21 17:56:05 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:56:08 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:56:11 INFO  Leitheon used Iron Ore Box: 4 Iron Ore
+2026-10-21 17:56:13 INFO  Leitheon used Iron Ore Box: 3 Iron Ore
+2026-10-21 17:56:22 INFO  Leitheon used Wood Box: 4 Wood
+2026-10-21 17:56:25 INFO  Leitheon used Wood Box: 3 Wood
+2026-10-21 17:56:27 INFO  Leitheon used Wood Box: 3 Wood
+2026-10-21 17:56:29 INFO  Leitheon used Wood Box: 2 Wood
+2026-10-21 17:56:32 INFO  Leitheon used Wood Box: 3 Wood
+2026-10-21 17:56:34 INFO  Leitheon used Wood Box: 4 Wood
+2026-10-21 17:56:36 INFO  Leitheon used Wood Box: 2 Wood
+2026-10-21 17:56:38 INFO  Leitheon used Wood Box: 2 Wood
+2026-10-21 17:56:40 INFO  Leitheon used Wood Box: 2 Wood
+2026-10-21 17:56:42 INFO  Leitheon used Wood Box: 2 Wood
+2026-10-21 17:56:48 INFO  Leitheon used Crude Gemstone Box: 4 Crude Gemstone
+2026-10-21 17:56:52 INFO  Leitheon used Fabric Box: 2 Fabric
+2026-10-21 17:56:55 INFO  Leitheon used Crude Gemstone Box: 2 Crude Gemstone
+2026-10-21 17:56:57 INFO  Leitheon used Fabric Box: 4 Fabric
+2026-10-21 17:57:00 INFO  Leitheon used Crude Gemstone Box: 4 Crude Gemstone
+2026-10-21 17:57:02 INFO  Leitheon used Fabric Box: 4 Fabric
+2026-10-21 17:57:25 INFO  Leitheon used Fabric Box: 3 Fabric
+2026-10-21 17:57:27 INFO  Leitheon used Crude Gemstone Box: 3 Crude Gemstone
+2026-10-21 17:57:30 INFO  Leitheon used Fabric Box: 3 Fabric
+2026-10-21 17:57:32 INFO  Leitheon used Crude Gemstone Box: 3 Crude Gemstone
+2026-10-21 17:57:34 INFO  Leitheon used Fabric Box: 4 Fabric
+2026-10-21 17:57:36 INFO  Leitheon used Crude Gemstone Box: 2 Crude Gemstone
+2026-10-21 17:57:39 INFO  Leitheon used Fabric Box: 4 Fabric
+2026-10-21 17:57:41 INFO  Leitheon used Crude Gemstone Box: 2 Crude Gemstone
+2026-10-21 17:57:44 INFO  Leitheon used Fabric Box: 3 Fabric
+2026-10-21 17:57:46 INFO  Leitheon used Crude Gemstone Box: 3 Crude Gemstone
+2026-10-21 17:57:49 INFO  Leitheon used Riding Reing: 3 Thoroughbred
+2026-10-21 17:57:54 INFO  Leitheon used Fabric Box: 3 Fabric
+2026-10-21 17:57:57 INFO  Leitheon used Fabric Box: 3 Fabric
+2026-10-21 17:57:59 INFO  Leitheon used Crude Gemstone Box: 3 Crude Gemstone
+2026-10-21 17:58:02 INFO  Leitheon used Crude Gemstone Box: 3 Crude Gemstone
+2026-10-21 17:58:05 INFO  Leitheon used Riding Reing: 1 Thoroughbred
+2026-10-21 17:58:07 INFO  Leitheon used Hero Package: 3 Delicate gem
+2026-10-21 17:58:10 INFO  Leitheon used Riding Reing: 2 Thoroughbred
+2026-10-21 17:58:12 INFO  Leitheon used Riding Reing: 1 Thoroughbred
+2026-10-21 17:58:15 INFO  Leitheon used Riding Reing: 1 Thoroughbred
+2026-10-21 17:58:17 INFO  Leitheon used Riding Reing: 2 Thoroughbred
+2026-10-21 17:58:19 INFO  Leitheon used Riding Reing: 1 Thoroughbred
+2026-10-21 17:58:21 INFO  Leitheon used Riding Reing: 1 Thoroughbred
+2026-10-21 17:58:24 INFO  Leitheon used Riding Reing: 3 Thoroughbred
+2026-10-21 17:58:26 INFO  Leitheon used Riding Reing: 2 Thoroughbred
+2026-10-21 17:58:31 INFO  Leitheon used Hero Package: 1 Wisdom Medal
+2026-10-21 17:58:34 INFO  Leitheon used Hero Package: 1 The Lost Armor Script
+2026-10-21 17:58:36 INFO  Leitheon used Hero Package: 1 Epitome of Military Science
+2026-10-21 17:58:38 INFO  Leitheon used Hero Package: 2 Cross Medal
+2026-10-21 17:58:41 INFO  Leitheon used Hero Package: 1 Arch Saw
+2026-10-21 17:58:50 INFO  Leitheon used Hero Package: 7 Speaker
+2026-10-21 17:58:54 INFO  Leitheon used Hero Package: 1 Primary Guidelines
+2026-10-21 18:04:17 INFO  Leitheon used Hero Package: 1 Holy Water
+2026-10-21 18:04:20 INFO  Leitheon used Hero Package: 1 Holy Water
+2026-10-21 18:04:27 WARN  Not implemented yet: commission.getMyAcceptedCommissionQuest {}
+2026-10-21 18:04:27 WARN  Not implemented yet: commission.getAllCommissionQuest {}
+2026-10-21 18:04:31 WARN  Not implemented yet: commission.getMyCommissionQuest {}
+2026-10-21 18:53:04 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-21 18:53:04 INFO  Leitheon was credited 989,209 prestige for what was already built, researched and trained
+2026-10-21 18:53:04 INFO  Placed 1,938 Historic Cities on the map
+2026-10-21 18:53:04 INFO  Socket policy server listening on 843
+2026-10-21 18:53:04 INFO  Game server listening on 9443
+2026-10-21 18:53:04 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-21 18:53:31 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 18:53:32 INFO  Leitheon disconnected
+2026-10-21 18:53:34 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 18:55:10 INFO  Leitheon disconnected
+2026-10-21 18:58:36 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 19:32:39 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-21 19:32:40 INFO  Leitheon's quests were moved to the 0.3.15 quest list
+2026-10-21 19:32:40 INFO  Placed 1,938 Historic Cities on the map
+2026-10-21 19:32:40 INFO  Socket policy server listening on 843
+2026-10-21 19:32:40 INFO  Game server listening on 9443
+2026-10-21 19:32:40 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-21 19:33:24 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 19:34:14 INFO  Leitheon disconnected
+2026-10-21 19:34:15 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-21 19:34:25 INFO  Leitheon completed the quest Queen
+2026-10-21 19:34:28 INFO  Leitheon completed the quest Queen
+2026-10-21 19:34:36 INFO  Leitheon completed the quest Queen
+2026-10-21 19:34:39 INFO  Leitheon completed the quest Queen
+2026-10-21 19:34:45 INFO  Leitheon completed the quest Cottage Building
+2026-10-21 19:34:46 INFO  Leitheon completed the quest Upgrade Cottage
+2026-10-21 19:34:48 INFO  Leitheon completed the quest Continuous Development
+2026-10-21 19:34:50 INFO  Leitheon completed the quest Farming
+2026-10-21 19:34:50 INFO  Leitheon completed the quest Lumbering
+2026-10-21 19:34:51 INFO  Leitheon completed the quest Quarrying
+2026-10-21 19:34:51 INFO  Leitheon completed the quest Forging
+2026-10-21 19:34:53 INFO  Leitheon completed the quest Continuous Development
+2026-10-21 19:34:56 INFO  Leitheon completed the quest Marketplace
+2026-10-21 19:35:02 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:04 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:06 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:08 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:09 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:11 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:12 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:14 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:15 INFO  Leitheon completed the quest Town Hall Upgrade
+2026-10-21 19:35:17 INFO  Leitheon completed the quest Academy
+2026-10-21 19:35:18 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:18 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:18 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:19 INFO  Leitheon completed the quest Academy Upgrade
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Agriculture
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Lumbering
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Masonry
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Mining
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Metal Casting
+2026-10-21 19:35:20 INFO  Leitheon completed the quest Informatics
+2026-10-21 19:35:23 INFO  Leitheon completed the quest Archery
+2026-10-21 19:35:27 INFO  Leitheon completed the quest Alliance
+2026-10-21 19:35:29 INFO  Leitheon completed the quest Inn
+2026-10-21 19:35:30 INFO  Leitheon completed the quest Feasting Hall
+2026-10-21 19:35:31 INFO  Leitheon completed the quest Rally Spot
+2026-10-21 19:35:32 INFO  Leitheon completed the quest Barracks
+2026-10-21 19:35:32 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:32 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:33 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:33 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:33 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:33 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:34 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:34 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:35 INFO  Leitheon completed the quest Barracks Upgrade
+2026-10-21 19:35:36 INFO  Leitheon completed the quest Warrior
+2026-10-21 19:35:38 INFO  Leitheon completed the quest Scout
+2026-10-21 19:35:42 INFO  Leitheon completed the quest Archer
+2026-10-21 19:35:46 INFO  Leitheon completed the quest Forge
+2026-10-21 19:35:47 INFO  Leitheon completed the quest Workshop
+2026-10-21 19:35:48 INFO  Leitheon completed the quest Walls
+2026-10-21 19:35:49 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:49 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:49 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:49 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:49 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:50 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:50 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:50 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:50 INFO  Leitheon completed the quest Walls Reinforcement
+2026-10-21 19:35:52 INFO  Leitheon completed the quest Sawmill Upgrade
+2026-10-21 19:35:52 INFO  Leitheon completed the quest Warehouse
+2026-10-21 19:35:55 INFO  Leitheon completed the quest Farm Upgrade
+2026-10-21 19:35:55 INFO  Leitheon completed the quest Stable
+2026-10-21 19:35:55 INFO  Leitheon completed the quest Relief Station
+2026-10-21 19:35:58 INFO  Leitheon completed the quest Beacon Tower
+2026-10-21 19:36:00 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:00 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:00 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:00 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:00 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:01 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:01 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:01 INFO  Leitheon completed the quest Population Increase
+2026-10-21 19:36:03 INFO  Leitheon completed the quest Great Harvest
+2026-10-21 19:36:05 INFO  Leitheon completed the quest Logging
+2026-10-21 19:36:06 INFO  Leitheon completed the quest Quarrying
+2026-10-21 19:36:07 INFO  Leitheon completed the quest Forging
+2026-10-21 19:36:11 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:12 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:12 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:12 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:12 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:13 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:13 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:13 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:13 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:14 INFO  Leitheon completed the quest Prestige Building
+2026-10-21 19:36:17 INFO  Leitheon completed the quest Lieutenant and is now a Lieutenant
+2026-10-21 19:36:19 INFO  Leitheon completed the quest Wars Begin
+2026-10-21 19:36:21 INFO  Leitheon completed the quest Cross Medal
+2026-10-21 19:36:23 INFO  Leitheon completed the quest Wisdom Medal
+2026-10-21 19:36:27 INFO  Leitheon completed the quest Add to Favorites
+2026-10-21 19:36:30 INFO  Leitheon completed the quest Daily Amulet
+2026-10-21 19:36:48 INFO  Leitheon used Aries Amulet: 3 Delicate gem
+2026-10-21 19:41:17 INFO  Leitheon used Aries Amulet: 1 Adv City Teleporter
+2026-10-21 19:41:29 INFO  Leitheon used Aries Amulet: 1 Fabric
+2026-10-21 19:42:06 INFO  Leitheon used Aries Amulet: 1 Beginner Guidelines
+2026-10-21 19:43:09 INFO  Leitheon completed the quest Amulet
+2026-10-21 19:46:55 WARN  Not implemented yet: alliance.getAllianceWanted {}
+2026-10-21 19:46:55 WARN  Not implemented yet: alliance.leaderWantUserInAllianceList {}
+2026-10-21 19:47:11 WARN  Not implemented yet: alliance.createAlliance {"castleId":102,"allianceName":"OMA"}
+2026-10-21 19:49:14 INFO  Leitheon completed the quest Military Science
+2026-10-21 19:49:15 INFO  Leitheon completed the quest Iron Working
+2026-10-21 19:49:18 INFO  Leitheon completed the quest Horseback Riding
+2026-10-21 19:49:21 INFO  Leitheon completed the quest Items Purchase
+2026-10-21 20:23:10 INFO  Leitheon disconnected
+2026-10-22 06:29:53 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-22 06:29:54 INFO  Placed 1,938 Historic Cities on the map
+2026-10-22 06:29:54 INFO  Socket policy server listening on 843
+2026-10-22 06:29:54 INFO  Game server listening on 9443
+2026-10-22 06:29:54 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-22 06:32:52 INFO  Missing art: favicon.ico (art server: HTTP 404)
+2026-10-22 06:34:16 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-22 06:34:24 INFO  Leitheon completed the quest Military Tradition
+2026-10-22 06:34:28 INFO  Leitheon completed the quest Forging Weapons
+2026-10-22 06:34:29 INFO  Leitheon completed the quest Daily Amulet
+2026-10-22 06:34:42 INFO  Leitheon sent an army (mission 3) to Hill Lv.5(675,339), arriving in 20s
+2026-10-22 06:35:23 INFO  Leitheon completed the quest Scouting
+2026-10-22 06:43:01 INFO  Leitheon used Aries Amulet: 1 The Lost Armor Script
+2026-10-22 06:43:12 INFO  Leitheon used Aries Amulet: 30 cents
+2026-10-22 06:43:19 INFO  Leitheon used Aries Amulet: 1 Chain Helm of Beowulf
+2026-10-22 06:43:26 INFO  Leitheon used Aries Amulet: 1 Anabasis
+2026-10-22 06:43:33 INFO  Leitheon used Aries Amulet: 5 Crude Gemstone
+2026-10-22 06:43:40 INFO  Leitheon used Aries Amulet: 2 Rose Medal
+2026-10-22 06:43:48 INFO  Leitheon used Aries Amulet: 1 Cross Medal
+2026-10-22 06:43:56 INFO  Leitheon used Aries Amulet: 10 cents
+2026-10-22 06:44:03 INFO  Leitheon used Aries Amulet: 30 cents
+2026-10-22 06:44:11 INFO  Leitheon used Aries Amulet: 2 Delicate gem
+2026-10-22 06:44:19 INFO  Leitheon used Aries Amulet: 1 Beginner Guidelines
+2026-10-22 06:44:24 WARN  Not implemented yet: city.getStoreList {"castleId":102}
+2026-10-22 06:44:26 INFO  Leitheon used Aries Amulet: 3 Delicate gem
+2026-10-22 06:44:30 INFO  Leitheon completed the quest Rose Medal
+2026-10-22 06:45:40 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-22 06:45:40 INFO  Placed 1,938 Historic Cities on the map
+2026-10-22 06:45:40 INFO  Socket policy server listening on 843
+2026-10-22 06:45:40 INFO  Game server listening on 9443
+2026-10-22 06:45:40 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-22 06:45:40 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-22 06:45:40 WARN  Not implemented yet: mail.receiveMailList {"pageNo":1,"pageSize":10,"type":1}
+2026-10-22 06:45:41 WARN  Not implemented yet: trade.searchTrades {"resType":1}
+2026-10-22 06:45:42 WARN  Not implemented yet: hero.GetRandomHero {}
+2026-10-22 06:45:45 WARN  Not implemented yet: common.setAutoHeal {"autoHeal":true}
+2026-10-22 06:50:46 INFO  Leitheon completed the quest Forging Shields
+2026-10-22 07:00:40 WARN  Not implemented yet: alliance.getAllianceFriendshipList {}
+2026-10-22 16:58:34 INFO  Created account leitheon2
+2026-10-22 16:58:34 INFO  New lord leitheon2 founded leitheon2's City at (148, 199)
+2026-10-22 16:58:34 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-22 19:06:04 INFO  leitheon2 disconnected
+2026-10-22 21:00:22 INFO  Leitheon disconnected
+2026-10-23 23:11:22 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-23 23:11:22 INFO  Leitheon's City: 1 historic hero updated to the corrected stats
+2026-10-23 23:11:22 INFO  Placed 1,938 Historic Cities on the map
+2026-10-23 23:11:22 INFO  Socket policy server listening on 843
+2026-10-23 23:11:23 INFO  Game server listening on 9443
+2026-10-23 23:11:23 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-23 23:12:49 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-23 23:12:59 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-23 23:13:30 INFO  Leitheon completed the quest Daily Amulet
+2026-10-23 23:14:15 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 2 Justice Medal, 4 Nation Medal
+2026-10-23 23:14:19 INFO  Leitheon used Medium Medal Box: 3 Honor Medal, 3 Courage Medal, 3 Wisdom Medal
+2026-10-23 23:14:23 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 2 Rose Medal, 2 Lion Medal
+2026-10-23 23:14:44 INFO  Leitheon used Package for Lords: 1 Civil Code, 1 The Wealth of Nations, 1 War Ensign, 1 National Flag, 1 War Horn, 1 Corselet, 1 City Teleporter, 1 Truce Agreement, 40 Speaker, 1 Beginner Guidelines, 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Napoleon's Diary, 1 Archimedes' Note, 1 Dynamite, 1 Penicillin, 1 Merchant Fleet, 10 Cross Medal, 5 Rose Medal, 1 Michelangelo's Script, 250 Worker
+2026-10-23 23:14:50 INFO  Leitheon used Newbies Package: 1 Bernini's Hammer, 1 Plowshares, 1 Arch Saw, 1 Quarrying Tools, 1 Blower, 1 War Horn, 1 Corselet, 1 Beginner Guidelines, 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Merchant Fleet, 1 Truce Agreement, 1 Holy Water, 2 Hero Hunting, 1 City Teleporter, 1 Anabasis, 2 Cross Medal
+2026-10-23 23:15:07 INFO  Leitheon completed the quest Knight and is now a Knight
+2026-10-23 23:15:16 INFO  Leitheon completed the quest Captain and is now a Captain
+2026-10-23 23:15:26 INFO  Leitheon completed the quest Lion Medal
+2026-10-23 23:15:27 INFO  Leitheon completed the quest Honor Medal
+2026-10-23 23:15:28 INFO  Leitheon completed the quest Courage Medal
+2026-10-23 23:15:28 INFO  Leitheon completed the quest Freedom Medal
+2026-10-23 23:15:29 INFO  Leitheon completed the quest Justice Medal
+2026-10-23 23:15:30 INFO  Leitheon completed the quest Nation Medal
+2026-10-23 23:15:33 INFO  Leitheon completed the quest Worker
+2026-10-23 23:15:37 INFO  Leitheon completed the quest Get a jump start
+2026-10-23 23:15:40 INFO  Leitheon completed the quest Package for Lords
+2026-10-23 23:25:53 INFO  Owner page: added 100000 coins to Leitheon
+2026-10-23 23:28:43 WARN  Not implemented yet: trade.searchTrades {"resType":0}
+2026-10-23 23:35:31 INFO  Owner page: added 100000 coins to Leitheon
+2026-10-24 00:14:30 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:31 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:33 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:34 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:34 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:35 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:35 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:36 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:37 INFO  Leitheon completed the quest Beacon Tower
+2026-10-24 00:14:39 INFO  Leitheon completed the quest Logistics
+2026-10-24 00:14:40 INFO  Leitheon completed the quest Compass
+2026-10-24 00:14:42 INFO  Leitheon completed the quest Medicine
+2026-10-24 00:14:47 INFO  Leitheon completed the quest Daily Amulet
+2026-10-24 00:14:50 INFO  Leitheon completed the quest Speedup
+2026-10-24 00:15:14 WARN  Not implemented yet: city.getStoreList {"castleId":102}
+2026-10-24 00:16:23 INFO  Missing art: badWord.txt (art server: HTTP 404)
+2026-10-24 00:16:49 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-24 00:18:53 INFO  Leitheon used Locked Halloween Chest: 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Hero Hunting, 1 Merchant Fleet, 1 Plowshares, 1 Double Saw, 1 Quarrying Tools, 1 Blower, 1 Michelangelo's Script, 1 Tax Policy , 1 The Wealth of Nations
+2026-10-24 00:19:00 INFO  Leitheon used Purchase Package: 1 Tax Policy 
+2026-10-24 00:19:12 INFO  Leitheon used Special Easter Chest: 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Hero Hunting, 1 Merchant Fleet, 1 Plowshares, 1 Double Saw, 1 Quarrying Tools, 1 Blower, 1 Michelangelo's Script, 1 Tax Policy , 1 The Wealth of Nations
+2026-10-24 00:19:16 INFO  Leitheon used St Patrick's Day Chest: 1 Excalibur, 1 War Horn, 1 Corselet, 1 Truce Agreement, 1 War Ensign, 1 Adv City Teleporter, 1 Michelangelo's Script
+2026-10-24 00:19:19 INFO  Leitheon used Valentine's Day Chest : 1 Excalibur, 1 War Horn, 1 Corselet, 1 Truce Agreement, 1 War Ensign, 1 Adv City Teleporter, 1 Michelangelo's Script
+2026-10-24 00:19:22 INFO  Leitheon used Secret Santa Chest: 1 Excalibur, 1 War Horn, 1 Corselet, 1 Truce Agreement, 1 War Ensign, 1 Adv City Teleporter, 1 Michelangelo's Script
+2026-10-24 00:19:26 INFO  Leitheon used Special Thanksgiving Package: 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Hero Hunting, 1 Merchant Fleet, 1 Plowshares, 1 Double Saw, 1 Quarrying Tools, 1 Blower, 1 Michelangelo's Script, 1 Tax Policy , 1 The Wealth of Nations
+2026-10-24 00:19:29 INFO  Leitheon used Halloween Chest O'Treats: 1 Excalibur, 1 War Horn, 1 Corselet, 1 Truce Agreement, 1 War Ensign, 1 Adv City Teleporter, 1 Michelangelo's Script
+2026-10-24 00:19:32 INFO  Leitheon used Special Evony Happiness Chest: 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Hero Hunting, 1 Merchant Fleet, 1 Plowshares, 1 Double Saw, 1 Quarrying Tools, 1 Blower, 1 Michelangelo's Script, 1 Tax Policy , 1 The Wealth of Nations
+2026-10-24 00:19:34 INFO  Leitheon used Special Easter Chest: 1 Freedom Medal, 1 Justice Medal, 1 Nation Medal, 1 Michelangelo's Script, 1 Plowshares, 1 Arch Saw, 1 Quarrying Tools, 1 Blower, 1 War Ensign, 1 Excalibur, 1 The Wealth of Nations, 1 Aries Amulet
+2026-10-24 00:19:37 INFO  Leitheon used Special New Year Chest: 1 Freedom Medal, 1 Justice Medal, 1 Nation Medal, 1 Michelangelo's Script, 1 Plowshares, 1 Arch Saw, 1 Quarrying Tools, 1 Blower, 1 War Ensign, 1 Excalibur, 1 The Wealth of Nations, 1 Aries Amulet
+2026-10-24 00:19:40 INFO  Leitheon used Special Christmas Chest: 1 Excalibur, 1 War Horn, 1 Corselet, 1 Truce Agreement, 1 War Ensign, 1 Adv City Teleporter, 1 Michelangelo's Script
+2026-10-24 00:19:56 INFO  Leitheon used Hollow Wooden Bull: 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Hero Hunting, 1 Merchant Fleet, 1 Plowshares, 1 Double Saw, 1 Quarrying Tools, 1 Blower, 1 Michelangelo's Script, 1 Tax Policy , 1 The Wealth of Nations
+2026-10-24 00:20:06 INFO  Leitheon completed the quest Satellite City
+2026-10-24 00:20:16 INFO  Leitheon completed the quest Rename city
+2026-10-24 06:50:28 INFO  Leitheon disconnected
+2026-10-24 06:50:29 INFO  leitheon2 disconnected
+2026-10-25 21:48:08 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-25 21:48:08 INFO  Placed 1,938 Historic Cities on the map
+2026-10-25 21:48:08 INFO  Socket policy server listening on 843
+2026-10-25 21:48:08 INFO  Game server listening on 9443
+2026-10-25 21:48:08 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-25 21:48:42 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-25 21:49:16 INFO  leitheon2 disconnected
+2026-10-25 21:49:32 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-25 21:50:06 INFO  Leitheon completed the quest Daily Amulet
+2026-10-25 21:50:11 INFO  Leitheon completed the quest Attain Achievement
+2026-10-25 21:53:48 INFO  Owner page: added 100000 coins to Leitheon
+2026-10-25 22:00:29 INFO  Owner page: added 1000000 coins to Leitheon
+2026-10-25 22:00:43 INFO  Leitheon completed the quest Training Mounts
+2026-10-25 22:00:45 INFO  Leitheon completed the quest Attain Achievement
+2026-10-25 22:00:50 INFO  Leitheon completed the quest Stockpile
+2026-10-25 22:00:51 INFO  Leitheon completed the quest Construction
+2026-10-25 22:00:52 INFO  Leitheon completed the quest Engineering
+2026-10-25 22:00:52 INFO  Leitheon completed the quest Machinery
+2026-10-25 22:00:52 INFO  Leitheon completed the quest Privateering
+2026-10-25 22:01:43 INFO  Leitheon sent an army (mission 5) to Hill Lv.6(675,339), arriving in 109s
+2026-10-25 22:03:32 INFO  Leitheon attacked Hill Lv.6(675,339): won in 2 rounds, valley taken
+2026-10-25 22:08:51 INFO  Leitheon completed the quest Queen
+2026-10-25 22:08:54 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:08:55 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:08:55 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:08:55 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:08:56 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:08:56 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-25 22:09:01 INFO  Leitheon completed the quest Forging Necklaces
+2026-10-25 22:10:03 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 2 Rose Medal, 3 Lion Medal
+2026-10-25 22:10:05 INFO  Leitheon used Junior Medal Box: 2 Cross Medal, 2 Rose Medal, 2 Lion Medal
+2026-10-25 22:10:08 INFO  Leitheon used Junior Medal Box: 2 Cross Medal, 3 Rose Medal, 4 Lion Medal
+2026-10-25 22:10:10 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 3 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:10:12 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 4 Courage Medal, 4 Wisdom Medal
+2026-10-25 22:10:14 INFO  Leitheon used Medium Medal Box: 4 Honor Medal, 2 Courage Medal, 4 Wisdom Medal
+2026-10-25 22:10:17 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 2 Justice Medal, 3 Nation Medal
+2026-10-25 22:10:19 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 2 Justice Medal, 3 Nation Medal
+2026-10-25 22:10:23 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 3 Justice Medal, 2 Nation Medal
+2026-10-25 22:10:32 INFO  Leitheon completed the quest Baronet and is now a Baronet
+2026-10-25 22:11:00 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 4 Rose Medal, 4 Lion Medal
+2026-10-25 22:11:05 INFO  Leitheon completed the quest Major and is now a Major
+2026-10-25 22:11:07 INFO  Leitheon completed the quest Baron and is now a Baron
+2026-10-25 22:11:17 INFO  Leitheon used Junior Medal Box: 2 Cross Medal, 2 Rose Medal, 4 Lion Medal
+2026-10-25 22:11:19 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 4 Rose Medal, 2 Lion Medal
+2026-10-25 22:11:22 INFO  Leitheon used Junior Medal Box: 4 Cross Medal, 4 Rose Medal, 2 Lion Medal
+2026-10-25 22:11:24 INFO  Leitheon used Junior Medal Box: 4 Cross Medal, 4 Rose Medal, 2 Lion Medal
+2026-10-25 22:11:25 INFO  Leitheon used Junior Medal Box: 2 Cross Medal, 2 Rose Medal, 2 Lion Medal
+2026-10-25 22:11:27 INFO  Leitheon used Junior Medal Box: 4 Cross Medal, 3 Rose Medal, 2 Lion Medal
+2026-10-25 22:11:29 INFO  Leitheon used Junior Medal Box: 4 Cross Medal, 3 Rose Medal, 3 Lion Medal
+2026-10-25 22:11:31 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 3 Rose Medal, 4 Lion Medal
+2026-10-25 22:11:32 INFO  Leitheon used Junior Medal Box: 3 Cross Medal, 4 Rose Medal, 4 Lion Medal
+2026-10-25 22:13:24 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 2 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:26 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 4 Courage Medal, 4 Wisdom Medal
+2026-10-25 22:13:27 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 2 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:29 INFO  Leitheon used Medium Medal Box: 4 Honor Medal, 3 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:30 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 3 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:32 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 4 Courage Medal, 4 Wisdom Medal
+2026-10-25 22:13:34 INFO  Leitheon used Medium Medal Box: 4 Honor Medal, 4 Courage Medal, 4 Wisdom Medal
+2026-10-25 22:13:36 INFO  Leitheon used Medium Medal Box: 4 Honor Medal, 2 Courage Medal, 3 Wisdom Medal
+2026-10-25 22:13:38 INFO  Leitheon used Medium Medal Box: 2 Honor Medal, 2 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:41 INFO  Leitheon used Medium Medal Box: 4 Honor Medal, 3 Courage Medal, 2 Wisdom Medal
+2026-10-25 22:13:44 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 3 Justice Medal, 3 Nation Medal
+2026-10-25 22:13:46 INFO  Leitheon used Senior Medal Box: 4 Freedom Medal, 2 Justice Medal, 4 Nation Medal
+2026-10-25 22:13:48 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 2 Justice Medal, 2 Nation Medal
+2026-10-25 22:13:50 INFO  Leitheon used Senior Medal Box: 4 Freedom Medal, 4 Justice Medal, 2 Nation Medal
+2026-10-25 22:13:52 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 3 Justice Medal, 2 Nation Medal
+2026-10-25 22:13:54 INFO  Leitheon used Senior Medal Box: 4 Freedom Medal, 2 Justice Medal, 3 Nation Medal
+2026-10-25 22:13:56 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 3 Justice Medal, 4 Nation Medal
+2026-10-25 22:13:57 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 2 Justice Medal, 4 Nation Medal
+2026-10-25 22:13:59 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 4 Justice Medal, 2 Nation Medal
+2026-10-25 22:14:02 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 2 Justice Medal, 2 Nation Medal
+2026-10-25 22:14:24 INFO  Leitheon completed the quest Forging Jewelry
+2026-10-25 22:14:26 INFO  Leitheon completed the quest Attain Achievement
+2026-10-25 22:14:30 INFO  Leitheon completed the quest Queen
+2026-10-25 22:14:39 INFO  Leitheon completed the quest Colonel and is now a Colonel
+2026-10-25 22:14:40 INFO  Leitheon completed the quest General and is now a General
+2026-10-25 22:14:41 INFO  Leitheon completed the quest Viscount and is now a Viscount
+2026-10-25 22:14:42 INFO  Leitheon completed the quest Earl and is now an Earl
+2026-10-25 22:14:42 INFO  Leitheon completed the quest Marquis and is now a Marquis
+2026-10-25 22:14:43 INFO  Leitheon completed the quest Duke and is now a Duke
+2026-10-25 22:14:43 INFO  Leitheon completed the quest Furstin and is now a Furstin
+2026-10-25 22:15:07 INFO  Leitheon used Senior Medal Box: 2 Freedom Medal, 2 Justice Medal, 2 Nation Medal
+2026-10-25 22:15:09 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 2 Justice Medal, 2 Nation Medal
+2026-10-25 22:15:11 INFO  Leitheon used Senior Medal Box: 3 Freedom Medal, 3 Justice Medal, 3 Nation Medal
+2026-10-25 22:15:15 INFO  Leitheon completed the quest Prinzessin and is now a Prinzessin
+2026-10-25 22:23:14 INFO  Leitheon completed the quest Forging Rings
+2026-10-25 22:29:21 INFO  Leitheon completed the quest Forging Helmets
+2026-10-25 22:31:22 INFO  Leitheon teleported Leitheon's City from (676,339) to (17,405)
+2026-10-25 22:31:44 INFO  Leitheon hired Casimir (level 70)
+2026-10-25 22:31:46 INFO  Leitheon hired Anselm (level 18)
+2026-10-25 22:31:49 INFO  Leitheon hired Ivo (level 39)
+2026-10-25 22:32:01 INFO  Leitheon hired Lothar (level 52)
+2026-10-25 22:32:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 152s
+2026-10-25 22:32:22 INFO  Leitheon completed the quest Recruitment
+2026-10-25 22:32:23 INFO  Leitheon completed the quest Assignment
+2026-10-25 22:32:23 INFO  Leitheon completed the quest Hero Upgrade
+2026-10-25 22:32:24 INFO  Leitheon completed the quest Hero Recruitment
+2026-10-25 22:32:25 INFO  Leitheon completed the quest Enquire Details
+2026-10-25 22:32:27 INFO  Leitheon completed the quest Folk Hearsay
+2026-10-25 22:32:28 INFO  Leitheon completed the quest Specific Hero Information
+2026-10-25 22:34:47 INFO  Leitheon attacked Barbarian's city(17,404): won in 8 rounds, loot 1200000, loyalty 86
+2026-10-25 22:35:34 INFO  Leitheon completed the quest Forging Pauldrons
+2026-10-25 22:36:37 INFO  Owner page: gave Leitheon 100000 lightCavalry in Leitheon's City
+2026-10-25 22:37:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 40s
+2026-10-25 22:37:08 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 40s
+2026-10-25 22:37:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 40s
+2026-10-25 22:37:29 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:37:41 INFO  Leitheon hired Gunther (level 33)
+2026-10-25 22:37:43 INFO  Leitheon attacked Barbarian's city(17,404): won in 11 rounds, loot 7319, loyalty 83
+2026-10-25 22:37:44 INFO  Leitheon hired Una (level 62)
+2026-10-25 22:37:47 INFO  Leitheon hired Alfred (level 15)
+2026-10-25 22:37:48 INFO  Leitheon attacked Barbarian's city(17,404): won in 5 rounds, loot 212, loyalty 77
+2026-10-25 22:37:50 INFO  Leitheon hired Jocelyn (level 64)
+2026-10-25 22:37:53 INFO  Leitheon attacked Barbarian's city(17,404): won in 5 rounds, loot 180, loyalty 70
+2026-10-25 22:38:06 INFO  Leitheon attacked Barbarian's city(17,404): won in 5 rounds, loot 549, loyalty 63
+2026-10-25 22:39:04 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:13 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:16 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:18 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(17,404), arriving in 36s
+2026-10-25 22:39:41 INFO  Leitheon attacked Barbarian's city(17,404): won in 11 rounds, loot 3956, loyalty 60
+2026-10-25 22:39:44 INFO  Leitheon attacked Barbarian's city(17,404): won in 5 rounds, loot 136, loyalty 54
+2026-10-25 22:39:47 INFO  Leitheon attacked Barbarian's city(17,404): won in 1 round, loot 137, loyalty 24
+2026-10-25 22:39:50 INFO  Leitheon conquered New city(17,404), capturing Cyrus II
+2026-10-25 22:39:50 INFO  Leitheon attacked Barbarian's city(17,404): won in 1 round, loot 101, loyalty 0
+2026-10-25 22:39:53 INFO  Leitheon attacked New city(17,404): won in 6 rounds, loot 79
+2026-10-25 22:39:55 INFO  Leitheon attacked New city(17,404): won in 1 round, loot 15
+2026-10-25 22:39:58 INFO  Leitheon attacked New city(17,404): won in 1 round, loot 17
+2026-10-25 22:40:01 INFO  Leitheon attacked Hello(17,404): won in 1 round, loot 17
+2026-10-25 22:40:04 INFO  Leitheon attacked Hello(17,404): won in 1 round, loot 15
+2026-10-25 22:40:16 INFO  Owner page: filled Leitheon's cities to 10000000
+2026-10-25 22:40:25 INFO  Leitheon persuaded Cyrus II to join
+2026-10-25 22:41:26 INFO  Leitheon sent an army (mission 2) to Hello(17,404), arriving in 7s
+2026-10-25 22:41:40 INFO  Leitheon sent an army (mission 2) to Leitheon's City(17,405), arriving in 18s
+2026-10-25 22:42:45 INFO  Leitheon sent an army (mission 2) to Hello(17,404), arriving in 7s
+2026-10-25 22:43:01 INFO  Leitheon sent an army (mission 2) to Leitheon's City(17,405), arriving in 18s
+2026-10-25 22:43:13 INFO  Leitheon completed the quest Queen
+2026-10-25 22:43:14 INFO  Leitheon completed the quest Queen
+2026-10-25 22:43:16 INFO  Leitheon completed the quest Acquire Enemy's Hero
+2026-10-25 22:43:16 INFO  Leitheon completed the quest Acquire Enemy's Hero
+2026-10-25 22:43:19 INFO  Leitheon completed the quest Cavalry
+2026-10-25 22:43:23 INFO  Leitheon completed the quest Traps
+2026-10-25 22:43:24 INFO  Leitheon completed the quest Great Harvest
+2026-10-25 22:43:27 INFO  Leitheon completed the quest Tax Revenue
+2026-10-25 22:43:31 INFO  Leitheon completed the quest Forging Breastplates
+2026-10-25 22:43:34 INFO  Leitheon completed the quest Tax Revenue
+2026-10-25 22:44:34 INFO  Leitheon teleported Leitheon's City from (17,405) to (163,225)
+2026-10-25 22:45:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 109s
+2026-10-25 22:47:04 INFO  Leitheon attacked Barbarian's city(163,226): won in 10 rounds, loot 6800000, loyalty 86
+2026-10-25 22:50:54 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:21 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:32 INFO  Leitheon attacked Barbarian's city(163,226): won in 13 rounds, loot 63017, loyalty 84
+2026-10-25 22:51:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:40 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1946, loyalty 81
+2026-10-25 22:51:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:51:46 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1417, loyalty 78
+2026-10-25 22:51:51 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1271, loyalty 75
+2026-10-25 22:51:58 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1706, loyalty 72
+2026-10-25 22:52:04 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1355, loyalty 69
+2026-10-25 22:52:11 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1624, loyalty 66
+2026-10-25 22:52:18 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1750, loyalty 63
+2026-10-25 22:53:39 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:53:44 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:53:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:53:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:54:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:54:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:54:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:54:15 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 27698, loyalty 61
+2026-10-25 22:54:17 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:54:21 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1227, loyalty 59
+2026-10-25 22:54:25 INFO  Leitheon attacked Barbarian's city(163,226): won in 9 rounds, loot 1121, loyalty 56
+2026-10-25 22:54:32 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1483, loyalty 54
+2026-10-25 22:54:39 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1795, loyalty 52
+2026-10-25 22:54:43 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 938, loyalty 48
+2026-10-25 22:54:48 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1252, loyalty 46
+2026-10-25 22:54:54 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1312, loyalty 44
+2026-10-25 22:55:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:55:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:55:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:00 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:18 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:56:25 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 21558, loyalty 43
+2026-10-25 22:56:28 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 580, loyalty 39
+2026-10-25 22:56:34 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1475, loyalty 37
+2026-10-25 22:56:37 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 655, loyalty 33
+2026-10-25 22:56:43 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1546, loyalty 31
+2026-10-25 22:56:46 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 725, loyalty 27
+2026-10-25 22:56:52 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1299, loyalty 25
+2026-10-25 22:56:54 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 586, loyalty 21
+2026-10-25 22:57:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:57:40 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:57:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:57:50 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:57:58 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:58:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:58:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:58:08 INFO  Leitheon sent an army (mission 5) to Barbarian's city(163,226), arriving in 36s
+2026-10-25 22:58:11 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 18048, loyalty 19
+2026-10-25 22:58:17 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1415, loyalty 17
+2026-10-25 22:58:24 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1667, loyalty 15
+2026-10-25 22:58:27 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 740, loyalty 11
+2026-10-25 22:58:35 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1838, loyalty 9
+2026-10-25 22:58:37 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 577, loyalty 5
+2026-10-25 22:58:40 INFO  Leitheon completed the quest Forging Cloaks
+2026-10-25 22:58:43 INFO  Leitheon attacked Barbarian's city(163,226): won in 11 rounds, loot 1274, loyalty 3
+2026-10-25 22:58:45 INFO  Leitheon conquered New city(163,226), capturing Vasco Nunez de Balboa
+2026-10-25 22:58:45 INFO  Leitheon attacked Barbarian's city(163,226): won in 7 rounds, loot 526, loyalty 0
+2026-10-25 22:59:39 INFO  Owner page: filled Leitheon's cities to 10000000
+2026-10-25 22:59:47 INFO  Leitheon persuaded Vasco Nunez de Balboa to join
+2026-10-25 23:00:27 INFO  Leitheon completed the quest Continuous Development
+2026-10-25 23:00:33 INFO  Leitheon completed the quest Great Harvest
+2026-10-25 23:00:35 INFO  Leitheon completed the quest Great Harvest
+2026-10-25 23:00:37 INFO  Leitheon completed the quest Tax Revenue
+2026-10-25 23:00:46 INFO  Leitheon completed the quest Rolling Logs
+2026-10-25 23:00:49 INFO  Leitheon completed the quest Population Increase
+2026-10-25 23:25:54 INFO  Missing art: PageModule=IsProtect&u=leitheon (art server: HTTP 404)
+2026-10-25 23:26:45 INFO  Leitheon abandoned Elminster; it is now a level 1 barbarian city
+2026-10-25 23:33:03 INFO  Leitheon completed the quest Forging Gauntlets
+2026-10-25 23:33:58 INFO  Leitheon disconnected
+2026-10-26 16:50:27 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 16:50:27 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 16:50:27 INFO  Socket policy server listening on 843
+2026-10-26 16:50:27 INFO  Game server listening on 9443
+2026-10-26 16:50:27 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 16:50:41 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 16:50:47 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-26 16:51:04 INFO  Leitheon founded the alliance test
+2026-10-26 16:51:54 INFO  Owner page: added 1000000 coins to leitheon2
+2026-10-26 16:51:55 INFO  Owner page: filled leitheon2's cities to 100000000
+2026-10-26 16:53:00 INFO  leitheon2 joined test
+2026-10-26 17:10:51 INFO  leitheon2 teleported leitheon2's City from (148,199) to (164,224)
+2026-10-26 17:14:44 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 17:14:44 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 17:14:44 INFO  Socket policy server listening on 843
+2026-10-26 17:14:44 INFO  Game server listening on 9443
+2026-10-26 17:14:44 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 17:15:06 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-26 17:15:10 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 17:16:14 INFO  Created account leitheon3
+2026-10-26 17:16:14 INFO  New lord leitheon3 founded City Name at (136, 420)
+2026-10-26 17:16:14 INFO  leitheon3 logged in from ::ffff:127.0.0.1
+2026-10-26 17:16:27 INFO  Owner page: added 1000000 coins to leitheon3
+2026-10-26 17:16:28 INFO  Owner page: filled leitheon3's cities to 100000000
+2026-10-26 17:19:46 INFO  Owner page: gave leitheon3 10000 all in City Name
+2026-10-26 17:20:19 INFO  leitheon3 teleported City Name from (136,420) to (163,223)
+2026-10-26 17:21:21 INFO  leitheon3 hired Jorund (level 1)
+2026-10-26 17:43:10 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 17:43:10 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 17:43:10 INFO  Socket policy server listening on 843
+2026-10-26 17:43:10 INFO  Game server listening on 9443
+2026-10-26 17:43:10 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 17:43:22 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 17:43:27 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-26 17:43:33 INFO  leitheon3 logged in from ::ffff:127.0.0.1
+2026-10-26 17:46:11 INFO  leitheon3 used Wage War without Declaration on leitheon2
+2026-10-26 17:46:32 INFO  leitheon3 declared war on leitheon2
+2026-10-26 17:47:19 INFO  leitheon3 sent an army (mission 7) to leitheon2's City(164,224), arriving in 113s
+2026-10-26 17:48:00 INFO  Missing art: PageModule=IsProtect&u=leitheon3 (art server: HTTP 404)
+2026-10-26 17:49:12 INFO  leitheon3 began colonizing leitheon2's City; the Stabilization battle is at 10/26/2026, 8:49:12 PM
+2026-10-26 17:49:12 INFO  leitheon3 attacked leitheon2's City(164,224): won in 1 round
+2026-10-26 17:52:43 INFO  Leitheon sent an army (mission 2) to leitheon2's City(164,224), arriving in 9s
+2026-10-26 17:56:05 INFO  Leitheon sent an army (mission 2) to leitheon2's City(164,224), arriving in 9s
+2026-10-26 18:11:50 INFO  Leitheon sent an army (mission 5) to Desert Lv.9(163,224), arriving in 109s
+2026-10-26 18:13:40 INFO  Leitheon attacked Desert Lv.9(163,224): won in 2 rounds, valley taken
+2026-10-26 18:17:36 INFO  Leitheon sent an army (mission 2) to leitheon2's City(164,224), arriving in 8s
+2026-10-26 18:20:52 INFO  leitheon3 founded the alliance test2
+2026-10-26 18:25:05 INFO  [World] leitheon2: hello
+2026-10-26 18:26:04 INFO  leitheon2 joined test
+2026-10-26 18:30:55 INFO  Leitheon sent an army (mission 2) to Leitheon's City(163,225), arriving in 9s
+2026-10-26 18:31:18 INFO  Owner page: gave Leitheon 1 scouter in Hello
+2026-10-26 18:31:25 INFO  Leitheon sent an army (mission 2) to Leitheon's City(163,225), arriving in 1049s
+2026-10-26 18:34:19 INFO  Missing art: PageModule=IsProtect&u=leitheon2 (art server: HTTP 404)
+2026-10-26 18:42:26 INFO  Leitheon abandoned Vasco; it is now a level 7 barbarian city
+2026-10-26 18:44:36 INFO  Leitheon teleported GoldAmulet from (328,104) to (163,226)
+2026-10-26 18:45:06 INFO  Created account leitheon4
+2026-10-26 18:45:06 INFO  New lord leitheon4 founded City Name at (637, 390)
+2026-10-26 18:45:06 INFO  leitheon4 logged in from ::ffff:127.0.0.1
+2026-10-26 18:45:15 INFO  Owner page: added 1000 coins to leitheon4
+2026-10-26 18:45:47 INFO  leitheon4 completed the quest Add to Favorites
+2026-10-26 18:45:50 INFO  leitheon4 completed the quest Daily Amulet
+2026-10-26 18:45:52 INFO  leitheon4 completed the quest Items Purchase
+2026-10-26 18:46:08 INFO  leitheon4 completed the quest Lieutenant and is now a Lieutenant
+2026-10-26 18:46:15 INFO  leitheon4 used Newbies Package: 1 Bernini's Hammer, 1 Plowshares, 1 Arch Saw, 1 Quarrying Tools, 1 Blower, 1 War Horn, 1 Corselet, 1 Beginner Guidelines, 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Merchant Fleet, 1 Truce Agreement, 1 Holy Water, 2 Hero Hunting, 1 City Teleporter, 1 Anabasis, 2 Cross Medal
+2026-10-26 18:46:27 INFO  Owner page: filled leitheon4's cities to 100000000
+2026-10-26 18:48:01 INFO  leitheon4 used Package for Lords: 1 Civil Code, 1 The Wealth of Nations, 1 War Ensign, 1 National Flag, 1 War Horn, 1 Corselet, 1 City Teleporter, 1 Truce Agreement, 40 Speaker, 1 Beginner Guidelines, 1 Primary Guidelines, 1 Intermediate Guidelines, 1 Napoleon's Diary, 1 Archimedes' Note, 1 Dynamite, 1 Penicillin, 1 Merchant Fleet, 10 Cross Medal, 5 Rose Medal, 1 Michelangelo's Script, 250 Worker
+2026-10-26 18:48:17 INFO  leitheon4 completed the quest Cross Medal
+2026-10-26 18:48:18 INFO  leitheon4 completed the quest Rose Medal
+2026-10-26 18:48:21 INFO  leitheon4 completed the quest Prestige Building
+2026-10-26 18:48:26 INFO  leitheon4 completed the quest Queen
+2026-10-26 18:48:27 INFO  leitheon4 completed the quest Queen
+2026-10-26 18:48:30 INFO  leitheon4 completed the quest Lumbering
+2026-10-26 18:48:32 INFO  leitheon4 completed the quest Forging
+2026-10-26 18:48:33 INFO  leitheon4 completed the quest Quarrying
+2026-10-26 18:48:35 INFO  leitheon4 completed the quest Get a jump start
+2026-10-26 18:48:36 INFO  leitheon4 completed the quest Package for Lords
+2026-10-26 18:48:37 INFO  leitheon4 completed the quest Town Hall Upgrade
+2026-10-26 18:48:39 INFO  leitheon4 completed the quest Town Hall Upgrade
+2026-10-26 18:48:46 INFO  leitheon4 completed the quest Forge
+2026-10-26 18:48:47 INFO  leitheon4 completed the quest Workshop
+2026-10-26 18:48:48 INFO  leitheon4 completed the quest Walls
+2026-10-26 18:48:51 INFO  leitheon4 completed the quest Prestige Building
+2026-10-26 18:48:56 INFO  leitheon4 completed the quest Prestige Building
+2026-10-26 18:48:58 INFO  leitheon4 completed the quest Knight and is now a Knight
+2026-10-26 18:52:22 INFO  Owner page: gave Leitheon 1000000 all in Leitheon's City
+2026-10-26 18:52:23 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:24 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:24 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:24 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:24 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:25 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 18:52:53 INFO  Leitheon teleported Leitheon's City from (163,225) to (153,226), giving up 1 valley
+2026-10-26 18:54:19 INFO  Leitheon raised Weaponry stars (0 -> 1, 95%)
+2026-10-26 18:54:20 INFO  Leitheon failed to raise Weaponry stars (1 -> 0, 90%)
+2026-10-26 18:54:21 INFO  Leitheon raised Weaponry stars (0 -> 1, 95%)
+2026-10-26 18:54:22 INFO  Leitheon raised Weaponry stars (1 -> 2, 90%)
+2026-10-26 18:54:23 INFO  Leitheon failed to raise Weaponry stars (2 -> 0, 85%)
+2026-10-26 18:54:24 INFO  Leitheon raised Weaponry stars (0 -> 1, 95%)
+2026-10-26 18:54:25 INFO  Leitheon raised Weaponry stars (1 -> 2, 90%)
+2026-10-26 18:54:27 INFO  Leitheon failed to raise Weaponry stars (2 -> 0, 85%)
+2026-10-26 18:54:28 INFO  Leitheon raised Weaponry stars (0 -> 1, 95%)
+2026-10-26 18:54:29 INFO  Leitheon raised Weaponry stars (1 -> 2, 90%)
+2026-10-26 18:54:30 INFO  Leitheon raised Weaponry stars (2 -> 3, 85%)
+2026-10-26 18:54:31 INFO  Leitheon raised Weaponry stars (3 -> 4, 80%)
+2026-10-26 18:54:32 INFO  Leitheon failed to raise Weaponry stars (4 -> 2, 75%)
+2026-10-26 18:54:33 INFO  Leitheon raised Weaponry stars (2 -> 3, 85%)
+2026-10-26 18:54:34 INFO  Leitheon raised Weaponry stars (3 -> 4, 80%)
+2026-10-26 18:54:35 INFO  Leitheon raised Weaponry stars (4 -> 5, 75%)
+2026-10-26 18:54:36 INFO  Leitheon raised Weaponry stars (5 -> 6, 70%)
+2026-10-26 18:54:37 INFO  Leitheon failed to raise Weaponry stars (6 -> 4, 85%)
+2026-10-26 18:54:38 INFO  Leitheon raised Weaponry stars (4 -> 5, 75%)
+2026-10-26 18:54:39 INFO  Leitheon raised Weaponry stars (5 -> 6, 70%)
+2026-10-26 18:54:40 INFO  Leitheon raised Weaponry stars (6 -> 7, 85%)
+2026-10-26 18:54:53 INFO  Leitheon raised Shield Construction stars (0 -> 1, 95%)
+2026-10-26 18:54:54 INFO  Leitheon raised Shield Construction stars (1 -> 2, 90%)
+2026-10-26 18:54:55 INFO  Leitheon raised Shield Construction stars (2 -> 3, 85%)
+2026-10-26 18:54:56 INFO  Leitheon raised Shield Construction stars (3 -> 4, 80%)
+2026-10-26 18:54:57 INFO  Leitheon failed to raise Shield Construction stars (4 -> 2, 75%)
+2026-10-26 18:54:58 INFO  Leitheon raised Shield Construction stars (2 -> 3, 85%)
+2026-10-26 18:54:59 INFO  Leitheon raised Shield Construction stars (3 -> 4, 80%)
+2026-10-26 18:55:00 INFO  Leitheon raised Shield Construction stars (4 -> 5, 75%)
+2026-10-26 18:55:01 INFO  Leitheon raised Shield Construction stars (5 -> 6, 70%)
+2026-10-26 18:55:02 INFO  Leitheon raised Shield Construction stars (6 -> 7, 85%)
+2026-10-26 18:55:12 INFO  Leitheon raised Necklace Fabrication stars (0 -> 1, 95%)
+2026-10-26 18:55:13 INFO  Leitheon raised Necklace Fabrication stars (1 -> 2, 90%)
+2026-10-26 18:55:14 INFO  Leitheon raised Necklace Fabrication stars (2 -> 3, 85%)
+2026-10-26 18:55:15 INFO  Leitheon failed to raise Necklace Fabrication stars (3 -> 1, 80%)
+2026-10-26 18:55:16 INFO  Leitheon raised Necklace Fabrication stars (1 -> 2, 90%)
+2026-10-26 18:55:17 INFO  Leitheon raised Necklace Fabrication stars (2 -> 3, 85%)
+2026-10-26 18:55:18 INFO  Leitheon raised Necklace Fabrication stars (3 -> 4, 80%)
+2026-10-26 18:55:19 INFO  Leitheon failed to raise Necklace Fabrication stars (4 -> 2, 75%)
+2026-10-26 18:55:20 INFO  Leitheon raised Necklace Fabrication stars (2 -> 3, 85%)
+2026-10-26 18:55:21 INFO  Leitheon raised Necklace Fabrication stars (3 -> 4, 80%)
+2026-10-26 18:55:22 INFO  Leitheon failed to raise Necklace Fabrication stars (4 -> 2, 75%)
+2026-10-26 18:55:23 INFO  Leitheon raised Necklace Fabrication stars (2 -> 3, 85%)
+2026-10-26 18:55:24 INFO  Leitheon raised Necklace Fabrication stars (3 -> 4, 80%)
+2026-10-26 18:55:25 INFO  Leitheon raised Necklace Fabrication stars (4 -> 5, 75%)
+2026-10-26 18:55:26 INFO  Leitheon raised Necklace Fabrication stars (5 -> 6, 70%)
+2026-10-26 18:55:27 INFO  Leitheon raised Necklace Fabrication stars (6 -> 7, 65%)
+2026-10-26 18:55:50 INFO  Leitheon raised Charm stars (0 -> 1, 95%)
+2026-10-26 18:55:51 INFO  Leitheon raised Charm stars (1 -> 2, 90%)
+2026-10-26 18:55:52 INFO  Leitheon raised Charm stars (2 -> 3, 85%)
+2026-10-26 18:55:54 INFO  Leitheon raised Charm stars (3 -> 4, 80%)
+2026-10-26 18:55:55 INFO  Leitheon raised Charm stars (4 -> 5, 75%)
+2026-10-26 18:55:56 INFO  Leitheon raised Charm stars (5 -> 6, 70%)
+2026-10-26 18:55:57 INFO  Leitheon raised Charm stars (6 -> 7, 65%)
+2026-10-26 18:56:04 INFO  Leitheon raised Ring Crafting stars (0 -> 1, 95%)
+2026-10-26 18:56:05 INFO  Leitheon raised Ring Crafting stars (1 -> 2, 90%)
+2026-10-26 18:56:07 INFO  Leitheon failed to raise Ring Crafting stars (2 -> 0, 85%)
+2026-10-26 18:56:08 INFO  Leitheon raised Ring Crafting stars (0 -> 1, 95%)
+2026-10-26 18:56:09 INFO  Leitheon raised Ring Crafting stars (1 -> 2, 90%)
+2026-10-26 18:56:10 INFO  Leitheon failed to raise Ring Crafting stars (2 -> 0, 85%)
+2026-10-26 18:56:11 INFO  Leitheon raised Ring Crafting stars (0 -> 1, 95%)
+2026-10-26 18:56:12 INFO  Leitheon raised Ring Crafting stars (1 -> 2, 90%)
+2026-10-26 18:56:13 INFO  Leitheon raised Ring Crafting stars (2 -> 3, 85%)
+2026-10-26 18:56:14 INFO  Leitheon raised Ring Crafting stars (3 -> 4, 80%)
+2026-10-26 18:56:15 INFO  Leitheon failed to raise Ring Crafting stars (4 -> 2, 75%)
+2026-10-26 18:56:16 INFO  Leitheon raised Ring Crafting stars (2 -> 3, 85%)
+2026-10-26 18:56:17 INFO  Leitheon raised Ring Crafting stars (3 -> 4, 80%)
+2026-10-26 18:56:18 INFO  Leitheon raised Ring Crafting stars (4 -> 5, 75%)
+2026-10-26 18:56:19 INFO  Leitheon raised Ring Crafting stars (5 -> 6, 70%)
+2026-10-26 18:56:20 INFO  Leitheon raised Ring Crafting stars (6 -> 7, 65%)
+2026-10-26 18:56:31 INFO  Leitheon raised Head Gearing stars (0 -> 1, 95%)
+2026-10-26 18:56:32 INFO  Leitheon raised Head Gearing stars (1 -> 2, 90%)
+2026-10-26 18:56:33 INFO  Leitheon raised Head Gearing stars (2 -> 3, 85%)
+2026-10-26 18:56:34 INFO  Leitheon raised Head Gearing stars (3 -> 4, 80%)
+2026-10-26 18:56:36 INFO  Leitheon failed to raise Head Gearing stars (4 -> 2, 75%)
+2026-10-26 18:56:37 INFO  Leitheon raised Head Gearing stars (2 -> 3, 85%)
+2026-10-26 18:56:38 INFO  Leitheon raised Head Gearing stars (3 -> 4, 80%)
+2026-10-26 18:56:39 INFO  Leitheon raised Head Gearing stars (4 -> 5, 75%)
+2026-10-26 18:56:40 INFO  Leitheon raised Head Gearing stars (5 -> 6, 70%)
+2026-10-26 18:56:41 INFO  Leitheon raised Head Gearing stars (6 -> 7, 65%)
+2026-10-26 18:56:53 INFO  Leitheon raised Shoulder Gearing stars (0 -> 1, 95%)
+2026-10-26 18:56:54 INFO  Leitheon raised Shoulder Gearing stars (1 -> 2, 90%)
+2026-10-26 18:56:55 INFO  Leitheon raised Shoulder Gearing stars (2 -> 3, 85%)
+2026-10-26 18:56:56 INFO  Leitheon raised Shoulder Gearing stars (3 -> 4, 80%)
+2026-10-26 18:56:57 INFO  Leitheon raised Shoulder Gearing stars (4 -> 5, 75%)
+2026-10-26 18:56:59 INFO  Leitheon raised Shoulder Gearing stars (5 -> 6, 70%)
+2026-10-26 18:57:00 INFO  Leitheon raised Shoulder Gearing stars (6 -> 7, 65%)
+2026-10-26 18:57:09 INFO  Leitheon raised Chest Gearing stars (0 -> 1, 95%)
+2026-10-26 18:57:10 INFO  Leitheon failed to raise Chest Gearing stars (1 -> 0, 90%)
+2026-10-26 18:57:11 INFO  Leitheon raised Chest Gearing stars (0 -> 1, 95%)
+2026-10-26 18:57:12 INFO  Leitheon raised Chest Gearing stars (1 -> 2, 90%)
+2026-10-26 18:57:13 INFO  Leitheon raised Chest Gearing stars (2 -> 3, 85%)
+2026-10-26 18:57:14 INFO  Leitheon failed to raise Chest Gearing stars (3 -> 1, 80%)
+2026-10-26 18:57:15 INFO  Leitheon raised Chest Gearing stars (1 -> 2, 90%)
+2026-10-26 18:57:16 INFO  Leitheon raised Chest Gearing stars (2 -> 3, 85%)
+2026-10-26 18:57:17 INFO  Leitheon raised Chest Gearing stars (3 -> 4, 80%)
+2026-10-26 18:57:18 INFO  Leitheon raised Chest Gearing stars (4 -> 5, 75%)
+2026-10-26 18:57:19 INFO  Leitheon failed to raise Chest Gearing stars (5 -> 3, 70%)
+2026-10-26 18:57:20 INFO  Leitheon failed to raise Chest Gearing stars (3 -> 1, 80%)
+2026-10-26 18:57:22 INFO  Leitheon raised Chest Gearing stars (1 -> 2, 90%)
+2026-10-26 18:57:23 INFO  Leitheon raised Chest Gearing stars (2 -> 3, 85%)
+2026-10-26 18:57:24 INFO  Leitheon raised Chest Gearing stars (3 -> 4, 80%)
+2026-10-26 18:57:25 INFO  Leitheon failed to raise Chest Gearing stars (4 -> 2, 75%)
+2026-10-26 18:57:26 INFO  Leitheon raised Chest Gearing stars (2 -> 3, 85%)
+2026-10-26 18:57:27 INFO  Leitheon raised Chest Gearing stars (3 -> 4, 80%)
+2026-10-26 18:57:28 INFO  Leitheon raised Chest Gearing stars (4 -> 5, 75%)
+2026-10-26 18:57:29 INFO  Leitheon raised Chest Gearing stars (5 -> 6, 70%)
+2026-10-26 18:57:30 INFO  Leitheon failed to raise Chest Gearing stars (6 -> 4, 65%)
+2026-10-26 18:57:31 INFO  Leitheon raised Chest Gearing stars (4 -> 5, 75%)
+2026-10-26 18:57:32 INFO  Leitheon failed to raise Chest Gearing stars (5 -> 3, 70%)
+2026-10-26 18:57:33 INFO  Leitheon raised Chest Gearing stars (3 -> 4, 80%)
+2026-10-26 18:57:34 INFO  Leitheon raised Chest Gearing stars (4 -> 5, 75%)
+2026-10-26 18:57:35 INFO  Leitheon raised Chest Gearing stars (5 -> 6, 70%)
+2026-10-26 18:57:36 INFO  Leitheon raised Chest Gearing stars (6 -> 7, 65%)
+2026-10-26 18:58:07 INFO  Leitheon raised Back Gearing stars (0 -> 1, 95%)
+2026-10-26 18:58:08 INFO  Leitheon raised Back Gearing stars (1 -> 2, 90%)
+2026-10-26 18:58:09 INFO  Leitheon raised Back Gearing stars (2 -> 3, 85%)
+2026-10-26 18:58:10 INFO  Leitheon raised Back Gearing stars (3 -> 4, 80%)
+2026-10-26 18:58:11 INFO  Leitheon raised Back Gearing stars (4 -> 5, 75%)
+2026-10-26 18:58:12 INFO  Leitheon raised Back Gearing stars (5 -> 6, 70%)
+2026-10-26 18:58:13 INFO  Leitheon failed to raise Back Gearing stars (6 -> 4, 65%)
+2026-10-26 18:58:14 INFO  Leitheon raised Back Gearing stars (4 -> 5, 75%)
+2026-10-26 18:58:15 INFO  Leitheon raised Back Gearing stars (5 -> 6, 70%)
+2026-10-26 18:58:16 INFO  Leitheon failed to raise Back Gearing stars (6 -> 4, 65%)
+2026-10-26 18:58:17 INFO  Leitheon raised Back Gearing stars (4 -> 5, 75%)
+2026-10-26 18:58:18 INFO  Leitheon failed to raise Back Gearing stars (5 -> 3, 70%)
+2026-10-26 18:58:19 INFO  Leitheon raised Back Gearing stars (3 -> 4, 80%)
+2026-10-26 18:58:20 INFO  Leitheon failed to raise Back Gearing stars (4 -> 2, 75%)
+2026-10-26 18:58:21 INFO  Leitheon raised Back Gearing stars (2 -> 3, 85%)
+2026-10-26 18:58:22 INFO  Leitheon failed to raise Back Gearing stars (3 -> 1, 80%)
+2026-10-26 18:58:24 INFO  Leitheon failed to raise Back Gearing stars (1 -> 0, 90%)
+2026-10-26 18:58:25 INFO  Leitheon raised Back Gearing stars (0 -> 1, 95%)
+2026-10-26 18:58:26 INFO  Leitheon raised Back Gearing stars (1 -> 2, 90%)
+2026-10-26 18:58:27 INFO  Leitheon raised Back Gearing stars (2 -> 3, 85%)
+2026-10-26 18:58:28 INFO  Leitheon raised Back Gearing stars (3 -> 4, 80%)
+2026-10-26 18:58:29 INFO  Leitheon raised Back Gearing stars (4 -> 5, 75%)
+2026-10-26 18:58:30 INFO  Leitheon raised Back Gearing stars (5 -> 6, 70%)
+2026-10-26 18:58:31 INFO  Leitheon raised Back Gearing stars (6 -> 7, 65%)
+2026-10-26 18:58:47 INFO  Leitheon raised Gauntlets stars (0 -> 1, 95%)
+2026-10-26 18:58:48 INFO  Leitheon raised Gauntlets stars (1 -> 2, 90%)
+2026-10-26 18:58:49 INFO  Leitheon raised Gauntlets stars (2 -> 3, 85%)
+2026-10-26 18:58:50 INFO  Leitheon raised Gauntlets stars (3 -> 4, 80%)
+2026-10-26 18:58:51 INFO  Leitheon raised Gauntlets stars (4 -> 5, 75%)
+2026-10-26 18:58:52 INFO  Leitheon raised Gauntlets stars (5 -> 6, 70%)
+2026-10-26 18:58:54 INFO  Leitheon raised Gauntlets stars (6 -> 7, 65%)
+2026-10-26 18:59:02 INFO  Leitheon raised Belts stars (0 -> 1, 95%)
+2026-10-26 18:59:03 INFO  Leitheon raised Belts stars (1 -> 2, 90%)
+2026-10-26 18:59:04 INFO  Leitheon raised Belts stars (2 -> 3, 85%)
+2026-10-26 18:59:05 INFO  Leitheon raised Belts stars (3 -> 4, 80%)
+2026-10-26 18:59:06 INFO  Leitheon raised Belts stars (4 -> 5, 75%)
+2026-10-26 18:59:08 INFO  Leitheon raised Belts stars (5 -> 6, 70%)
+2026-10-26 18:59:09 INFO  Leitheon raised Belts stars (6 -> 7, 65%)
+2026-10-26 18:59:20 INFO  Leitheon raised Legs Gearing stars (0 -> 1, 95%)
+2026-10-26 18:59:21 INFO  Leitheon raised Legs Gearing stars (1 -> 2, 90%)
+2026-10-26 18:59:22 INFO  Leitheon raised Legs Gearing stars (2 -> 3, 85%)
+2026-10-26 18:59:24 INFO  Leitheon raised Legs Gearing stars (3 -> 4, 80%)
+2026-10-26 18:59:25 INFO  Leitheon raised Legs Gearing stars (4 -> 5, 75%)
+2026-10-26 18:59:26 INFO  Leitheon failed to raise Legs Gearing stars (5 -> 3, 70%)
+2026-10-26 18:59:27 INFO  Leitheon raised Legs Gearing stars (3 -> 4, 80%)
+2026-10-26 18:59:28 INFO  Leitheon raised Legs Gearing stars (4 -> 5, 75%)
+2026-10-26 18:59:29 INFO  Leitheon raised Legs Gearing stars (5 -> 6, 70%)
+2026-10-26 18:59:30 INFO  Leitheon raised Legs Gearing stars (6 -> 7, 65%)
+2026-10-26 19:00:09 INFO  Leitheon completed the quest Queen
+2026-10-26 19:00:12 INFO  Leitheon completed the quest Pikeman
+2026-10-26 19:00:12 INFO  Leitheon completed the quest Swordsman
+2026-10-26 19:00:12 INFO  Leitheon completed the quest Cataphract
+2026-10-26 19:00:13 INFO  Leitheon completed the quest Transporter
+2026-10-26 19:00:13 INFO  Leitheon completed the quest Ballista
+2026-10-26 19:00:13 INFO  Leitheon completed the quest Battering Ram
+2026-10-26 19:00:13 INFO  Leitheon completed the quest Catapult
+2026-10-26 19:00:17 INFO  Leitheon completed the quest Gear Stars
+2026-10-26 19:00:17 INFO  Leitheon completed the quest Forging Belts
+2026-10-26 19:00:17 INFO  Leitheon completed the quest Forging Legguards
+2026-10-26 19:00:19 INFO  Leitheon completed the quest Daily Amulet
+2026-10-26 19:00:39 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-26 19:00:40 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-26 19:00:40 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-26 19:05:08 INFO  Leitheon recruited PiperPerri with a Legendary Ring (162/160/160)
+2026-10-26 19:05:35 INFO  Leitheon completed the quest Forging Greaves
+2026-10-26 19:05:45 INFO  Leitheon raised Foot Gear stars (0 -> 1, 95%)
+2026-10-26 19:05:46 INFO  Leitheon raised Foot Gear stars (1 -> 2, 90%)
+2026-10-26 19:05:47 INFO  Leitheon raised Foot Gear stars (2 -> 3, 85%)
+2026-10-26 19:05:48 INFO  Leitheon raised Foot Gear stars (3 -> 4, 80%)
+2026-10-26 19:05:50 INFO  Leitheon raised Foot Gear stars (4 -> 5, 75%)
+2026-10-26 19:05:51 INFO  Leitheon raised Foot Gear stars (5 -> 6, 70%)
+2026-10-26 19:05:52 INFO  Leitheon raised Foot Gear stars (6 -> 7, 65%)
+2026-10-26 19:07:26 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:08:08 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:08:13 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:08:14 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:08:18 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:08:56 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 5 rounds
+2026-10-26 19:09:02 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 3 rounds
+2026-10-26 19:09:06 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 5 rounds
+2026-10-26 19:10:20 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 303s
+2026-10-26 19:10:26 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 303s
+2026-10-26 19:10:31 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 303s
+2026-10-26 19:10:34 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 303s
+2026-10-26 19:15:23 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 14 rounds
+2026-10-26 19:15:29 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 13 rounds
+2026-10-26 19:15:34 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 13 rounds
+2026-10-26 19:15:37 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 13 rounds
+2026-10-26 19:17:02 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:03 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:03 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:03 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:04 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:05 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:06 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:17:12 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:17:19 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:17:22 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:17:26 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:17:29 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:17:32 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 19:18:01 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:18:02 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in Leitheon's City
+2026-10-26 19:18:08 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:18:11 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:18:14 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:18:18 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 19:18:21 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 5 rounds
+2026-10-26 19:21:59 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:22:00 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:22:00 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:22:01 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:22:02 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-26 19:22:10 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 454s
+2026-10-26 19:22:17 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 454s
+2026-10-26 19:22:21 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 454s
+2026-10-26 19:22:26 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 454s
+2026-10-26 19:29:44 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 16 rounds
+2026-10-26 19:29:51 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 13 rounds
+2026-10-26 19:29:56 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 15 rounds
+2026-10-26 19:30:00 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 15 rounds
+2026-10-26 19:34:17 INFO  Leitheon disconnected
+2026-10-26 19:34:17 INFO  leitheon2 disconnected
+2026-10-26 19:34:17 INFO  leitheon3 disconnected
+2026-10-26 19:34:18 INFO  leitheon4 disconnected
+2026-10-26 20:52:38 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 20:52:39 INFO  Leitheon's City: 3 historic heroes given the points they were short
+2026-10-26 20:52:39 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 20:52:39 INFO  Socket policy server listening on 843
+2026-10-26 20:52:39 INFO  Game server listening on 9443
+2026-10-26 20:52:39 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 20:52:50 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 20:56:04 INFO  Owner page: gave Leitheon 5000000 heavyCavalry in Leitheon's City
+2026-10-26 20:58:37 INFO  Owner page: gave Leitheon 10 x Stygandr’s Banner of the Horde
+2026-10-26 20:58:42 INFO  Owner page: gave Leitheon 10 x Stygandr’s Tools
+2026-10-26 20:58:46 INFO  Owner page: gave Leitheon 10 x Stygandr’s Tools of the Destroyer
+2026-10-26 20:59:28 INFO  Leitheon used Stygandr’s Tools of the Destroyer: 1 Merchant Fleet
+2026-10-26 20:59:33 INFO  Leitheon used Stygandr’s Tools of the Destroyer: 3 Iron Ore
+2026-10-26 21:01:21 INFO  Leitheon used Stygandr’s Tools: 2 Thoroughbred
+2026-10-26 21:01:35 INFO  Leitheon used Stygandr’s Tools: 1 War Horn
+2026-10-26 21:01:48 INFO  Leitheon used Stygandr’s Tools: 1 Bronze Key
+2026-10-26 21:10:04 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:10:08 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:10:16 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:10:20 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:10:49 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:10:53 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 6 rounds
+2026-10-26 21:11:01 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:11:05 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 6 rounds
+2026-10-26 21:12:25 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:30 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:35 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:40 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:44 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:49 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:51 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:54 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:12:56 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 21:13:02 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 21:13:10 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 6 rounds
+2026-10-26 21:13:14 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 6 rounds
+2026-10-26 21:13:20 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:13:25 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 6 rounds
+2026-10-26 21:13:29 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:13:34 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:13:35 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:13:39 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 5 rounds
+2026-10-26 21:13:41 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:13:51 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 4 rounds
+2026-10-26 21:14:35 INFO  Owner page: gave Leitheon 1000000 all in Leitheon's City
+2026-10-26 21:14:48 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 416s
+2026-10-26 21:14:54 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 416s
+2026-10-26 21:14:58 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 416s
+2026-10-26 21:15:02 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 416s
+2026-10-26 21:21:44 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 14 rounds
+2026-10-26 21:21:50 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 15 rounds
+2026-10-26 21:21:55 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 16 rounds
+2026-10-26 21:21:59 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 16 rounds
+2026-10-26 21:22:31 INFO  Leitheon disconnected
+2026-10-26 21:22:35 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 21:24:05 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:24:09 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:24:13 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:24:14 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:24:18 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 363s
+2026-10-26 21:24:20 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:29:39 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 14 rounds
+2026-10-26 21:29:43 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 12 rounds
+2026-10-26 21:29:46 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 12 rounds
+2026-10-26 21:29:48 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 12 rounds
+2026-10-26 21:29:54 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 12 rounds
+2026-10-26 21:30:22 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 12 rounds
+2026-10-26 21:46:19 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 333s
+2026-10-26 21:46:36 INFO  Leitheon used Thunder Raid
+2026-10-26 21:46:47 INFO  Leitheon used Thunder Raid
+2026-10-26 21:46:55 INFO  Leitheon completed the quest Stratagem
+2026-10-26 21:49:15 INFO  Leitheon attacked Coronel Oviedo(153,225): lost in 16 rounds
+2026-10-26 22:05:01 INFO  Leitheon disconnected
+2026-10-26 22:05:17 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 22:05:17 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 22:05:17 INFO  Socket policy server listening on 843
+2026-10-26 22:05:17 INFO  Game server listening on 9443
+2026-10-26 22:05:17 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 22:06:18 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 22:06:38 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:07:22 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 22300000, loyalty 87
+2026-10-26 22:08:38 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:08:42 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:08:46 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:08:50 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:08:57 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:08:58 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:09:02 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 22:09:04 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:09:11 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:09:14 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:09:22 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 93014, loyalty 84
+2026-10-26 22:09:26 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3442, loyalty 82
+2026-10-26 22:09:30 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3015, loyalty 78
+2026-10-26 22:09:34 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2975, loyalty 76
+2026-10-26 22:09:41 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 5269, loyalty 73
+2026-10-26 22:09:42 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1237, loyalty 70
+2026-10-26 22:09:48 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 4731, loyalty 68
+2026-10-26 22:09:50 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1437, loyalty 65
+2026-10-26 22:09:55 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3345, loyalty 64
+2026-10-26 22:09:58 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2459, loyalty 61
+2026-10-26 22:11:57 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:11:59 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:03 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:05 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:09 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:10 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:14 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:16 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:19 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 22:12:21 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:12:42 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 126766, loyalty 59
+2026-10-26 22:12:44 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1387, loyalty 57
+2026-10-26 22:12:48 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2977, loyalty 55
+2026-10-26 22:12:49 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1420, loyalty 54
+2026-10-26 22:12:53 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2954, loyalty 51
+2026-10-26 22:12:55 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1184, loyalty 49
+2026-10-26 22:12:59 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2979, loyalty 47
+2026-10-26 22:13:00 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1394, loyalty 44
+2026-10-26 22:13:05 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3735, loyalty 43
+2026-10-26 22:13:08 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2109, loyalty 42
+2026-10-26 22:13:51 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:13:52 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:13:57 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:13:59 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:03 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:05 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:08 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:10 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:13 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 22:14:15 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:14:35 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 67407, loyalty 42
+2026-10-26 22:14:37 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1312, loyalty 39
+2026-10-26 22:14:42 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 4029, loyalty 36
+2026-10-26 22:14:44 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1345, loyalty 33
+2026-10-26 22:14:47 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2795, loyalty 30
+2026-10-26 22:14:49 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1382, loyalty 27
+2026-10-26 22:14:53 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2903, loyalty 24
+2026-10-26 22:14:54 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1195, loyalty 21
+2026-10-26 22:14:59 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3920, loyalty 18
+2026-10-26 22:15:02 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1804, loyalty 15
+2026-10-26 22:15:51 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:15:53 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:15:57 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:15:59 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:02 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:04 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:07 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:09 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:12 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 48s
+2026-10-26 22:16:14 INFO  Leitheon sent an army (mission 5) to Coronel Oviedo(153,225), arriving in 44s
+2026-10-26 22:16:35 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 12 rounds, loot 72395, loyalty 13
+2026-10-26 22:16:37 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1636, loyalty 10
+2026-10-26 22:16:42 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 3275, loyalty 7
+2026-10-26 22:16:43 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1197, loyalty 4
+2026-10-26 22:16:47 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 2797, loyalty 1
+2026-10-26 22:16:48 INFO  Leitheon conquered Coronel Oviedo(153,225)
+2026-10-26 22:16:48 INFO  Leitheon attacked Coronel Oviedo(153,225): won in 10 rounds, loot 1278, loyalty 0
+2026-10-26 23:13:05 INFO  Leitheon disconnected
+2026-10-26 23:13:27 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 23:13:27 WARN  Coronel Oviedo sits on a Historic City tile (153,225).
+2026-10-26 23:13:27 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 23:13:27 INFO  Socket policy server listening on 843
+2026-10-26 23:13:27 INFO  Game server listening on 9443
+2026-10-26 23:13:27 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk, or http://127.0.0.1:8080/ruffle.html in any browser (Ruffle, no Flash)
+2026-10-26 23:13:51 INFO  Missing art: ruffle/ruffle.js (art server: HTTP 404)
+2026-10-26 23:17:53 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:18:07 INFO  Owner page: set Leitheon's gear all to level 10
+2026-10-26 23:18:12 INFO  Owner page: set Leitheon's research all to 10
+2026-10-26 23:18:12 INFO  Owner page: set Leitheon's gear all to level 10
+2026-10-26 23:18:12 INFO  Owner page: set Leitheon's gear all to 15 stars
+2026-10-26 23:19:22 INFO  Leitheon abandoned Coronel Oviedo; it is now a level 10 barbarian city
+2026-10-26 23:19:55 INFO  Leitheon teleported Leitheon's City from (153,226) to (101,100)
+2026-10-26 23:21:16 INFO  Leitheon teleported Leitheon's City from (101,100) to (204,768)
+2026-10-26 23:21:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 29s
+2026-10-26 23:21:58 INFO  Leitheon attacked Barbarian's city(204,767): won in 10 rounds, loot 355000, loyalty 77
+2026-10-26 23:24:10 INFO  Leitheon disconnected
+2026-10-26 23:24:18 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:24:18 INFO  Leitheon disconnected
+2026-10-26 23:24:41 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:24:41 INFO  Leitheon disconnected
+2026-10-26 23:25:02 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:25:02 INFO  Leitheon disconnected
+2026-10-26 23:25:20 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:25:20 INFO  Leitheon disconnected
+2026-10-26 23:33:29 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-26 23:33:29 INFO  Placed 1,938 Historic Cities on the map
+2026-10-26 23:33:29 INFO  Socket policy server listening on 843
+2026-10-26 23:33:29 INFO  Game server listening on 9443
+2026-10-26 23:33:29 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk
+2026-10-26 23:33:57 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:33:57 INFO  Leitheon disconnected
+2026-10-26 23:35:53 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-26 23:35:56 INFO  leitheon2 completed the quest Queen
+2026-10-26 23:35:56 INFO  leitheon2 completed the quest Cottage Building
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Farming
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Lumbering
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Quarrying
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Forging
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Assign labor force
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Assign tax rate
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-26 23:35:57 INFO  leitheon2 completed the quest Alliance
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Chat Box
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Rally Spot
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Barracks
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Forge
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Workshop
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Walls
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Sawmill Upgrade
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Farm Upgrade
+2026-10-26 23:35:58 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Population Increase
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Prestige Building
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Items Purchase
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Lieutenant and is now a Lieutenant
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Wars Begin
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Add to Favorites
+2026-10-26 23:35:59 INFO  leitheon2 completed the quest Daily Amulet
+2026-10-26 23:36:02 INFO  leitheon2 completed the quest Queen
+2026-10-26 23:36:02 INFO  leitheon2 completed the quest Upgrade Cottage
+2026-10-26 23:36:02 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-26 23:36:02 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-26 23:36:03 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-26 23:36:03 INFO  leitheon2 completed the quest Population Increase
+2026-10-26 23:36:03 INFO  leitheon2 completed the quest Prestige Building
+2026-10-26 23:36:17 INFO  leitheon2 disconnected
+2026-10-26 23:36:27 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-26 23:55:47 INFO  Leitheon sent an army (mission 1) to GoldAmulet(163,226), arriving in 241s
+2026-10-26 23:55:56 INFO  Leitheon sent an army (mission 1) to GoldAmulet(163,226), arriving in 310s
+2026-10-26 23:56:07 INFO  Leitheon sent an army (mission 1) to GoldAmulet(163,226), arriving in 334s
+2026-10-26 23:56:14 INFO  Leitheon sent an army (mission 1) to GoldAmulet(163,226), arriving in 334s
+2026-10-27 00:01:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 31s
+2026-10-27 00:01:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:01:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 26s
+2026-10-27 00:01:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 36s
+2026-10-27 00:01:51 INFO  Leitheon attacked Barbarian's city(204,767): won in 10 rounds, loot 355000, loyalty 77
+2026-10-27 00:01:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:02:00 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 109, loyalty 74
+2026-10-27 00:02:07 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 97, loyalty 71
+2026-10-27 00:02:17 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 111, loyalty 69
+2026-10-27 00:02:23 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 75, loyalty 66
+2026-10-27 00:02:38 INFO  Leitheon completed the quest Daily Amulet
+2026-10-27 00:02:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 23s
+2026-10-27 00:02:53 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:02:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 26s
+2026-10-27 00:03:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:03:11 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 587, loyalty 63
+2026-10-27 00:03:18 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 87, loyalty 60
+2026-10-27 00:03:22 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 43, loyalty 58
+2026-10-27 00:03:26 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 50, loyalty 57
+2026-10-27 00:08:44 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:08:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 22s
+2026-10-27 00:08:53 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:08:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 23s
+2026-10-27 00:09:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 28s
+2026-10-27 00:09:05 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 26s
+2026-10-27 00:09:09 INFO  Leitheon attacked Barbarian's city(204,767): won in 9 rounds, loot 4228, loyalty 56
+2026-10-27 00:09:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:09:11 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:09:14 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 62, loyalty 54
+2026-10-27 00:09:18 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 36s
+2026-10-27 00:09:19 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 54, loyalty 53
+2026-10-27 00:09:23 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 49, loyalty 50
+2026-10-27 00:09:30 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 76, loyalty 48
+2026-10-27 00:09:31 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 13, loyalty 45
+2026-10-27 00:09:35 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 47, loyalty 43
+2026-10-27 00:09:37 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 24, loyalty 41
+2026-10-27 00:09:54 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 207, loyalty 38
+2026-10-27 00:14:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:14:39 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 22s
+2026-10-27 00:14:46 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:14:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 23s
+2026-10-27 00:14:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 28s
+2026-10-27 00:14:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 26s
+2026-10-27 00:15:01 INFO  Leitheon attacked Barbarian's city(204,767): won in 9 rounds, loot 3787, loyalty 37
+2026-10-27 00:15:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:15:05 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:15:07 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 66, loyalty 34
+2026-10-27 00:15:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 36s
+2026-10-27 00:15:13 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 61, loyalty 31
+2026-10-27 00:15:17 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 49, loyalty 30
+2026-10-27 00:15:24 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 84, loyalty 28
+2026-10-27 00:15:24 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 5, loyalty 25
+2026-10-27 00:15:28 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 47, loyalty 22
+2026-10-27 00:15:30 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 27, loyalty 19
+2026-10-27 00:15:47 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 202, loyalty 17
+2026-10-27 00:16:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:16:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 22s
+2026-10-27 00:16:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 30s
+2026-10-27 00:16:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 23s
+2026-10-27 00:16:44 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 710, loyalty 14
+2026-10-27 00:16:46 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 28s
+2026-10-27 00:16:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 26s
+2026-10-27 00:16:50 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 66, loyalty 12
+2026-10-27 00:16:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:16:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 25s
+2026-10-27 00:16:58 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 101, loyalty 12
+2026-10-27 00:17:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(204,767), arriving in 36s
+2026-10-27 00:17:04 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 71, loyalty 10
+2026-10-27 00:17:14 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 125, loyalty 7
+2026-10-27 00:17:15 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 5, loyalty 5
+2026-10-27 00:17:20 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 61, loyalty 2
+2026-10-27 00:17:22 INFO  Leitheon conquered New city(204,767), capturing Henry IV
+2026-10-27 00:17:22 INFO  Leitheon attacked Barbarian's city(204,767): won in 1 round, loot 25, loyalty 0
+2026-10-27 00:18:10 INFO  Owner page: filled Leitheon's cities to 1000000
+2026-10-27 00:18:16 INFO  Leitheon persuaded Henry IV to join
+2026-10-27 00:18:40 INFO  Leitheon sent an army (mission 2) to Leitheon's City(204,768), arriving in 20s
+2026-10-27 00:21:10 INFO  Leitheon sent an army (mission 2) to GoldAmulet(163,226), arriving in 241s
+2026-10-27 00:21:19 INFO  Leitheon sent an army (mission 2) to GoldAmulet(163,226), arriving in 435s
+2026-10-27 00:21:26 INFO  Leitheon sent an army (mission 2) to GoldAmulet(163,226), arriving in 310s
+2026-10-27 00:21:33 INFO  Leitheon sent an army (mission 2) to GoldAmulet(163,226), arriving in 334s
+2026-10-27 00:21:41 INFO  Leitheon sent an army (mission 2) to GoldAmulet(163,226), arriving in 334s
+2026-10-27 00:30:02 INFO  Leitheon abandoned Leitheon's City; it is now a level 1 barbarian city
+2026-10-27 00:30:13 INFO  Leitheon abandoned Hello; it is now a level 3 barbarian city
+2026-10-27 00:30:26 INFO  Leitheon abandoned Henry; it is now a level 2 barbarian city
+2026-10-27 00:30:32 INFO  Leitheon disconnected
+2026-10-27 00:31:55 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 00:49:27 INFO  Owner page: gave Leitheon 10000000 heavyCavalry in GoldAmulet
+2026-10-27 00:49:31 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-27 00:53:36 INFO  Leitheon disconnected
+2026-10-27 00:53:58 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 00:53:58 INFO  Leitheon disconnected
+2026-10-27 02:19:08 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-27 02:19:08 INFO  Placed 1,938 Historic Cities on the map
+2026-10-27 02:19:08 INFO  Socket policy server listening on 843
+2026-10-27 02:19:08 INFO  Game server listening on 9443
+2026-10-27 02:19:08 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk, or http://127.0.0.1:8080/ruffle.html in any browser (Ruffle, no Flash)
+2026-10-27 02:19:09 INFO  leitheon3 fought at leitheon2's City(164,224): won in 1 round
+2026-10-27 02:19:09 INFO  leitheon3 won the Stabilization battle: leitheon2's City is now a Protectorate of City Name
+2026-10-27 02:19:24 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 02:28:43 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 02:29:40 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:29:59 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:30:43 INFO  Owner page: gave Leitheon 100000000 lightCavalry in GoldAmulet
+2026-10-27 02:30:59 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:03 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:06 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:09 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:11 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:13 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:16 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:18 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:31:42 INFO  Owner page: filled Leitheon's cities to 100000000
+2026-10-27 02:32:55 INFO  Owner page: gave Leitheon 90000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:14 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:19 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:22 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:25 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:27 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:30 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:38 INFO  Owner page: gave Leitheon 100000000 heavyCavalry in GoldAmulet
+2026-10-27 02:33:55 INFO  Owner page: gave Leitheon 94838513 heavyCavalry in GoldAmulet
+2026-10-27 02:34:04 INFO  Leitheon disconnected
+2026-10-27 02:34:13 INFO  Owner page: gave Leitheon 100000000 catapult in GoldAmulet
+2026-10-27 02:34:18 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 02:35:31 INFO  Leitheon teleported GoldAmulet from (163,226) to (417,790)
+2026-10-27 02:35:58 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:35:58 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:35:59 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:35:59 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:36:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:36:28 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 16850000, loyalty 87
+2026-10-27 02:36:37 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 5536, loyalty 84
+2026-10-27 02:36:41 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 2043, loyalty 81
+2026-10-27 02:36:53 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 7310, loyalty 79
+2026-10-27 02:36:55 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 1257, loyalty 76
+2026-10-27 02:36:58 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:37:16 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:37:21 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:37:27 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 18826, loyalty 73
+2026-10-27 02:37:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:37:48 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:37:54 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 16146, loyalty 70
+2026-10-27 02:37:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:38:03 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 4661, loyalty 68
+2026-10-27 02:38:19 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 9085, loyalty 66
+2026-10-27 02:38:27 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 5009, loyalty 63
+2026-10-27 02:38:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:38:42 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 8480, loyalty 60
+2026-10-27 02:38:45 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:38:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:39:00 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:39:12 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 18242, loyalty 58
+2026-10-27 02:39:23 INFO  Leitheon completed the quest Heal the Wounded
+2026-10-27 02:39:25 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 7672, loyalty 55
+2026-10-27 02:39:26 INFO  Leitheon attacked Barbarian's city(416,790): won in 10 rounds, loot 554, loyalty 53
+2026-10-27 02:39:35 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:39:42 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 8500, loyalty 51
+2026-10-27 02:39:52 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:39:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:40:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:40:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:40:25 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 25564, loyalty 48
+2026-10-27 02:40:28 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 2028, loyalty 45
+2026-10-27 02:40:30 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 1227, loyalty 42
+2026-10-27 02:40:51 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 11953, loyalty 39
+2026-10-27 02:40:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:41:05 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 8198, loyalty 36
+2026-10-27 02:41:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:41:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:41:25 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 11786, loyalty 34
+2026-10-27 02:41:33 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:41:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:41:48 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 13472, loyalty 32
+2026-10-27 02:41:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:42:14 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 15504, loyalty 30
+2026-10-27 02:42:15 INFO  Leitheon attacked Barbarian's city(416,790): won in 10 rounds, loot 584, loyalty 27
+2026-10-27 02:42:24 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 5291, loyalty 24
+2026-10-27 02:42:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:42:28 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 2338, loyalty 23
+2026-10-27 02:42:55 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:42:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:43:06 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 21682, loyalty 20
+2026-10-27 02:43:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:43:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:43:12 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-27 02:43:24 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 10851, loyalty 18
+2026-10-27 02:43:38 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 8150, loyalty 16
+2026-10-27 02:43:45 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:43:51 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 7728, loyalty 15
+2026-10-27 02:43:54 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:44:03 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 6684, loyalty 13
+2026-10-27 02:44:20 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:44:23 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 11773, loyalty 12
+2026-10-27 02:44:24 INFO  Leitheon attacked Barbarian's city(416,790): won in 10 rounds, loot 504, loyalty 10
+2026-10-27 02:44:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 41s
+2026-10-27 02:44:53 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 29s
+2026-10-27 02:44:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 53s
+2026-10-27 02:45:01 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 21950, loyalty 7
+2026-10-27 02:45:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(416,790), arriving in 38s
+2026-10-27 02:45:16 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 8327, loyalty 5
+2026-10-27 02:45:22 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 3954, loyalty 2
+2026-10-27 02:45:41 INFO  Leitheon conquered New city(416,790), capturing Arêtes III, King of the Nabata
+2026-10-27 02:45:41 INFO  Leitheon attacked Barbarian's city(416,790): won in 11 rounds, loot 11269, loyalty 0
+2026-10-27 02:46:02 INFO  Leitheon completed the quest Abatis
+2026-10-27 02:46:02 INFO  Leitheon completed the quest Defensive Trebuchet
+2026-10-27 02:46:55 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 02:46:58 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:46:59 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:48:05 INFO  Leitheon sent an army (mission 1) to New city(416,790), arriving in 53s
+2026-10-27 02:50:11 INFO  Leitheon persuaded Arêtes III, King of the Nabata to join
+2026-10-27 02:50:51 INFO  Leitheon sent an army (mission 1) to New city(416,790), arriving in 53s
+2026-10-27 02:51:45 INFO  Leitheon sent an army (mission 2) to GoldAmulet(417,790), arriving in 10s
+2026-10-27 02:52:06 INFO  Leitheon sent an army (mission 2) to GoldAmulet(417,790), arriving in 7s
+2026-10-27 02:52:40 INFO  Leitheon abandoned New city; it is now a level 9 barbarian city
+2026-10-27 02:53:35 INFO  Leitheon teleported GoldAmulet from (417,790) to (424,126)
+2026-10-27 02:54:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:54:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 02:54:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:54:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:54:16 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 02:54:44 INFO  Leitheon attacked Barbarian's city(424,127): won in 12 rounds, loot 2260000, loyalty 87
+2026-10-27 02:54:54 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 859, loyalty 84
+2026-10-27 02:54:56 INFO  Leitheon attacked Barbarian's city(424,127): won in 6 rounds, loot 117, loyalty 81
+2026-10-27 02:55:08 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 979, loyalty 79
+2026-10-27 02:55:09 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 32, loyalty 76
+2026-10-27 02:55:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:55:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 02:55:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 02:55:44 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 2693, loyalty 74
+2026-10-27 02:56:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:56:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:56:12 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 2282, loyalty 72
+2026-10-27 02:56:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:56:19 INFO  Leitheon attacked Barbarian's city(424,127): won in 6 rounds, loot 512, loyalty 69
+2026-10-27 02:56:41 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1779, loyalty 66
+2026-10-27 02:56:52 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 02:56:55 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1087, loyalty 64
+2026-10-27 02:56:56 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 38, loyalty 62
+2026-10-27 02:57:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 02:57:11 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:57:31 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 2688, loyalty 60
+2026-10-27 02:57:41 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 786, loyalty 57
+2026-10-27 02:57:43 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 194, loyalty 54
+2026-10-27 02:57:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:57:50 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:58:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:58:10 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 02:58:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 02:58:39 INFO  Leitheon attacked Barbarian's city(424,127): won in 12 rounds, loot 4417, loyalty 53
+2026-10-27 02:58:43 INFO  Leitheon attacked Barbarian's city(424,127): won in 6 rounds, loot 265, loyalty 50
+2026-10-27 02:58:44 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 38, loyalty 47
+2026-10-27 02:58:49 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 438, loyalty 45
+2026-10-27 02:59:08 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1462, loyalty 43
+2026-10-27 02:59:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 02:59:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 02:59:36 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:59:36 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:59:36 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:59:36 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:59:36 INFO  leitheon2 completed the quest Walls Reinforcement
+2026-10-27 02:59:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:59:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 02:59:38 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 2413, loyalty 42
+2026-10-27 02:59:38 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-27 02:59:40 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-27 02:59:41 INFO  leitheon2 completed the quest Population Increase
+2026-10-27 02:59:43 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-27 02:59:44 INFO  leitheon2 completed the quest Beacon Tower
+2026-10-27 02:59:46 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:46 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:46 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:46 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:46 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:47 INFO  leitheon2 completed the quest Prestige Building
+2026-10-27 02:59:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 02:59:51 INFO  leitheon2 completed the quest Daily Amulet
+2026-10-27 02:59:55 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 02:59:57 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 02:59:59 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 03:00:00 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 03:00:02 INFO  leitheon2 completed the quest Town Hall Upgrade
+2026-10-27 03:00:05 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 2171, loyalty 40
+2026-10-27 03:00:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 03:00:31 INFO  Leitheon attacked Barbarian's city(424,127): won in 10 rounds, loot 1902, loyalty 37
+2026-10-27 03:00:31 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 24, loyalty 34
+2026-10-27 03:00:31 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 39, loyalty 33
+2026-10-27 03:00:39 INFO  Leitheon attacked Barbarian's city(424,127): won in 6 rounds, loot 583, loyalty 30
+2026-10-27 03:00:44 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 03:01:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 03:01:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 03:01:23 INFO  Leitheon attacked Barbarian's city(424,127): won in 12 rounds, loot 3474, loyalty 28
+2026-10-27 03:01:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 03:01:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 03:01:37 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1116, loyalty 26
+2026-10-27 03:01:54 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1336, loyalty 23
+2026-10-27 03:02:02 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 03:02:02 INFO  Owner page: gave leitheon2 10000 lightCavalry in leitheon2's City
+2026-10-27 03:02:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 03:02:17 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1809, loyalty 20
+2026-10-27 03:02:20 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 161, loyalty 17
+2026-10-27 03:02:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 03:02:37 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1357, loyalty 14
+2026-10-27 03:02:41 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 305, loyalty 12
+2026-10-27 03:02:55 INFO  leitheon2 recruited SashaGrey with a Legendary Ring (163/161/140)
+2026-10-27 03:03:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 03:03:06 INFO  leitheon2 sent an army (mission 5) to Swamp Lv.7(164,223), arriving in 60s
+2026-10-27 03:03:11 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 03:03:13 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 53s
+2026-10-27 03:03:16 INFO  leitheon2 completed the quest Inn
+2026-10-27 03:03:17 INFO  leitheon2 completed the quest Feasting Hall
+2026-10-27 03:03:18 INFO  Leitheon attacked Barbarian's city(424,127): won in 12 rounds, loot 2929, loyalty 11
+2026-10-27 03:03:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 38s
+2026-10-27 03:03:35 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1357, loyalty 9
+2026-10-27 03:03:42 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 41s
+2026-10-27 03:03:58 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1777, loyalty 7
+2026-10-27 03:04:04 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 500, loyalty 5
+2026-10-27 03:04:04 INFO  Leitheon sent an army (mission 5) to Barbarian's city(424,127), arriving in 29s
+2026-10-27 03:04:06 INFO  Leitheon attacked Barbarian's city(424,127): won in 1 round, loot 157, loyalty 3
+2026-10-27 03:04:06 INFO  leitheon2 attacked Swamp Lv.7(164,223): won in 5 rounds, valley taken
+2026-10-27 03:04:24 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 1388, loyalty 1
+2026-10-27 03:04:33 INFO  Leitheon conquered New city(424,127), capturing Pachacuti
+2026-10-27 03:04:33 INFO  Leitheon attacked Barbarian's city(424,127): won in 9 rounds, loot 754, loyalty 0
+2026-10-27 03:09:25 INFO  Leitheon sent an army (mission 1) to New city(424,127), arriving in 53s
+2026-10-27 03:11:25 INFO  Leitheon persuaded Pachacuti to join
+2026-10-27 03:12:18 INFO  Leitheon sent an army (mission 1) to New city(424,127), arriving in 53s
+2026-10-27 03:13:17 INFO  Leitheon sent an army (mission 2) to GoldAmulet(424,126), arriving in 9s
+2026-10-27 03:13:18 INFO  Leitheon sent an army (mission 2) to GoldAmulet(424,126), arriving in 17s
+2026-10-27 03:13:34 INFO  Leitheon sent an army (mission 2) to GoldAmulet(424,126), arriving in 17s
+2026-10-27 03:13:45 INFO  Leitheon sent an army (mission 2) to GoldAmulet(424,126), arriving in 17s
+2026-10-27 03:14:10 INFO  Leitheon abandoned New city; it is now a level 4 barbarian city
+2026-10-27 03:15:28 INFO  Leitheon teleported GoldAmulet from (424,126) to (641,551)
+2026-10-27 03:17:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:17:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:17:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:17:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:17:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:17:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:17:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:17:54 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 22107040, loyalty 86
+2026-10-27 03:18:03 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 199506, loyalty 83
+2026-10-27 03:18:05 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1222, loyalty 80
+2026-10-27 03:18:05 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 385, loyalty 77
+2026-10-27 03:18:05 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 346, loyalty 74
+2026-10-27 03:18:07 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1107, loyalty 72
+2026-10-27 03:18:09 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1598, loyalty 69
+2026-10-27 03:18:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:18:42 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:18:46 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:18:48 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:18:48 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:18:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:18:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:18:53 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 34274, loyalty 67
+2026-10-27 03:19:21 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 21370, loyalty 66
+2026-10-27 03:19:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:19:27 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 5004, loyalty 63
+2026-10-27 03:19:29 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1507, loyalty 60
+2026-10-27 03:19:30 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 386, loyalty 57
+2026-10-27 03:19:30 INFO  Leitheon attacked Barbarian's city(642,551): won in 5 rounds, loot 410, loyalty 55
+2026-10-27 03:19:32 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1561, loyalty 53
+2026-10-27 03:19:52 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 15639, loyalty 50
+2026-10-27 03:20:00 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:20:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:20:11 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:20:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:20:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:20:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:20:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:20:39 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 35446, loyalty 47
+2026-10-27 03:20:51 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 9754, loyalty 45
+2026-10-27 03:20:52 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 771, loyalty 43
+2026-10-27 03:20:53 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 785, loyalty 41
+2026-10-27 03:20:54 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 373, loyalty 39
+2026-10-27 03:20:54 INFO  Leitheon attacked Barbarian's city(642,551): won in 5 rounds, loot 346, loyalty 37
+2026-10-27 03:20:56 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1547, loyalty 35
+2026-10-27 03:21:17 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:21:33 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:21:35 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:21:35 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:21:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:21:38 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:21:55 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 46354, loyalty 32
+2026-10-27 03:22:08 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 8966, loyalty 29
+2026-10-27 03:22:15 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 5471, loyalty 26
+2026-10-27 03:22:17 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1507, loyalty 24
+2026-10-27 03:22:17 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 385, loyalty 21
+2026-10-27 03:22:18 INFO  Leitheon attacked Barbarian's city(642,551): won in 5 rounds, loot 373, loyalty 20
+2026-10-27 03:22:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:22:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:22:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:22:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:22:59 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:22:59 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:23:00 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:23:06 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 37733, loyalty 18
+2026-10-27 03:23:13 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 5417, loyalty 17
+2026-10-27 03:23:15 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1932, loyalty 14
+2026-10-27 03:23:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 29s
+2026-10-27 03:23:38 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 17487, loyalty 12
+2026-10-27 03:23:40 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 1547, loyalty 9
+2026-10-27 03:23:40 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 423, loyalty 6
+2026-10-27 03:23:41 INFO  Leitheon attacked Barbarian's city(642,551): won in 5 rounds, loot 385, loyalty 4
+2026-10-27 03:23:52 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 38s
+2026-10-27 03:23:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:24:06 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 19095, loyalty 2
+2026-10-27 03:24:20 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:24:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:24:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:24:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(642,551), arriving in 41s
+2026-10-27 03:24:30 INFO  Leitheon conquered New city(642,551), capturing Saladin
+2026-10-27 03:24:30 INFO  Leitheon attacked Barbarian's city(642,551): won in 7 rounds, loot 19007, loyalty 0
+2026-10-27 03:24:44 INFO  Leitheon completed the quest Tax Revenue
+2026-10-27 03:26:00 INFO  Leitheon sent an army (mission 1) to New city(642,551), arriving in 53s
+2026-10-27 03:27:07 INFO  Leitheon persuaded Saladin to join
+2026-10-27 03:27:30 INFO  Leitheon sent an army (mission 2) to GoldAmulet(641,551), arriving in 8s
+2026-10-27 03:27:43 INFO  Leitheon sent an army (mission 2) to GoldAmulet(641,551), arriving in 6s
+2026-10-27 03:28:02 INFO  Leitheon abandoned New city; it is now a level 10 barbarian city
+2026-10-27 03:28:51 INFO  Leitheon teleported GoldAmulet from (641,551) to (707,464)
+2026-10-27 03:32:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 38s
+2026-10-27 03:32:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:32:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:32:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:32:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:32:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:32:29 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:32:56 INFO  Leitheon attacked Barbarian's city(707,463): won in 10 rounds, loot 355000, loyalty 78
+2026-10-27 03:33:04 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 88, loyalty 75
+2026-10-27 03:33:04 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 0, loyalty 74
+2026-10-27 03:33:07 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 40, loyalty 71
+2026-10-27 03:33:08 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 68
+2026-10-27 03:33:09 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 8, loyalty 67
+2026-10-27 03:33:09 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 64
+2026-10-27 03:33:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:33:39 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:33:43 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 38s
+2026-10-27 03:33:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:33:50 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:33:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:33:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:33:56 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 572, loyalty 61
+2026-10-27 03:34:15 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 228, loyalty 58
+2026-10-27 03:34:21 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 77, loyalty 55
+2026-10-27 03:34:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:34:31 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 114, loyalty 52
+2026-10-27 03:34:31 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 49
+2026-10-27 03:34:32 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 46
+2026-10-27 03:34:32 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 43
+2026-10-27 03:34:51 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:34:56 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 286, loyalty 41
+2026-10-27 03:35:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 38s
+2026-10-27 03:35:12 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:35:14 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:35:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:35:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:35:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:35:27 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 378, loyalty 38
+2026-10-27 03:35:39 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 154, loyalty 36
+2026-10-27 03:35:53 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 170, loyalty 34
+2026-10-27 03:35:55 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 24, loyalty 32
+2026-10-27 03:35:56 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 1, loyalty 30
+2026-10-27 03:35:56 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 2, loyalty 27
+2026-10-27 03:35:57 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 24
+2026-10-27 03:36:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:36:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 38s
+2026-10-27 03:36:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:36:35 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:36:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:36:38 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 514, loyalty 23
+2026-10-27 03:36:39 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:36:39 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:36:55 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 197, loyalty 20
+2026-10-27 03:36:58 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 27, loyalty 19
+2026-10-27 03:37:15 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:37:17 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 236, loyalty 16
+2026-10-27 03:37:19 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 23, loyalty 13
+2026-10-27 03:37:21 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 23, loyalty 10
+2026-10-27 03:37:21 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 4, loyalty 8
+2026-10-27 03:37:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:37:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 38s
+2026-10-27 03:37:50 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 359, loyalty 5
+2026-10-27 03:37:54 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 42, loyalty 3
+2026-10-27 03:37:57 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:37:59 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:38:01 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:38:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 41s
+2026-10-27 03:38:14 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 248, loyalty 2
+2026-10-27 03:38:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 29s
+2026-10-27 03:38:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(707,463), arriving in 35s
+2026-10-27 03:38:39 INFO  Leitheon conquered New city(707,463), capturing Genghis Khan
+2026-10-27 03:38:39 INFO  Leitheon attacked Barbarian's city(707,463): won in 1 round, loot 303, loyalty 0
+2026-10-27 03:38:47 INFO  Leitheon sent an army (mission 1) to New city(707,463), arriving in 53s
+2026-10-27 03:39:56 INFO  Leitheon persuaded Genghis Khan to join
+2026-10-27 03:39:56 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:40:08 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 20s
+2026-10-27 03:40:24 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:40:30 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:40:58 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:41:01 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:41:26 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:41:32 INFO  Leitheon sent an army (mission 2) to GoldAmulet(707,464), arriving in 26s
+2026-10-27 03:42:01 INFO  Leitheon abandoned New city; it is now a level 2 barbarian city
+2026-10-27 03:44:02 INFO  Leitheon teleported GoldAmulet from (707,464) to (507,743)
+2026-10-27 03:44:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:45:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:45:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:45:07 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:45:08 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:45:08 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:45:09 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 16850000, loyalty 86
+2026-10-27 03:45:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 53s
+2026-10-27 03:45:09 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:45:36 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 16260, loyalty 83
+2026-10-27 03:45:44 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 4358, loyalty 81
+2026-10-27 03:45:48 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:45:48 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 2367, loyalty 79
+2026-10-27 03:45:49 INFO  Leitheon attacked Barbarian's city(507,744): won in 10 rounds, loot 565, loyalty 78
+2026-10-27 03:45:49 INFO  Leitheon attacked Barbarian's city(507,744): won in 9 rounds, loot 290, loyalty 75
+2026-10-27 03:45:51 INFO  Leitheon attacked Barbarian's city(507,744): won in 10 rounds, loot 894, loyalty 73
+2026-10-27 03:46:02 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 6708, loyalty 70
+2026-10-27 03:46:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:46:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:46:26 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 13930, loyalty 67
+2026-10-27 03:46:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:46:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:46:32 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:46:33 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:46:36 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 5616, loyalty 64
+2026-10-27 03:46:54 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 10822, loyalty 63
+2026-10-27 03:46:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 53s
+2026-10-27 03:47:05 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:47:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:47:11 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 9972, loyalty 60
+2026-10-27 03:47:12 INFO  Leitheon attacked Barbarian's city(507,744): won in 9 rounds, loot 261, loyalty 57
+2026-10-27 03:47:14 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 1148, loyalty 55
+2026-10-27 03:47:14 INFO  Leitheon attacked Barbarian's city(507,744): won in 6 rounds, loot 281, loyalty 53
+2026-10-27 03:47:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:47:35 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 12341, loyalty 50
+2026-10-27 03:47:43 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 4980, loyalty 48
+2026-10-27 03:47:49 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 3205, loyalty 45
+2026-10-27 03:47:53 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:47:54 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:47:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:47:56 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:48:06 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 9691, loyalty 42
+2026-10-27 03:48:06 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:48:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:48:35 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 17042, loyalty 41
+2026-10-27 03:48:35 INFO  Leitheon attacked Barbarian's city(507,744): won in 9 rounds, loot 214, loyalty 39
+2026-10-27 03:48:36 INFO  Leitheon attacked Barbarian's city(507,744): won in 7 rounds, loot 55, loyalty 36
+2026-10-27 03:48:37 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 1140, loyalty 33
+2026-10-27 03:48:38 INFO  Leitheon attacked Barbarian's city(507,744): won in 6 rounds, loot 290, loyalty 32
+2026-10-27 03:48:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:48:43 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 53s
+2026-10-27 03:49:01 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 13746, loyalty 29
+2026-10-27 03:49:05 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:49:17 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 9093, loyalty 26
+2026-10-27 03:49:17 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:49:18 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:49:20 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:49:20 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:49:34 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 10238, loyalty 23
+2026-10-27 03:49:36 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 1451, loyalty 22
+2026-10-27 03:49:40 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:49:53 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:49:59 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 12879, loyalty 20
+2026-10-27 03:50:00 INFO  Leitheon attacked Barbarian's city(507,744): won in 9 rounds, loot 252, loyalty 17
+2026-10-27 03:50:02 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 1139, loyalty 15
+2026-10-27 03:50:02 INFO  Leitheon attacked Barbarian's city(507,744): won in 6 rounds, loot 269, loyalty 12
+2026-10-27 03:50:04 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:50:11 INFO  Owner page: set leitheon2's research all to 10
+2026-10-27 03:50:13 INFO  Owner page: set leitheon2's gear all to level 10
+2026-10-27 03:50:15 INFO  Owner page: set leitheon2's gear all to 15 stars
+2026-10-27 03:50:19 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 9973, loyalty 10
+2026-10-27 03:50:28 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 5612, loyalty 7
+2026-10-27 03:50:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 53s
+2026-10-27 03:50:33 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 2974, loyalty 5
+2026-10-27 03:50:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:50:42 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:50:42 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:50:44 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 41s
+2026-10-27 03:50:58 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 38s
+2026-10-27 03:51:03 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 29s
+2026-10-27 03:51:04 INFO  Leitheon sent an army (mission 5) to Barbarian's city(507,744), arriving in 35s
+2026-10-27 03:51:22 INFO  Leitheon attacked Barbarian's city(507,744): won in 11 rounds, loot 28846, loyalty 3
+2026-10-27 03:51:23 INFO  Leitheon conquered New city(507,744), capturing Beowulf
+2026-10-27 03:51:23 INFO  Leitheon attacked Barbarian's city(507,744): won in 9 rounds, loot 289, loyalty 0
+2026-10-27 03:51:34 INFO  leitheon2 teleported leitheon2's City from (164,224) to (190,225), giving up 1 valley
+2026-10-27 03:51:46 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:49 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:50 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:50 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:50 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:51 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:51 INFO  leitheon2 completed the quest Valleys Conquer
+2026-10-27 03:51:54 INFO  leitheon2 completed the quest Heal the Wounded
+2026-10-27 03:51:56 INFO  leitheon2 completed the quest Attain Achievement
+2026-10-27 03:51:58 INFO  leitheon2 completed the quest Gear Stars
+2026-10-27 03:51:58 INFO  leitheon2 completed the quest Forging Weapons
+2026-10-27 03:51:59 INFO  leitheon2 completed the quest Forging Shields
+2026-10-27 03:51:59 INFO  leitheon2 completed the quest Training Mounts
+2026-10-27 03:51:59 INFO  leitheon2 completed the quest Forging Necklaces
+2026-10-27 03:51:59 INFO  leitheon2 completed the quest Forging Jewelry
+2026-10-27 03:51:59 INFO  leitheon2 completed the quest Forging Rings
+2026-10-27 03:52:06 INFO  leitheon2 completed the quest Forging Helmets
+2026-10-27 03:52:07 INFO  leitheon2 completed the quest Forging Pauldrons
+2026-10-27 03:52:07 INFO  leitheon2 completed the quest Forging Breastplates
+2026-10-27 03:52:07 INFO  leitheon2 completed the quest Forging Cloaks
+2026-10-27 03:52:07 INFO  leitheon2 completed the quest Forging Gauntlets
+2026-10-27 03:52:07 INFO  leitheon2 completed the quest Forging Belts
+2026-10-27 03:52:08 INFO  leitheon2 completed the quest Forging Legguards
+2026-10-27 03:52:08 INFO  leitheon2 completed the quest Forging Greaves
+2026-10-27 03:53:50 INFO  Owner page: gave leitheon2 1000000 heavyCavalry in leitheon2's City
+2026-10-27 03:54:27 INFO  leitheon2 sent an army (mission 5) to Villarrica(189,225), arriving in 44s
+2026-10-27 03:55:08 INFO  Leitheon sent an army (mission 1) to New city(507,744), arriving in 53s
+2026-10-27 03:55:11 INFO  leitheon2 attacked Villarrica(189,225): lost in 5 rounds
+2026-10-27 03:56:22 INFO  leitheon2 sent an army (mission 5) to Villarrica(189,225), arriving in 41s
+2026-10-27 03:56:35 INFO  Leitheon persuaded Beowulf to join
+2026-10-27 03:56:39 INFO  Leitheon sent an army (mission 2) to GoldAmulet(507,743), arriving in 10s
+2026-10-27 03:56:51 INFO  Leitheon sent an army (mission 2) to GoldAmulet(507,743), arriving in 8s
+2026-10-27 03:57:02 INFO  Leitheon abandoned New city; it is now a level 9 barbarian city
+2026-10-27 03:57:04 INFO  leitheon2 attacked Villarrica(189,225): lost in 6 rounds
+2026-10-27 05:03:52 INFO  Leitheon teleported GoldAmulet from (507,743) to (101,100)
+2026-10-27 05:04:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:04:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:04:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:04:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:04:25 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:04:25 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:04:26 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:04:26 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:04:27 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:04:53 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:05:00 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:05:01 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:05:04 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:05:05 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:05:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:05:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:05:19 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:05:20 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:05:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:05:37 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:05:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:05:47 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:05:48 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:05:48 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:05:50 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:05:53 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:06:13 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:06:19 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:06:28 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:06:29 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:06:29 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:06:31 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:06:42 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:06:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:06:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:06:48 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:06:59 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:07:10 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:07:12 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:07:12 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:07:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:07:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:07:24 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:07:36 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:07:37 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:07:38 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:07:42 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:07:52 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:07:53 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:07:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:07:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:07:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:08:12 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:08:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:08:30 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:08:31 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:08:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:08:33 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:08:35 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:08:37 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:08:38 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:08:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:08:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-27 05:09:09 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:09:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:09:14 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:09:16 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:09:19 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:09:19 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:09:23 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-27 05:09:24 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-27 05:09:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:09:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:09:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-27 05:09:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:09:59 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:10:01 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:10:02 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:10:10 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:10:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:10:17 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:10:18 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:10:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:10:38 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:10:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:10:41 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:10:43 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:10:43 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:10:50 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:10:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:11:10 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:11:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:11:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:11:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:11:22 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:11:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:11:25 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:11:29 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:11:31 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:11:40 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:12:02 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:04 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:04 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:12:05 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:12:06 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:07 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:12:09 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:38 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:12:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:12:44 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:12:45 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:12:46 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:12:49 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:12:49 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:12:58 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:12:58 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:20 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:25 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:13:25 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:25 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:31 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:31 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:13:38 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:13:52 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:13:53 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:13:56 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:14:04 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:14:06 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:14:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:14:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:14:12 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:14:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:14:32 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:14:38 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:14:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:14:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:14:46 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:14:47 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:14:50 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:14:53 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:14:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:15:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:15:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:15:22 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:15:30 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:15:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:15:36 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:15:36 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:15:37 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:15:39 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:15:40 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:15:43 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:00 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:16:06 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:13 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:17 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:18 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:16:19 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:16:32 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:16:33 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:16:35 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:16:38 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:16:54 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:16:55 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:16:56 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:17:00 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:17:00 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:17:05 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:17:18 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:17:27 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:17:28 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:17:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:17:34 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:17:35 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:17:37 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:17:41 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:17:42 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:17:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-27 05:18:03 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:18:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:18:17 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:18:19 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:18:21 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 9 rounds
+2026-10-27 05:18:22 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 9 rounds
+2026-10-27 05:18:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:18:25 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:18:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:18:35 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-27 05:18:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-27 05:18:58 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:19:01 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-27 05:19:02 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-27 05:19:06 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 10 rounds
+2026-10-27 05:19:06 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 11 rounds
+2026-10-27 05:19:14 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-27 05:19:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:19:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-27 05:19:19 INFO  Leitheon attacked Washington, D.C.(100,100): won in 25 rounds, loot 2270240, loyalty 88
+2026-10-27 05:19:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-27 05:19:40 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:19:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:19:48 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-27 05:20:02 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 20033140, loyalty 84
+2026-10-27 05:20:10 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 5790, loyalty 80
+2026-10-27 05:20:10 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 494, loyalty 77
+2026-10-27 05:20:22 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 9354, loyalty 75
+2026-10-27 05:20:24 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1684, loyalty 72
+2026-10-27 05:20:29 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 3949, loyalty 70

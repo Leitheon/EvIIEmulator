@@ -1,0 +1,23 @@
+{
+  "_source": "Fox's grid of live-game Historic City locations (x,y), Oct 2026. Names as written in the grid.",
+  "18": [[0, 0, "Atlantis"]],
+  "16": [
+    [100, 100, "Washington DC"], [300, 100, "Beijing"], [500, 100, "Loyang"], [700, 100, "Moscow"],
+    [100, 300, "Prague"], [300, 300, "Berlin"], [500, 300, "Vienna"], [700, 300, "London"],
+    [100, 500, "Paris"], [300, 500, "Rome"], [500, 500, "Athens"], [700, 500, "Cairo"],
+    [100, 700, "Ottawa"], [300, 700, "Jerusalem"], [500, 700, "Canberra"], [700, 700, "Islamabad"]
+  ],
+  "14": [
+    [33, 33, "Tirana"], [99, 33, "Algiers"], [165, 33, "Kabul"], [231, 33, "Buenos Aires"], [297, 33, "Abu Dhabi"], [363, 33, "Muscat"], [429, 33, "Baku"], [495, 33, "Addis Adaba"], [561, 33, "Dublin"], [627, 33, "Tallinn"], [693, 33, "Andorra La Vella"],
+    [33, 99, "Saint John"], [165, 99, "Port Moresby"], [231, 99, "Nassau"], [363, 99, "Brasilia"], [429, 99, "Minsk"], [561, 99, "Brussels"], [627, 99, "Lima"],
+    [33, 165, "Sarajevo"], [99, 165, "Gabarone"], [165, 165, "Thimphu"], [231, 165, "Bujumbura"], [297, 165, "Pyongyang"], [363, 165, "Malabo"], [429, 165, "Copenhagen"], [495, 165, "Dili"], [561, 165, "Lome"], [627, 165, "Roseau"], [693, 165, "Quito"],
+    [33, 231, "Maynila"], [99, 231, "Suva"], [165, 231, "Helsinki"], [231, 231, "Praia"], [297, 231, "Brazzaville"], [363, 231, "Kinshasa"], [429, 231, "Santa Fe De Bogota"], [495, 231, "St. George's"], [561, 231, "Tbilisi"], [627, 231, "St. Peter Port"], [693, 231, "Havana"],
+    [33, 297, "Astana"], [165, 297, "Djibouti"], [231, 297, "Bishkek"], [363, 297, "Bissau"], [429, 297, "Accra"], [561, 297, "Phnom Penh"], [627, 297, "Harare"],
+    [33, 363, "Moroni"], [99, 363, "Pristina"], [165, 363, "Kuwait City"], [231, 363, "Zagreb"], [297, 363, "Nairobi"], [363, 363, "Riga"], [429, 363, "Maseru"], [495, 363, "Vientiane"], [561, 363, "Vilnius"], [627, 363, "Monrovia"], [693, 363, "Tripoli"],
+    [33, 429, "Luxembourg"], [99, 429, "Kigali"], [165, 429, "Bucharest"], [231, 429, "Antananarivo"], [297, 429, "Male"], [363, 429, "Valletta"], [429, 429, "Bamako"], [495, 429, "Skopje"], [561, 429, "Port Louis"], [627, 429, "Nouakchott"], [693, 429, "Ulan Bator"],
+    [33, 495, "Palikir"], [165, 495, "Chisinau"], [231, 495, "Rabat"], [363, 495, "Maputo"], [429, 495, "Mexico City"], [561, 495, "Kathmandu"], [627, 495, "Niamey"],
+    [33, 561, "Oslo"], [99, 561, "Lisbon"], [165, 561, "Stockholm"], [231, 561, "Berne"], [297, 561, "Apia"], [363, 561, "Belgrade"], [429, 561, "Freetown"], [495, 561, "Dakar"], [561, 561, "Nicosia"], [627, 561, "Victoria"], [693, 561, "Riyadh"],
+    [33, 627, "Bratislava"], [99, 627, "Ljubljana"], [165, 627, "Khartoum"], [231, 627, "Paramaribo"], [297, 627, "Mogadishu"], [363, 627, "Dushanbe"], [429, 627, "Bangkok"], [495, 627, "Nuku'Alofa"], [561, 627, "Port of Spain"], [627, 627, "Tunis"], [693, 627, "Ankara"],
+    [33, 693, "Port Vila"], [165, 693, "Bandar Seri Begawan"], [231, 693, "Kampala"], [363, 693, "Montevideo"], [429, 693, "Tash Kent"], [561, 693, "El Aaiun"], [627, 693, "Singapore"]
+  ]
+}

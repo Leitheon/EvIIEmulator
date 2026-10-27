@@ -1,0 +1,13 @@
+{
+  "host": "127.0.0.1",
+  "httpPort": 8080,
+  "gamePort": 9443,
+  "policyPort": 843,
+  "assetCdn": "http://e2.eimg.us",
+  "speed": 1,
+  "clientFile": "client/EvonyClient1921.swf",
+  "dataDir": "data",
+  "cacheDir": "cache",
+  "logLevel": "info",
+  "serverName": "Local"
+}
