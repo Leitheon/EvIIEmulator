@@ -9,6 +9,8 @@
 //     From a lord's name in the chat he can mute him for 30 minutes ("You have muted X for 30 mins.").
 //   - Publicity Ambassador badges (the PlayerSpeakerBuf_* buffs) put their icon before the name (ownitemid 1-6).
 //   - Alliance chat: "In Alliance chat, you can communicate with the members of your own alliance" (no Speaker).
+//   - A lord on someone's blocklist (friends.js) doesn't reach him by whisper or alliance chat; world chat can't be
+//     blocked.
 // Messages go to the other lords online; the client shows the sender's own line itself.
 const SPEAKER = 'consume.1.a';
 const BADGES = [['PlayerSpeakerBuf_GPAP', 6], ['PlayerSpeakerBuf_GPAP_15', 5], ['PlayerSpeakerBuf_SPAP', 4], ['PlayerSpeakerBuf_SPAP_15', 3], ['PlayerSpeakerBuf_BPAP', 2], ['PlayerSpeakerBuf_BPAP_15', 1]];
@@ -62,7 +64,8 @@ class Chat {
     const text = this.text(msg); if (!text) return [-1, 'You cannot send a blank message.'];
     const until = this.muted(p, now); if (until) return [-1, `You have been muted for ${Math.ceil((until - now) / 60000)} more minutes.`];
     const data = { fromUser: this.g.fame.chatName(p), msg: text, languageType: Number(lang) || 0, ownitemid: this.badge(p, now) };
-    for (const id of a.members) if (id !== p.id && this.g.online.has(id)) this.g.push(id, 'server.AllianceChatMsg', data);
+    for (const id of a.members) if (id !== p.id && this.g.online.has(id) && !this.g.friends.blocked(this.g.db.players[id], p)) this.g.push(id, 'server.AllianceChatMsg', data);
+    this.g.quests.flag(p, 'allianceChat');
     return {};
   }
   whisper(p, name, msg, now){
@@ -72,6 +75,7 @@ class Chat {
     const text = this.text(msg); if (!text) return [-1, 'You cannot send a blank message.'];
     const until = this.muted(p, now); if (until) return [-1, `You have been muted for ${Math.ceil((until - now) / 60000)} more minutes.`];
     if (!this.g.online.has(to.id)) return [-3, `${to.name} is not online. Send a letter instead.`];
+    if (this.g.friends.blocked(to, p)) return {};   // (on his blocklist: it never reaches him)
     this.g.push(to.id, 'server.PrivateChatMessage', { fromUser: p.name, msg: text, chatType: 0, ownitemid: this.badge(p, now) });
     return {};
   }
@@ -88,11 +92,21 @@ class Chat {
     this.g.log.info(`${p.name} muted ${q.name} for ${mins} minutes`);
     return {};
   }
-  // A "[System]" line in the chat, for one lord or (id null) everyone online.
+  // A "[System]" line in the chat, for one lord or (id null) everyone online. Announcements to everyone also go on
+  // the Newsboard (NoticeWin, mail.getAllTVMsg), which keeps the last rules.chat.newsboard of them (default 50).
   system(id, msg){
     const data = { msg: esc(String(msg)), sender: '', alliance: false, noSenderSystemInfo: false, tV: false, tVContext: '' };
     for (const to of id == null ? [...this.g.online.keys()] : [id]) this.g.push(to, 'server.SystemInfoMsg', data);
+    if (id == null) this.news(msg);
   }
+  news(msg, now = this.g.now()){
+    const db = this.g.db, list = db.newsboard || (db.newsboard = []), max = this.rules.newsboard ?? 50;
+    list.push({ msg: esc(String(msg)), time: now });
+    if (list.length > max) list.splice(0, list.length - max);
+    this.g.store.touch();
+  }
+  // Oldest first: the window reverses them.
+  newsBeans(){ return (this.g.db.newsboard || []).map(x => ({ msg: x.msg, time: x.time })); }
 }
 
 module.exports = { Chat, SPEAKER };

@@ -7,9 +7,9 @@
 const world = require('./world');
 const { battleXml, scoutXml, REPORT_TYPE, stamp } = require('./reports');
 const { HERO_STATUS } = require('./heroes');
-const { TYPE } = require('./castle');
+const { TYPE, addTroops } = require('./castle');
 
-const MISSION = { TRANS: 1, SEND: 2, SCOUT: 3, CONSTRUCT: 4, OCCUPY: 5, COLONIZE: 7 };
+const MISSION = { TRANS: 1, SEND: 2, SCOUT: 3, CONSTRUCT: 4, OCCUPY: 5, COLONIZE: 7, ANTI_COLONIAL: 10 };
 const DIR = { FORWARD: 1, BACK: 2, STAY: 3 };
 const FOOT = new Set([2, 3, 4, 5, 6, 7]);           // Compass (marchSkillParam) in the client
 const TECH = { COMPASS: 12, HORSE: 13, LOGISTICS: 11, PRIVATEERING: 20, INFORMATICS: 7 };
@@ -80,7 +80,8 @@ class ArmyLogic {
     const g = this.g, mission = Number(bean.missionType), target = Number(bean.targetPoint);
     if (!(target >= 0 && target < world.SIZE * world.SIZE)) return [-18, 'That map location does not exist.'];
     if (target === c.fieldId) return [-13, 'Your army is already there.'];
-    if (![MISSION.TRANS, MISSION.SEND, MISSION.SCOUT, MISSION.CONSTRUCT, MISSION.OCCUPY, MISSION.COLONIZE].includes(mission))
+    // (Anti-Colonization marches come only from a commission quest: commission.js.)
+    if (![MISSION.TRANS, MISSION.SEND, MISSION.SCOUT, MISSION.CONSTRUCT, MISSION.OCCUPY, MISSION.COLONIZE].includes(mission) && !(mission === MISSION.ANTI_COLONIAL && bean.commission))
       return [-13, "That kind of march isn't supported on this server yet."];
     if (mission === MISSION.CONSTRUCT){ const bad = this.canConstruct(p, world.tileAt(g.store, target, now)); if (bad) return bad; }
     if (mission === MISSION.COLONIZE){ const bad = g.colonies.cantColonize(p, c, world.tileAt(g.store, target, now), now); if (bad) return bad; }
@@ -165,7 +166,8 @@ class ArmyLogic {
     }
     const destLord = tile.type === world.T.CASTLE ? this.db.players[this.db.castles[tile.castleId]?.playerId] : null;
     const own = !!destLord && (destLord.id === p.id || g.alliances.same(p, destLord));   // (an ally's city too: the march window)
-    const ms = this.travelMs(c.fieldId, target, troops, p, hero, own ? this.stationParam(c) : 1);
+    // (Fleet Feet on the lord speeds it up; Lost in the Wastes on the city slows it down: charms.js.)
+    const ms = Math.round(this.travelMs(c.fieldId, target, troops, p, hero, own ? this.stationParam(c) : 1) * (g.charms ? g.charms.marchFactor(p, c, now) : 1));
     // Camp time (the march window's hours and minutes, up to 24 hours; Fox: live): the army waits at home that long
     // before it marches, eating the city's food meanwhile, so the window adds an hour's upkeep for each hour of it to
     // the food the march needs.
@@ -229,7 +231,7 @@ class ArmyLogic {
     a.carry = {};
     // The workers stay on in the new city (live: it starts with the 250 Workers sent); other troops follow the
     // march window's choice.
-    const move = (k, n) => { if (n > 0){ nc.troops[k] = (nc.troops[k] || 0) + n; a.troops[k] -= n; } };
+    const move = (k, n) => { if (n > 0){ nc.troops[k] = addTroops(nc.troops[k], n); a.troops[k] -= n; } };
     move('peasants', Math.min(rule.workers, a.troops.peasants || 0));
     if (!a.backAfter) for (const [k, n] of Object.entries(a.troops)) move(k, n);
     const left = Object.values(a.troops).some(n => n > 0);
@@ -248,6 +250,7 @@ class ArmyLogic {
     // (the lord whose city allied troops are stationed in can send them home: the Embassy's Send Back)
     if (!a || (a.playerId !== p.id && !(host && host.playerId === p.id))) return [-23, 'That army has already returned.'];
     if (a.direction === DIR.BACK) return [-14, 'That army is already on its way home.'];
+    if (this.g.commission?.locked(a)) return [-14, 'Mercenaries on a commission quest can only be called back by giving up the quest (Quests, Commission).'];
     if (!force && a.bolted && a.direction === DIR.FORWARD) return [-14, 'Bolt the Door to Catch the Thief: these troops cannot be recalled until they finish the attack. Cicada Sheds Its Skin lifts it.'];
     // An army stationed in a city it is colonizing marches the whole way home (and the colonization fails if it
     // was the last one there; colonies.tick).
@@ -294,7 +297,7 @@ class ArmyLogic {
     g.pushFriends(host);
   }
   sendHome(a, now){
-    delete a.colonyId; delete a.stationedAt;
+    delete a.colonyId; delete a.stationedAt; delete a.commissionId;
     Object.assign(a, { direction: DIR.BACK, startTime: now, reachTime: now + this.homeMs(a, a.oneWay) });
   }
   // Allied troops in cities gone or changed hands, or between lords no longer allied.
@@ -334,7 +337,18 @@ class ArmyLogic {
   }
   upkeepOf(troops){ let f = 0; for (const t of Object.values(this.g.data.troops)) f += (troops[t.field] || 0) * t.upkeep; return f; }
   // What a city feeds of the allied troops staying in it with no time set.
-  guestUpkeep(c){ return this.guests(c).reduce((s, a) => s + this.upkeepOf(a.troops), 0); }
+  // The Rally Spot's "Open gate to fight": open, the city's troops come out to defend it; closed, only its defenses
+  // fight. A city starts with it open (UNVERIFIED), and Broken Gates can hold it open or shut for an hour (charms.js).
+  gateOpen(c, now = this.g.now()){
+    const lock = c?.charms?.gateLock;
+    if (lock && lock.until > now) return !!lock.open;
+    return c?.goOut !== false;
+  }
+  // Troops a city feeds besides its own: allies stationed in it, and its own mercenaries camped for a commission quest
+  // ("Troops cost normal upkeep of bidders").
+  // (allies' troops count with the city's own of each type, CastleLogic.upkeep; the commission's camp on its own)
+  guestUpkeep(c){ return this.g.commission?.upkeep(c) || 0; }
+  guestTroops(c){ const o = {}; for (const a of this.guests(c)) for (const [k, n] of Object.entries(a.troops || {})) o[k] = (o[k] || 0) + (n || 0); return o; }
   // Other lords' armies on their way to lord p's cities as reinforcements, or stationed in them (FriendArmysUpdate).
   friends(p){
     return Object.values(this.list()).filter(a => a.mission === MISSION.SEND && a.playerId !== p.id && (a.stationedAt ? this.db.castles[a.stationedAt]?.playerId === p.id : a.direction === DIR.FORWARD && this.targetCity(a)?.playerId === p.id))
@@ -368,11 +382,12 @@ class ArmyLogic {
         for (const [k, v] of Object.entries(a.carry || {})) dest.res[k] += v;
         const what = Object.entries(a.carry || {}).map(([k, v]) => `${v.toLocaleString('en-US')} ${k === 'wood' ? 'lumber' : k}`).join(', ') || 'no resources';
         if (a.mission === MISSION.SEND && dest.playerId === p.id){
-          for (const [k, n] of Object.entries(a.troops)) dest.troops[k] = (dest.troops[k] || 0) + n;
+          for (const [k, n] of Object.entries(a.troops)) dest.troops[k] = addTroops(dest.troops[k], n);
           a.troops = {}; stay = true;
-          // The hero moves into the city's Feasting Hall when it has a free seat (Fox); otherwise he rides home.
+          // The hero moves into the city's Feasting Hall when it has a free seat (Fox); otherwise he rides home. A King
+          // or Queen needs no seat, so always moves (Fox).
           let moved = false;
-          if (hero && c && dest !== c && g.heroes.vacancies(dest) > 0){
+          if (hero && c && dest !== c && (hero.king || g.heroes.vacancies(dest) > 0)){
             c.heroes = g.heroes.list(c).filter(h => h !== hero); g.heroes.list(dest).push(hero);
             hero.status = HERO_STATUS.FREE; a.heroId = 0; moved = true;
             g.pushHero(c, hero, 1); g.pushHero(dest, hero, 0);
@@ -386,10 +401,14 @@ class ArmyLogic {
       }
     } else if (a.mission === MISSION.OCCUPY || a.mission === MISSION.COLONIZE) stay = this.attack(a, p, c, hero, tile, report, now);
     else if (a.mission === MISSION.CONSTRUCT) stay = this.construct(a, p, c, tile, report, now);
+    else if (a.mission === MISSION.ANTI_COLONIAL) stay = g.commission.arrive(a, p, report, now);
     if (stay === 'parked') return;   // stationed in a city it is colonizing (colonies.js)
     // Head home (or end the march if everyone stayed).
     const anyone = Object.values(a.troops).some(n => n > 0) || (hero && hero.status === HERO_STATUS.SENT);
     if (stay && !anyone){ delete this.list()[a.id]; if (hero) hero.status = HERO_STATUS.FREE; return; }
+    // Live (Fox): only a won attack marches home with its loot; after a lost one the hero (and any troops left) are
+    // back in the city at once.
+    if (a.lost){ const back = this.home(a); if (back) g.pushTroops(back.c); return; }
     delete a.bolted;
     Object.assign(a, { direction: DIR.BACK, startTime: now, reachTime: now + this.homeMs(a, a.oneWay) });
   }
@@ -445,8 +464,10 @@ class ArmyLogic {
       const dc = this.db.castles[tile.castleId], dp = dc && this.db.players[dc.playerId];
       if (!dc || !dp) return;
       g.logic.settle(dc, dp, now);
-      // Scouts against Scouts. With none at home the city's army catches them, and loses (as on valleys).
-      const theirs = dc.troops.scouter || 0, ours = a.troops.scouter || 0, mayor = g.heroes.chief(dc);
+      // Scouts against Scouts. With none at home the city's army catches them, and loses (as on valleys). With the gates
+      // closed the city's scouts stay in (the Age I guide: "Defendin' cities scouts (with open gates, ofc) will take
+      // the initiative and attack enemy scouts invadin' them").
+      const theirs = this.gateOpen(dc, now) ? dc.troops.scouter || 0 : 0, ours = a.troops.scouter || 0, mayor = g.heroes.chief(dc);
       const strength = (n, pl, h) => n * (1 + g.logic.techLevel(pl, TECH.INFORMATICS) * (cfg.perInformatics ?? 0.1)) * (1 + (h ? g.heroes.effective(h, 'int', now) : 0) * (cfg.perIntelligence ?? 0.01));
       const atk = strength(ours, p, hero), def = strength(theirs, dp, mayor);
       if (!theirs){ outcome = { isAttack: true, isFound: false, isSuccess: true }; battle = { unNomal: 'No defending troops found.', back: [{ typeId: 4, remain: ours }] }; }
@@ -469,7 +490,9 @@ class ArmyLogic {
       // Live (Fox's reports, Oct 2026): an NPC city also shows its hero, population, loyalty and buildings; a
       // valley its hero.
       const st = g.npc.state(this.db, tile, now), npcCity = tile.type === world.T.NPC;
-      const defender = npcCity ? st.ruler || (!tile.historic ? g.hh.defender(tile.id, now) || g.npc.hero(tile, now) : null) : g.npc.hero(tile, now);
+      // (an ordinary NPC hero is shown without a portrait in a scout report, as live: heroUrl="")
+      const plainHero = h => (h ? { name: h.name, level: h.level } : null);
+      const defender = npcCity ? st.ruler || (!tile.historic ? g.hh.defender(tile.id, now) || plainHero(g.npc.hero(tile, now)) : null) : plainHero(g.npc.hero(tile, now));
       // Live (Informatics 7, one Scout): an NPC city compares against its level; a Historic City against its own.
       const scouts = a.troops.scouter || 0, level = npcCity ? (tile.historic ? tile.historic.level : g.npc.techLevel(tile)) : tile.level || 0;
       const d = this.wildInformatics(p) - level + (npcCity ? this.scoutBonus(scouts) : 0);
@@ -533,15 +556,17 @@ class ArmyLogic {
       if (bad){ report(p, { type: REPORT_TYPE.OTHER, title: `Attack on ${this.placeName(a.target)} called off`, content: `${bad[1]} Your army is heading home.` }); return false; }
     }
     const attacker = { troops: a.troops, mods: this.attackMods(p, hero, a.troops, tile) };
-    let defender, defName, dc = null, dp = null, npcState = null, defHero = null, defHeroObj = null, hhDef = null, npcHero = null, rising = null, guests = [];
+    let defender, defName, dc = null, dp = null, npcState = null, defHero = null, defHeroObj = null, hhDef = null, npcHero = null, rising = null, guests = [], shut = false;
     if (tile.type === world.T.CASTLE){
       dc = this.db.castles[tile.castleId]; dp = dc && this.db.players[dc.playerId];
       if (!dc) return;
       g.logic.settle(dc, dp, now);
       // Allied troops stationed in the city fight alongside its own, led by the strongest hero among them all.
-      guests = this.guests(dc);
+      // With the gates closed (the Rally Spot's "Open gate to fight" off) they all stay inside: only the defenses fight.
+      shut = !this.gateOpen(dc, now);
+      guests = shut ? [] : this.guests(dc);
       defHero = defHeroObj = this.defender(dc, guests, now);
-      const defTroops = guests.length ? this.merged(dc.troops, guests) : dc.troops;
+      const defTroops = shut ? {} : guests.length ? this.merged(dc.troops, guests) : dc.troops;
       defender = { troops: defTroops, forts: dc.forts, mods: g.combat.mods(g.logic, dp, defHero, defTroops, { side: 'defence', walls: g.logic.level(dc, TYPE.WALLS) }) };
       defName = dp.name;
       // An attack on an uprising colony of this lord's suppresses the uprising when it wins.
@@ -556,7 +581,9 @@ class ArmyLogic {
       defender = { troops: npcState.troops, forts: npcState.forts, mods: tile.type === world.T.NPC ? g.npc.mods(tile, g.data.techs, ruler) : {} };
       if (ruler) defHero = { name: ruler.name, level: ruler.level, face: ruler.face };
       else if (npcHero) defHero = npcHero;
-      defName = tile.ownerCastle ? (this.db.players[this.db.castles[tile.ownerCastle]?.playerId]?.name || g.rules.npcOwner) : g.rules.npcOwner;
+      // Live (Fox's Basilisk reports, Oct 29 2026): the barbarians' side has no lord's name ("Defender (Enemy's Side)
+      // Defeat").
+      defName = tile.ownerCastle ? (this.db.players[this.db.castles[tile.ownerCastle]?.playerId]?.name || '') : '';
     }
     const before = { ...a.troops };
     const r = g.combat.fight(attacker, defender);
@@ -565,7 +592,7 @@ class ArmyLogic {
     // Penicillin: 30% of the troops lost in battle survive.
     this.relive(p, before, a.troops, now);
     // The survivors are shared out: each kind loses the same share in the city and in every allied army.
-    const cityLeft = dc && guests.length ? this.shareLosses(dc.troops, guests, r.defLeft) : r.defLeft;
+    const cityLeft = dc && shut ? dc.troops : dc && guests.length ? this.shareLosses(dc.troops, guests, r.defLeft) : r.defLeft;
     const defBefore = dc ? { ...dc.troops } : null;
     if (dc) this.relive(dp, { ...dc.troops }, cityLeft, now);
     // Wounded: a share of each side's losses waits in its own city (the attacker's home city).
@@ -597,9 +624,10 @@ class ArmyLogic {
       }
       if (loot) a.loot = loot;
     }
-    // Medals: a won attack on an NPC or Historic City may turn one up (rules.npcMedals).
-    const medal = r.attackerWon && !dc && tile.type === world.T.NPC ? this.medalDrop(tile.historic ? Math.max(11, tile.level) : tile.level || 1, Math.random, g.effort.bonus(p, 'drops')) : null;
-    if (medal){ g.items.add(p, medal, 1); g.pushItems(p, [medal]); }
+    // Treasure (rules.battleDrops, Fox's drop table): medals, gear materials, gems and scripts from NPC cities,
+    // Historic Cities and valleys, amulets and teleporters from lords' cities.
+    const found = this.battleTreasure(p, tile, dc, r, now);
+    if (found.length){ for (const f of found) g.items.add(p, f.id, f.n); g.pushItems(p, found.map(f => f.id)); }
     if (dc) this.repairForts(dp, defender.forts, fortsAfter);
     if (!dc && tile.type === world.T.NPC) Object.assign(fortsAfter, g.npc.repair(tile, defender.forts || {}, fortsAfter));
     // City loyalty (rules.npcConquest): a won attack on an NPC or Historic City lowers it; at 0 the city is
@@ -650,8 +678,9 @@ class ArmyLogic {
     // After a conquest the army stays in its new city, so no troops come home (BattleReportDetail).
     const back = won || parked ? null : { hero, seized: heroSeized, units: Object.entries(before).map(([f, n]) => ({ typeId: this.typeOf(f), preCount: n, remain: a.troops[f] || 0 })), loot };
     const body = { round: r.round, heroExp: hero ? xp : undefined,
-      attacker: { king: p.name, hero, pos: this.placeName(a.from), units: units(r.att) },
-      defender: { king: defName, hero: defHero, pos: here, units: units(r.def) }, loot, back, conquest, colony };
+      // (live, a battle at an NPC city has no "Castle: ..." line on either side: the first line names both places)
+      attacker: { king: p.name, hero, pos: dc ? this.placeName(a.from) : undefined, units: units(r.att) },
+      defender: { king: defName, hero: defHero, pos: dc ? here : undefined, units: units(r.def) }, loot, back, conquest, colony };
     const verb = won ? `conquered ${here}` : parked ? `began colonizing ${here}` : colony ? `suppressed the uprising at ${here}` : captured ? `took ${here}` : r.attackerWon ? `won at ${here}` : `was beaten at ${here}`;
     // Honor, in battles between lords: each side's own (combat.honor; live reports carry it as honor="...").
     const hon = p && dp ? this.honor(p, dp, r.def, r.att, r.attackerWon) : null;
@@ -662,13 +691,17 @@ class ArmyLogic {
     if (p && (prestige || pLoss)){ p.prestige = Math.max(0, (p.prestige || 0) + prestige - pLoss); g.pushPlayerInfo(p); }
     if (dp && dLoss){ dp.prestige = Math.max(0, (dp.prestige || 0) - dLoss); g.pushPlayerInfo(dp); }
     let note = '';
-    if (medal) note += `; found a ${g.items.name(medal)}`;
+    const foundText = found.map(f => `${f.n > 1 ? f.n + ' ' : ''}${g.items.name(f.id)}`).join(', ');
+    if (found.length) note += `; found ${foundText}`;
     if (conquest && !won) note += conquest.problem ? '; loyalty 0' : `; loyalty ${conquest.loyalty}`;
     if (won?.captive) note += `; captured ${won.captive.name}`;
     if (won?.captives?.length) note += `; captured ${won.captives.map(h => h.name).join(', ')}`;
     if (heroSeized) note += `; ${hero.name} was captured`;
     const injuredPer = Math.round((g.rules.wounded?.share ?? 0) * 100) || undefined;
-    report(p, { type: REPORT_TYPE.ARMY, title: `Your army ${verb}${note}`, content: battleXml({ ...body, injuredPer, autoHeal: this.healXml(attHeal, c), isAttack: true, won: r.attackerWon, honor: hon?.att, prestige: prestige || undefined }) });
+    // Live (Fox's Basilisk report, Oct 29 2026): an attack's report is titled "Attack Reports", whatever came of it,
+    // as a scout's is "Scout Reports"; a conquest, a colonization, a taken valley and a captured hero keep their own.
+    const plain = !won && !parked && !colony && !captured && !heroSeized && !won?.captive;
+    report(p, { type: REPORT_TYPE.ARMY, title: plain ? 'Attack Reports' : `Your army ${verb}${note}`, content: battleXml({ ...body, injuredPer, autoHeal: this.healXml(attHeal, c), isAttack: true, won: r.attackerWon, honor: hon?.att, prestige: prestige || undefined, items: found.length ? found.map(f => (f.n > 1 ? `${f.id}=${f.n}` : f.id)).join(',') : undefined }) });
     if (won) this.conquestReports(p, won, here);
     // The allied troops' lords get the battle too; an army with nobody left, or in a city that changed hands, goes home.
     for (const ga of guests){
@@ -679,7 +712,9 @@ class ArmyLogic {
     }
     if (guests.length) g.pushFriends(dp);
     if (dp) report(dp, { type: REPORT_TYPE.ARMY, attack: false, title: won ? `${p.name} conquered ${dc.name}` : parked ? `${p.name} is colonizing ${dc.name}` : colony ? `${p.name} suppressed ${dc.name}'s uprising` : heroSeized ? `${p.name} attacked ${dc.name}; you captured ${hero.name}` : `${p.name} attacked ${dc.name}`, content: battleXml({ ...body, injuredPer, autoHeal: this.healXml(defHeal, dc), isAttack: false, won: r.attackerWon, back: null, honor: hon?.def }) });
-    g.log.info(`${p.name} attacked ${here}: ${r.attackerWon ? 'won' : 'lost'} in ${r.round} round${r.round > 1 ? 's' : ''}${loot ? `, loot ${Object.values(loot).reduce((x, y) => x + y, 0)}` : ''}${captured ? ', valley taken' : ''}${conquest ? `, loyalty ${conquest.loyalty}` : ''}`);
+    g.log.info(`${p.name} attacked ${here}: ${r.attackerWon ? 'won' : 'lost'} in ${r.round} round${r.round > 1 ? 's' : ''}${loot ? `, loot ${Object.values(loot).reduce((x, y) => x + y, 0)}` : ''}${captured ? ', valley taken' : ''}${conquest ? `, loyalty ${conquest.loyalty}` : ''}${found.length ? `, found ${foundText}` : ''}`);
+    // Live (Fox): a lost attack doesn't march home; what is left of the army is home at once (arrive()).
+    if (!r.attackerWon) a.lost = true;
     return parked ? 'parked' : !!won;   // a conquering army stays in its new city; a colonizing one in the city
   }
   // Prestige for a won attack on an NPC city, Historic City or valley (rules.battlePrestige): what was killed is
@@ -790,7 +825,7 @@ class ArmyLogic {
     g.logic.settle(c, p, now);
     if (c.res.gold < cost) return [-1, `Curing the wounded costs ${cost.toLocaleString('en-US')} gold.`];
     c.res.gold -= cost;
-    for (const [k, n] of Object.entries(whole)) c.troops[k] = (c.troops[k] || 0) + n;
+    for (const [k, n] of Object.entries(whole)) c.troops[k] = addTroops(c.troops[k], n);
     c.wounded = {};
     if (p) g.quests.flag(p, 'cure');
     g.store.touch(); g.pushTroops(c); g.pushResources(c); g.pushInjured(c);
@@ -854,6 +889,7 @@ class ArmyLogic {
     if (held && held.castle === c) g.pushHero(c, held.hero, 0);
     g.store.touch();
     g.pushCastle(nc, 0); g.pushPlayerInfo(p); g.pushTroops(c);
+    g.quests.record(p, 'npcCity', hc ? 10 : tile.level || 0);
     g.effort.note(p, 'seize'); if (!hc && tile.level >= 10) g.effort.note(p, 'barbarian10'); if (held) g.effort.note(p, 'captive');
     g.log.info(`${p.name} conquered ${this.placeName(tile.id)}${held ? `, capturing ${held.hero.name}` : ''}`);
     return { castle: nc, captive: held?.hero || null, heldIn: held?.castle || null, hh, npcHero };
@@ -876,16 +912,39 @@ class ArmyLogic {
       add(`${won.hh.hero.name} got away`, `${won.hh.hero.name} has left for another NPC city. To capture a historic hero, ${need.join(' and ')} before you take the city.`);
     } else if (won.hh?.full || won.npcHero) add(`${(won.hh?.hero || won.npcHero).name} got away`, 'Your Feasting Halls had no empty seat to hold the hero.');
   }
-  // The medal a won NPC battle turns up, or null. Higher levels give better medals: level 1 mostly Cross
-  // Medals, level 10 mostly Nation Medals (players' guides: "defeat level 10 NPC cities for Freedom, Justice
-  // and Nation medals"). Odds are estimates in rules.npcMedals.
-  // (bonus: the achievements' treasure drop bonus, in %.)
-  medalDrop(level, rnd = Math.random, bonus = 0){
-    const cfg = this.g.rules.npcMedals || {}; if (cfg.enabled === false) return null;
-    if (rnd() >= Math.min(1, ((cfg.baseChance ?? 0.2) + (cfg.chancePerLevel ?? 0.03) * level) * (1 + bonus / 100))) return null;
-    const base = Math.min(8, Math.round((Math.min(level, 10) - 1) * 8 / 9)), x = rnd();
-    const i = Math.max(0, Math.min(8, base + (x < 0.6 ? 0 : x < 0.9 ? -1 : 1)));
-    return `hero.loyalty.${i + 1}`;
+  // What a won battle turns up (rules.battleDrops, Fox's drop table): [{ id, n }], each item rolled on its own.
+  // kind: 'valley' | 'npc' | 'historic' | 'pvp'; level: the valley's or NPC city's 1-10, the Historic City's 12-18
+  // (a level between the table's columns uses the one below). bonus: the achievements' treasure bonus, in %.
+  treasure(kind, level, rnd = Math.random, bonus = 0){
+    const cfg = this.g.rules.battleDrops || {}, out = [];
+    if (cfg.enabled === false) return out;
+    for (const [id, t] of Object.entries(cfg.items || {})){
+      const row = t[kind];
+      let pc = 0;
+      if (typeof row === 'number') pc = row;
+      else if (Array.isArray(row)) pc = row[Math.max(1, Math.min(row.length + 1, level)) - 1] || 0;
+      else if (row && typeof row === 'object'){ const at = Object.keys(row).map(Number).filter(l => l <= level).sort((a, b) => b - a)[0]; pc = at === undefined ? 0 : row[at]; }
+      if (pc > 0 && rnd() < Math.min(1, pc / 100 * (1 + bonus / 100)) && this.g.data.items?.[id]) out.push({ id, n: 1 });
+    }
+    return out;
+  }
+  // The treasure of a battle that has been fought (r: the combat result): none unless the attacker won and killed at
+  // least rules.battleDrops.minKillShare of the place's full troops (an NPC city's, Historic City's or valley's full
+  // garrison; the lord's troops that fought), so a city already emptied of troops gives nothing (Fox).
+  battleTreasure(p, tile, dc, r, now){
+    const g = this.g, cfg = g.rules.battleDrops || {};
+    if (!p || !r.attackerWon || cfg.enabled === false) return [];
+    const troopRows = r.def.filter(u => !u.fort && u.typeId < 14);
+    const killed = troopRows.reduce((a, u) => a + (u.lose || 0), 0);
+    let kind, level, full;
+    if (dc){ kind = 'pvp'; level = 0; full = troopRows.reduce((a, u) => a + (u.count || 0), 0); }
+    else {
+      kind = tile.type === world.T.NPC ? (tile.historic ? 'historic' : 'npc') : 'valley';
+      level = tile.historic ? tile.historic.level : tile.level || 1;
+      full = Object.values(g.npc.full(tile, now).troops || {}).reduce((a, n) => a + (n || 0), 0);
+    }
+    if (killed <= 0 || killed < (cfg.minKillShare ?? 0.1) * full) return [];
+    return this.treasure(kind, level, Math.random, g.effort.bonus(p, 'drops'));
   }
   // Take up to `cap` resources, evenly, from what's available.
   take(store, cap, avail){
@@ -932,7 +991,7 @@ class ArmyLogic {
     const g = this.g, c = this.db.castles[a.castleId], p = this.db.players[a.playerId];
     delete this.list()[a.id];
     if (!c) return null;
-    for (const [k, n] of Object.entries(a.troops)) c.troops[k] = (c.troops[k] || 0) + n;
+    for (const [k, n] of Object.entries(a.troops)) c.troops[k] = addTroops(c.troops[k], n);
     for (const src of [a.carry, a.loot]) for (const [k, v] of Object.entries(src || {})) c.res[k] += v;
     const hero = g.heroes.find(c, a.heroId);
     if (hero && hero.status === HERO_STATUS.SENT) hero.status = HERO_STATUS.FREE;
@@ -969,7 +1028,7 @@ class ArmyLogic {
     dc.playerId = p.id;
     if (this.db.tiles[dc.fieldId]) this.db.tiles[dc.fieldId].playerId = p.id;
     dc.trainQ = {}; dc.wounded = {}; dc.policies = null; dc.loyalty = 100 - dc.taxRate;
-    for (const [k, n] of Object.entries(a.troops)) if (n > 0) dc.troops[k] = (dc.troops[k] || 0) + n;
+    for (const [k, n] of Object.entries(a.troops)) if (n > 0) dc.troops[k] = addTroops(dc.troops[k], n);
     for (const [k, v] of Object.entries(a.loot || {})) dc.res[k] = (dc.res[k] || 0) + v;
     a.troops = {}; a.loot = null; a.carry = {};
     if (hero && c){ c.heroes = g.heroes.list(c).filter(h => h !== hero); hero.status = HERO_STATUS.FREE; g.heroes.list(dc).push(hero); g.pushHero(c, hero, 1); }

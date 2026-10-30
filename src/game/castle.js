@@ -9,6 +9,14 @@ const TECH_CONSTRUCTION = 17, TECH_STOCKPILE = 15;
 const ERR = { RESOURCE: -1, UNIQUE: -3, POSITION: -4, BUSY: -5, DEPEND: -8, PEOPLE: -10, NO_BUILDING: -30, STATUS: -45, TOWNHALL: -48, MAX_LEVEL: -57 };
 const MAX_LEVEL_MSG = 'The building has already reached maximum level.';   // the live server's words (Fox's capture)
 
+// A number as a Java int: the low 32 bits, signed (2^31 becomes -2^31).
+function int32(n){ const m = ((Math.trunc(n) % 4294967296) + 4294967296) % 4294967296; return m >= 2147483648 ? m - 4294967296 : m; }
+// The most of one troop type a city can hold: a Java int's largest (Fox: past it the original's count turned negative
+// and broke the city; here it stops there).
+const TROOP_MAX = 2147483647;
+// A city's count of one troop type with n more added, no more than TROOP_MAX.
+const addTroops = (have, n) => Math.min(TROOP_MAX, (have || 0) + n);
+
 class CastleLogic {
   constructor(data, rules, speed){
     this.data = data; this.rules = rules; this.speed = speed > 0 ? speed : 1;
@@ -49,7 +57,14 @@ class CastleLogic {
     const step = this.rules.stockpileStep;
     return Math.round(s * (!p ? 1 : step ? Math.pow(step, this.techLevel(p, TECH_STOCKPILE)) : 1 + this.techEffect(p, TECH_STOCKPILE) / 100));
   }
-  upkeep(c){ let f = 0; for (const t of Object.values(this.data.troops)) f += (c.troops?.[t.field] || 0) * t.upkeep; return f; }
+  // Food the city's troops eat an hour. As on the original server, each troop type's upkeep (how many there are, with
+  // the allied troops of that type the city feeds, x the type's upkeep) is a 32-bit integer (Fox): past 2^31 it wraps
+  // to negative, so that type feeds the city instead, and back again at each 2^32, a type at a time.
+  upkeep(c, guests = null){
+    let f = 0;
+    for (const t of Object.values(this.data.troops)) f += int32(((c.troops?.[t.field] || 0) + (guests?.[t.field] || 0)) * t.upkeep);
+    return f;
+  }
   buffActive(p, id, now = Date.now()){ return (p.buffs?.[id] || 0) > now; }
   commence(c){ return c.commence || (c.commence = { food: 100, wood: 100, stone: 100, iron: 100 }); }
   // Workers each resource's fields could use, and the base output of those fields.
@@ -89,12 +104,14 @@ class CastleLogic {
     // positive received).
     r.tribute = !raw && this.hooks.tribute ? this.hooks.tribute(c, r, now) : null;
     if (r.tribute) for (const k of ['food', 'wood', 'stone', 'iron', 'gold']) r[k] += r.tribute[k];
-    r.foodUpkeep = (this.upkeep(c) + (this.hooks.guestUpkeep?.(c) || 0)) * this.hooks.upkeepRate(p, now);   // (and allied troops it feeds)
+    r.foodUpkeep = (this.upkeep(c, this.hooks.guestTroops?.(c)) + (this.hooks.guestUpkeep?.(c) || 0)) * this.hooks.upkeepRate(p, now);   // (and allied troops it feeds)
     r.efficiency = staffed; r.workNeeded = Math.round(demand); r.detail = detail;
     return r;
   }
   // Bring resources and population up to `now`.
   settle(c, p, now){
+    // (a count past TROOP_MAX, from a save made before the cap, comes down to it)
+    for (const k in c.troops || {}) if (c.troops[k] > TROOP_MAX) c.troops[k] = TROOP_MAX;
     const dt = (now - c.resAt) / 3600000;
     if (dt <= 0) return;
     const r = this.rates(c, p, c.resAt);
@@ -111,7 +128,7 @@ class CastleLogic {
     c.loyalty = c.loyalty == null ? target : c.loyalty < target ? Math.min(target, c.loyalty + drift) : Math.max(target, c.loyalty - drift);
     c.complaint = Math.max(0, (c.complaint || 0) - drift * (1 + (this.hooks.effort?.(p, 'grievance') || 0) / 100));
     // The population grows (or shrinks) toward where the tax rate lets it settle.
-    const settle = this.popTarget(c), k = this.rules.populationGrowthPerHour * this.speed;
+    const settle = this.popTarget(c), k = this.rules.populationGrowthPerHour * this.speed * (this.hooks.plagued?.(c, now) ? 0.9 : 1);   // (Opportunist's Plague)
     c.pop = settle - (settle - c.pop) * Math.exp(-k * dt);
     if (Math.abs(settle - c.pop) < 0.5) c.pop = settle;
     c.resAt = now;
@@ -288,4 +305,4 @@ class CastleLogic {
   removeEmpty(c, pos){ const b = c.buildings[pos]; if (b && b.level === 0 && b.status === STATUS.NORMAL) delete c.buildings[pos]; }
 }
 
-module.exports = { CastleLogic, TYPE, STATUS, POS_TOWN_HALL, POS_WALLS, ERR, FIELD_RES };
+module.exports = { int32, TROOP_MAX, addTroops, CastleLogic, TYPE, STATUS, POS_TOWN_HALL, POS_WALLS, ERR, FIELD_RES };

@@ -79,7 +79,7 @@ module.exports = (game, H) => {
     const left = Math.max(0, b.endTime - now);
     // Dynamite: "Demolish building immediately. But acquire no resource."
     const s = d.itemId === 'player.destroy.1.a'
-      ? (b.status !== STATUS.DESTRUCTING ? { err: 'Dynamite only finishes a demolition.' } : game.items.has(p, d.itemId) ? { reduce: () => 0, item: d.itemId, dynamite: true } : { err: "You don't have any Dynamite." })
+      ? (b.status !== STATUS.DESTRUCTING ? { err: 'Dynamite only finishes a demolition.' } : game.items.ensure(p, d.itemId) ? { reduce: () => 0, item: d.itemId, dynamite: true } : { err: "You don't have any Dynamite." })
       : game.items.speedup(p, d.itemId, left, game.items.coinsFor(left));
     if (s.dynamite) b.noRefund = true;
     if (s.err) return game.fail(conn, cmd, -44, s.err);
@@ -103,10 +103,11 @@ module.exports = (game, H) => {
     c.taxRate = t; game.store.touch();
     game.reply(conn, cmd, {}); game.pushResources(c);
   };
+  // (a bad rate is -99, OK_INVALID_REQUEST: the one error ResourceProduce shows)
   H['interior.modifyCommenceRate'] = (conn, d, cmd) => {
     const c = game.castleOr(conn, cmd, d.castleId); if (!c) return;
     const rates = { food: d.foodrate, wood: d.woodrate, stone: d.stonerate, iron: d.ironrate };
-    for (const k of Object.keys(rates)){ const v = Math.round(Number(rates[k])); if (!(v >= 0 && v <= 100)) return game.fail(conn, cmd, -35, 'Labour rates must be between 0 and 100.'); rates[k] = v; }
+    for (const k of Object.keys(rates)){ const v = Math.round(Number(rates[k])); if (!(v >= 0 && v <= 100)) return game.fail(conn, cmd, -99, 'Labour rates must be between 0 and 100.'); rates[k] = v; }
     c.commence = rates; game.store.touch();
     game.reply(conn, cmd, {}); game.pushResources(c);
   };

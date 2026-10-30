@@ -1,4 +1,5 @@
 'use strict';
+const { addTroops } = require('./castle');
 // Colonies. Everything here follows the client (ColonyConstants, ColonyCommands, FieldInfoWin, ColonyInfoWin,
 // SuzerainInfoWin, ArmyInColonie, ColonyBar, the battle report and its texts) and Fox's live answers
 // (rules.colonies):
@@ -21,7 +22,8 @@
 //      lost (or no army set), it is free. Before that the suzerain may also attack it (an attack on an uprising
 //      colony is a suppression); a won attack ends the uprising.
 //   5. The suzerain can Abandon a colony: it is handed back after abandonHours, or at once with Instant Handover.
-// Not done: Anti-Colonization quests (commission quests), and colonies in alliance wars.
+// Anti-Colonization quests (commission quests) are in commission.js: issuing one starts the uprising, and the
+// bidders' mercenaries fight the suppression army first when it ends. Not done: colonies in alliance wars.
 const world = require('./world');
 const { REPORT_TYPE, battleXml, stamp } = require('./reports');
 const { HERO_STATUS } = require('./heroes');
@@ -178,13 +180,14 @@ class Colonies {
   }
 
   // ---------- uprising ----------
-  uprise(c, p, now){
+  // (minutes: how long the uprising war lasts; an Anti-Colonization quest makes it 24 hours.)
+  uprise(c, p, now, minutes = this.rules.uprisingMinutes ?? 30){
     const rec = this.ofColony(c);
     if (!rec || rec.colonyPlayerId !== p.id || !HELD.has(rec.status)) return [-1, 'This city is not a colony. Switch to the colony city to rise up.'];
-    if (rec.status === STATUS.UPRISING) return [-1, 'This city is already rising up.'];
+    if (rec.status === STATUS.UPRISING) return [-1, this.g.commission?.ofColony(rec) ? 'An Anti-Colonization quest is under way here: the mercenaries will fight for you.' : 'This city is already rising up.'];
     if (rec.status === STATUS.ABANDON) return [-1, 'Your suzerain is already handing this city back.'];
     const g = this.g, sc = this.castle(rec.suzerainCastleId), sp = this.player(rec.suzerainPlayerId);
-    Object.assign(rec, { status: STATUS.UPRISING, startTime: now, endTime: now + this.ms((this.rules.uprisingMinutes ?? 30) / 60) });
+    Object.assign(rec, { status: STATUS.UPRISING, startTime: now, endTime: now + this.ms(minutes / 60) });
     const a = { startTime: stamp(rec.startTime), endTime: stamp(rec.endTime) };
     g.reports.add(p, { type: REPORT_TYPE.OTHER, startPos: this.place(c), targetPos: this.place(sc), title: `${c.name} rose up against ${sp ? sp.name : 'its suzerain'}`, content: xml('uprisingWarReport', { isColony: true, ...a }) });
     if (sp) g.reports.add(sp, { type: REPORT_TYPE.OTHER, startPos: this.place(c), targetPos: this.place(sc), title: `Uprising in your Protectorate ${c.name}`, content: xml('uprisingWarReport', { isColony: false, ...a }) });
@@ -198,6 +201,7 @@ class Colonies {
   rising(p, dc){ const rec = this.ofColony(dc); return rec && rec.status === STATUS.UPRISING && rec.suzerainPlayerId === p.id ? rec : null; }
   // A won attack on an uprising colony ends the uprising.
   suppressed(rec, now){
+    this.g.commission?.closeFor(rec, now, 'The uprising was suppressed.');
     Object.assign(rec, { status: STATUS.OCCUPIED, startTime: now, endTime: 0 });
     this.g.store.touch();
     this.push(rec);
@@ -216,7 +220,19 @@ class Colonies {
     const g = this.g, sc = this.castle(rec.suzerainCastleId), dc = this.castle(rec.colonyCastleId), sp = this.player(rec.suzerainPlayerId), dp = dc && this.player(dc.playerId);
     if (!sc || !dc || !sp || !dp) return this.drop(rec);
     g.logic.settle(sc, sp, now);
-    const troops = this.suppressionArmy(rec, sc, sp, now);
+    let troops = this.suppressionArmy(rec, sc, sp, now);
+    // Mercenaries of an Anti-Colonization quest fight it first, one bidder at a time (commission.js).
+    if (Object.values(troops).some(n => n > 0) && g.commission?.ofColony(rec)){
+      for (const [k, n] of Object.entries(troops)) sc.troops[k] -= n;
+      const m = g.commission.battles(rec, sc, sp, dc, dp, troops, now);
+      for (const [k, n] of Object.entries(troops)) sc.troops[k] = addTroops(sc.troops[k], n);
+      if (m){
+        for (const [k, n] of Object.entries(troops)) sc.troops[k] -= n - (m.left[k] || 0);
+        g.pushTroops(sc); g.push(dp.id, 'server.FortificationsUpdate', { castleId: dc.id, fortification: g.beans.forts(dc) });
+        if (m.freed){ g.log.info(`${dc.name} was freed by mercenaries`); return this.drop(rec, true); }
+        troops = Object.fromEntries(Object.entries(m.left).filter(([, n]) => n > 0));
+      }
+    } else if (!Object.values(troops).some(n => n > 0)) g.commission?.unopposed(rec, now);
     if (!Object.values(troops).some(n => n > 0)){
       g.reports.add(dp, { type: REPORT_TYPE.OTHER, startPos: this.place(dc), targetPos: this.place(sc), title: `${dc.name} is free`, content: `${sp.name} sent no suppression army. Your troops won the uprising war, and your city regained freedom.` });
       g.reports.add(sp, { type: REPORT_TYPE.OTHER, startPos: this.place(dc), targetPos: this.place(sc), title: `${dc.name} is free`, content: `No suppression army was set in ${sc.name}, so ${dc.name}'s uprising succeeded. The Protectorate city was freed from your colonization.` });
@@ -225,7 +241,7 @@ class Colonies {
     }
     for (const [k, n] of Object.entries(troops)) sc.troops[k] -= n;
     const b = g.armies.cityBattle(sp, sc, null, troops, dc, now);
-    for (const [k, n] of Object.entries(b.left)) if (n > 0) sc.troops[k] = (sc.troops[k] || 0) + n;
+    for (const [k, n] of Object.entries(b.left)) if (n > 0) sc.troops[k] = addTroops(sc.troops[k], n);
     g.pushTroops(sc);
     const colony = { isUprising: true };
     g.reports.add(sp, { type: REPORT_TYPE.ARMY, startPos: this.place(sc), targetPos: this.place(dc), title: b.won ? `Uprising in ${dc.name} suppressed` : `${dc.name} won its uprising`,
@@ -238,6 +254,7 @@ class Colonies {
   }
   // The colony is free again.
   drop(rec, report = false){
+    this.g.commission?.closeFor(rec, this.g.now(), rec.status === STATUS.UPRISING ? 'The city won its freedom without the mercenaries.' : 'The city is no longer a colony.');
     for (const a of this.stationed(rec)) this.sendHome(a, this.g.now());
     delete this.list()[rec.id];
     this.g.store.touch();
@@ -304,7 +321,7 @@ class Colonies {
       if (!field) return [-1, 'That city has no troops.'];
       amount = Math.floor(dc.troops[field] * share); armyType = this.troopName(field);
       dc.troops[field] -= amount;
-      if (kind === 'draft') c.troops[field] = (c.troops[field] || 0) + amount;
+      if (kind === 'draft') c.troops[field] = addTroops(c.troops[field], amount);
     }
     rec.policyDay = this.today(now);
     const name = POLICY[kind];

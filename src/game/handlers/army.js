@@ -8,11 +8,14 @@ module.exports = (game, H) => {
     const r = armies.send(c, p, d.newArmyBean || {}, now);
     if (Array.isArray(r)) return game.fail(conn, cmd, r[0], r[1]);
     game.store.touch();
-    game.reply(conn, cmd, {});
+    // The hero's new status and the troops that left go out before the answer: the march window rebuilds its list
+    // of free heroes as soon as the answer comes (NewArmyWin.onNewArmyResponse -> setFreeHeros), and the hero just
+    // sent mustn't still be on it, so the next one can be sent straight away.
     game.pushTroops(c); game.pushResources(c);
     if (r.hero) game.pushHero(c, r.hero, 2);
     if (r.usedItems?.length) game.pushItems(p, r.usedItems);
     game.pushArmies(p);
+    game.reply(conn, cmd, {});
     if (armies.hostile(r.army)) game.pushEnemies(game.targetLord(r.army));
     if (r.army.mission === 2){ const t = armies.targetCity(r.army); if (t && t.playerId !== p.id) game.pushFriends(game.db.players[t.playerId]); }   // (troops on their way to an ally)
     game.log.info(`${p.name} sent an army (mission ${r.army.mission}) to ${armies.placeName(r.army.target)}, arriving in ${Math.round((r.army.reachTime - now) / 1000)}s`);
@@ -39,7 +42,12 @@ module.exports = (game, H) => {
   const flag = v => v === true || v === 'true' || v === 1;
   H['army.setAllowAllianceArmy'] = (conn, d, cmd) => { const c = game.castleOr(conn, cmd, d.castleId); if (!c) return; c.allowAlliance = flag(d.isAllow); game.store.touch(); game.reply(conn, cmd, {}); };
   // The Rally Spot's "go out of the city" (kept; it changes nothing in battle here: live cities all show false).
-  H['army.setArmyGoOut'] = (conn, d, cmd) => { const c = game.castleOr(conn, cmd, d.castleId); if (!c) return; c.goOut = flag(d.isArmyGoOut); game.store.touch(); game.reply(conn, cmd, {}); };
+  H['army.setArmyGoOut'] = (conn, d, cmd) => {
+    const c = game.castleOr(conn, cmd, d.castleId); if (!c) return;
+    const lock = c.charms?.gateLock, now = game.now();
+    if (lock && lock.until > now) return game.fail(conn, cmd, -1, `Broken Gates: this city's gates are stuck ${lock.open ? 'open' : 'shut'} until ${new Date(lock.until).toLocaleTimeString()}.`);
+    c.goOut = flag(d.isArmyGoOut); game.store.touch(); game.reply(conn, cmd, {});
+  };
   // The Fugitive Camp (Rally Spot): "Mutiny may occur when your city does not have enough food to feed the troops."
   // Fox: that was Age I (10% an hour); on Age II hungry troops don't desert, they just can't march without food.
   // So the camp stays empty.

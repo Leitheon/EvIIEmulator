@@ -100,7 +100,11 @@ module.exports = (game, H) => {
   H['city.modifyCastleName'] = (conn, d, cmd) => {
     const c = game.castleOr(conn, cmd, d.castleId); if (!c) return;
     const name = cleanName(d.name, 20); if (!name) return game.fail(conn, cmd, -1, 'City names must be 1 to 20 characters.');
-    c.name = name; game.store.touch();
+    c.name = name;
+    // the city's picture (ModifyCastleNameView: one of images/icon/cityLogo/...); none set: null, and the client
+    // shows its default (CastleLogo: citylogo_01)
+    if (typeof d.logUrl === 'string' && /^images\/icon\/cityLogo\/[\w.-]+\.(png|jpg)$/.test(d.logUrl)) c.logUrl = d.logUrl;
+    game.store.touch();
     game.reply(conn, cmd, {}); game.pushCastle(c, 2);
   };
   H['city.modifyCastleIcon'] = (conn, d, cmd) => {

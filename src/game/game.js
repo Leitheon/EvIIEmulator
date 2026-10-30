@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const world = require('./world');
-const { CastleLogic, STATUS } = require('./castle');
+const { CastleLogic, STATUS, addTroops } = require('./castle');
 const { TroopLogic } = require('./troops');
 const { ResearchLogic } = require('./research');
 const { Items } = require('./items');
@@ -22,6 +22,10 @@ const { Mail } = require('./mail');
 const { Market } = require('./market');
 const { Policies } = require('./policies');
 const { Colonies } = require('./colonies');
+const { Commission } = require('./commission');
+const { Friends } = require('./friends');
+const { Packages } = require('./packages');
+const { Charms } = require('./charms');
 const { War } = require('./war');
 const { Captives } = require('./captives');
 const { Fame } = require('./fame');
@@ -41,12 +45,13 @@ const LOGIN = { BAD_USER: -2, FULL: -3, NEED_PLAYER: -4 };
 // (an "is" check must be isSomething: issueCommissionQuest is an action)
 const READ_VERB = /^(get|receive|read|query|list|search|check|view|load|has|map|zone|all|my|show|find)/i, IS_VERB = /^[iI]s[A-Z]/;
 // Writes that only record a preference or tutorial step; acknowledging them is harmless.
+// (Every command this client sends now has a handler; these stay for safety.)
 const HARMLESS = new Set(['common.step', 'common.setEventDone', 'common.addToFavorites', 'common.setReturnReport', 'common.setAutoHeal']);
-const HANDLER_FILES = ['account', 'castle', 'map', 'troops', 'shop', 'research', 'info', 'heroes', 'army', 'reports', 'field', 'forts', 'interior', 'npchero', 'city', 'equipment', 'quests', 'mail', 'market', 'capital', 'colony', 'war', 'fame', 'profile', 'signs', 'chat', 'effort', 'stratagem', 'alliance'];
+const HANDLER_FILES = ['account', 'castle', 'map', 'troops', 'shop', 'research', 'info', 'heroes', 'army', 'reports', 'field', 'forts', 'interior', 'npchero', 'city', 'equipment', 'quests', 'mail', 'market', 'capital', 'colony', 'war', 'fame', 'profile', 'signs', 'chat', 'effort', 'stratagem', 'alliance', 'commission', 'friends', 'common'];
 
 class Game {
-  constructor({ store, data, rules, speed, protocol, log, logDir, faces, art }){
-    this.store = store; this.data = data; this.rules = rules; this.protocol = protocol; this.log = log; this.clientVersion = CLIENT_VERSION;
+  constructor({ store, data, rules, speed, protocol, log, logDir, faces, art, perf }){
+    this.perf = perf || null; this.store = store; this.data = data; this.rules = rules; this.protocol = protocol; this.log = log; this.clientVersion = CLIENT_VERSION;
     this.logic = new CastleLogic(data, rules, speed);
     this.troops = new TroopLogic(data, rules, this.logic);
     this.research = new ResearchLogic(data, rules, this.logic);
@@ -56,6 +61,7 @@ class Game {
     this.armies = new ArmyLogic(this);
     this.combat = new Combat(data, rules);
     this.npc = new NpcLogic(rules, this.logic.speed);
+    this.npc.portraits = data.portraits;   // (the generic hero portraits, for NPC heroes)
     this.forts = new FortLogic(data, rules, this.logic);
     this.reports = new Reports(this);
     this.faces = faces || null;       // which hero portraits exist on the art server (see http.js)
@@ -71,7 +77,8 @@ class Game {
       buildSlots: p => this.items.buildSlots(p),
       items: p => p?.items || {},
       tribute: (c, r, now) => this.colonies.tribute(c, r, now),
-      guestUpkeep: c => this.armies.guestUpkeep(c),
+      guestUpkeep: c => this.armies.guestUpkeep(c), guestTroops: c => this.armies.guestTroops(c),
+      plagued: (c, now) => this.charms?.plagued(c, now),
       // Achievements (effort.js): their bonuses, and what is produced.
       effort: (p, k) => this.effort?.bonus(p, k) || 0,
       produced: (p, k, n) => this.effort?.note(p, `produce:${k}`, n),
@@ -84,7 +91,8 @@ class Game {
     this.heroes.statusOf = h => { if (h.status !== 3) return h.status; const a = Object.values(this.db.armies || {}).find(x => x.heroId === h.id); return !a ? 3 : a.direction === DIR.BACK ? 5 : a.direction === DIR.STAY ? 2 : 3; };
     this.combat.heroAttr = (h, k) => this.heroes.effective(h, k);
     this.combat.heroLeadership = h => this.heroes.leadership(h);
-    this.combat.playerBuff = p => this.items.battleBuff(p);
+    this.combat.playerBuff = p => ({ ...this.items.battleBuff(p), life: this.charms.lifeBonus(p) });
+    this.heroes.charmFactor = (h, now) => this.charms.heroFactor(h, now);
     this.research.mayorBonus = c => this.heroes.mayorBonus(c, 'points:int');
     const hist = historic.build(data.historicNames || [], rules);
     world.setHistoric(hist);
@@ -97,6 +105,10 @@ class Game {
     this.market = new Market(this);
     this.policies = new Policies(this);
     this.colonies = new Colonies(this);
+    this.commission = new Commission(this);
+    this.friends = new Friends(this);
+    this.packages = new Packages(this);
+    this.charms = new Charms(this);
     this.war = new War(this);
     this.captives = new Captives(this);
     this.fame = new Fame(this);
@@ -121,6 +133,8 @@ class Game {
     this.troops.onDone = (c, type, num) => { gain(c, this.data.troops[type], num); this.effort.note(this.playerOf(c), `train:${this.data.troops[type]?.field}`, num); };
     this.troops.costCut = (p, typeId) => this.effort.bonus(p, { foot: 'infantry', mounted: 'cavalry', siege: 'machine' }[CLASS[typeId]] || 'none');
     this.items.onAdd = (p, id, n) => { if (/^hero\.loyalty\.\d$/.test(id)) this.effort.note(p, `medal:${id}`, n); };
+    // an item bought at the moment it's used: the coins change (after the command's own reply)
+    this.items.onBuy = p => setImmediate(() => this.pushPlayerInfo(p));
     this.forts.onDone = (c, type, num) => gain(c, this.data.forts[type], num);
     for (const f of HANDLER_FILES) require('./handlers/' + f)(this, this.handlers);
     this.migrate();
@@ -146,7 +160,7 @@ class Game {
     }
     for (const c of Object.values(this.db.castles)){
       c.troops = c.troops || {}; c.forts = c.forts || {}; c.trainQ = c.trainQ || {}; c.heroes = c.heroes || []; c.valleys = c.valleys || []; c.fortQ = c.fortQ || [];
-      if (this.heroes.migrate(c)) this.store.touch?.();
+      if (this.heroes.migrate(c, this.db.players[c.playerId])) this.store.touch?.();
       // 0.3.28: the historic hero sheet had attack and intelligence swapped; hired heroes take the corrected stats.
       let fixed = 0;
       for (const h of [...c.heroes, ...(c.innHistoric || [])]) if (this.hh.sync(h)) fixed++;
@@ -424,6 +438,7 @@ class Game {
     this.war.tick(now);
     this.account.tick(now);
     this.colonies.tick(now);
+    this.commission.tick(now);
     this.moveArmies(now);
     this.market.tick(now);
     // Population, production and prestige grow on their own: look for newly finished quests now and then.
@@ -479,6 +494,7 @@ class Game {
     const isRead = v => READ_VERB.test(v) || IS_VERB.test(v);
     if (p && cmd !== 'furlough.cancelFurlought' && !isRead(cmd.split('.').pop()) && this.account.vacation(p, this.now())) return this.fail(conn, cmd, -1, 'You are on vacation: no operation of the game is allowed.');
     conn.tracking = p ? { cmd, data, items: { ...(p.items || {}) }, coins: p.coins || 0, sent: {}, flushed: false } : null;
+    const started = this.perf?.now();
     try {
       if (h) return h(conn, data || {}, cmd);
       return this.unhandled(conn, cmd, data);
@@ -491,6 +507,7 @@ class Game {
       if (p && h && !isRead(cmd.split('.').pop())){
         try { this.questNotice(p, this.castleFor(conn, data?.castleId)); } catch (e){ this.log.error(`quest check after ${cmd}: ${e.stack || e.message}`); }
       }
+      if (this.perf) this.perf.record('cmd', cmd, this.perf.now() - started);
     }
   }
   unhandled(conn, cmd, data){
@@ -513,6 +530,36 @@ class Game {
   }
 
   // ---------- local web pages ----------
+  // The news ticker across the top of the screen: the client loads movingText.txt every 5 minutes and scrolls it
+  // (nothing shows while it's empty). Set it from the debug menu, or edit data/movingText.txt.
+  tickerFile(){ return path.join(this.dataDir, 'movingText.txt'); }
+  ticker(){ try { return fs.readFileSync(this.tickerFile(), 'utf8').replace(/[\r\n]+/g, '   ').trim(); } catch (e){ return String(this.rules.newsTicker || ''); } }
+  setTicker(text){ const t = String(text || '').replace(/[\r\n]+/g, ' ').trim().slice(0, 500); fs.writeFileSync(this.tickerFile(), t); return t; }
+  // The debug menu's Server speed section (src/perf.js): is the server keeping up, or is the lag in the client?
+  perfHtml(name, esc){
+    if (!this.perf) return '';
+    const s = this.perf.summary(), ms = v => v >= 1000 ? (v / 1000).toFixed(1) + ' s' : v >= 10 ? Math.round(v) + ' ms' : v.toFixed(1) + ' ms';
+    const held = v => Math.max(0, v - 20);           // the event-loop monitor samples every 20 ms
+    const loopMax = s.loop ? held(s.loop.max) : 0, worst = Math.max(loopMax, s.all.max, s.tick.max, s.save.max);
+    const slowCmd = s.cmds[0];
+    const verdict = !s.all.n ? 'Nothing measured yet: play a while with this page closed, then reload it.'
+      : worst < 150 ? `<span class="ok">The server is keeping up: its slowest moment was ${ms(worst)}, which you can't see in the game. If the game feels laggy, it's the client (Flash in Basilisk), not the server.</span>`
+      : `<span class="bad">The server held things up for as long as ${ms(worst)}. While it does, every reply and update waits, so the game can stutter. What was slow is listed below; send this page to Claude.</span>`;
+    const rows = [
+      ['Answers', `${s.all.n.toLocaleString('en-US')} commands, ${ms(s.all.avg)} on average, slowest ${ms(s.all.max)}${slowCmd ? ` (${esc(slowCmd.cmd)})` : ''}`],
+      ['Stalls', s.loop ? `typically ${ms(held(s.loop.p50))}, 99% of the time under ${ms(held(s.loop.p99))}, worst ${ms(loopMax)}` : 'not measured'],
+      ['Timers (every second)', `${ms(s.tick.avg)} on average, slowest ${ms(s.tick.max)}`],
+      ['Saving world.json', `${(s.save.bytes / 1048576).toFixed(1)} MB, ${s.save.n} saves, ${ms(s.save.avg)} on average, slowest ${ms(s.save.max)}`],
+      ['Sent to clients', `${Math.round(s.sent.perMin)} messages a minute (${Math.round(s.sent.kbPerMin)} KB); most: ${s.sent.top.map(([c, n]) => `${esc(c)} ${n}`).join(', ') || 'none'}`],
+      ['Art', `${s.art.cache} files from the cache, ${s.art.fetched} from the art server (${ms(s.art.fetchAvg)} on average, slowest ${ms(s.art.fetchMax)}), ${s.art.missing} missing`],
+    ];
+    const slowest = s.cmds.slice(0, 5).filter(c => c.max >= 20).map(c => `${esc(c.cmd)}: ${c.n} x, ${ms(c.avg)} avg, ${ms(c.max)} max`).join('<br>');
+    const moments = s.slow.slice(0, 6).map(x => `${new Date(x.at).toTimeString().slice(0, 8)} ${esc(x.what)} ${ms(x.ms)}`).join('<br>');
+    return `<h2>Server speed</h2><p>Measured over the last ${s.minutes < 2 ? Math.round(s.minutes * 60) + ' seconds' : Math.round(s.minutes) + ' minutes'}. ${verdict}</p>
+      <table>${rows.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}</table>
+      ${slowest ? `<p>Slowest commands:<br>${slowest}</p>` : ''}${moments ? `<p class="bad">Slow moments:<br>${moments}</p>` : ''}
+      <p><a class="btn" href="?user=${encodeURIComponent(name)}&perf=reset">Start measuring again</a></p>`;
+  }
   // "Get More Coins" in the client opens <addFund>&user=NAME. On this server that page is a small
   // owner's panel: add coins, or fill every city's resources. Turn it off with coinsPage: false.
   coinsPage(query){
@@ -548,7 +595,7 @@ class Game {
         const kinds = troopRaw === 'all' ? Object.values(this.data.troops) : Object.values(this.data.troops).filter(t => t.field === troopRaw);
         if (!c || !kinds.length || !(tn > 0 && tn <= 100000000)) note = '<p class="bad">Pick a city, a kind of troop and an amount from 1 to 100,000,000.</p>';
         else {
-          for (const t of kinds) c.troops[t.field] = (c.troops[t.field] || 0) + tn;
+          for (const t of kinds) c.troops[t.field] = addTroops(c.troops[t.field], tn);
           this.store.touch(); this.pushTroops(c);
           const what = troopRaw === 'all' ? 'of every kind of troop' : esc(kinds[0].name);
           note = `<p class="ok">Added ${n(tn)} ${what} to ${esc(c.name)}. They're already in the city in the game.</p>`;
@@ -611,7 +658,31 @@ class Game {
           if (changed.gear) for (const h of this.heroes.list(c)) this.pushHero(c, h, 2);
         }
       }
+      // A gift package (packages.js) for this lord or every lord: "pkg" its name, "pitems" lines of item * count.
+      const pkgName = String(query.get('pkg') || '').trim();
+      if (pkgName){
+        const all = Object.values(this.data.items).filter(i => !/^hero\.taskitem\./.test(i.id)), items = [], bad = [];
+        for (const line of String(query.get('pitems') || '').split(/[\r\n,]+/).map(x => x.trim()).filter(Boolean)){
+          const m = line.match(/^(.*?)\s*(?:[*x×]\s*(\d+))?$/i), raw = (m?.[1] || line).trim(), low = raw.toLowerCase();
+          const count = Math.max(1, Math.min(9999, Math.floor(Number(m?.[2]) || 1)));
+          const it = this.data.items[raw] || all.find(i => i.name.trim().toLowerCase() === low) || all.find(i => i.name.toLowerCase().includes(low));
+          if (it) items.push({ id: it.id, count }); else bad.push(raw);
+        }
+        if (bad.length || !items.length) said.push(`<p class="bad">${bad.length ? `No item called ${bad.map(b => `"${esc(b)}"`).join(', ')}.` : 'Put at least one item in the package.'}</p>`);
+        else {
+          const to = query.get('pall') ? Object.values(this.db.players) : [p], days = Math.max(0, Math.min(365, Math.floor(Number(query.get('pdays')) || 0)));
+          for (const q of to) this.packages.give(q, pkgName, String(query.get('pdesc') || '').trim(), items, days);
+          said.push(`<p class="ok">Sent "${esc(pkgName)}" (${items.map(x => `${x.count} x ${esc(this.items.name(x.id))}`).join(', ')}) to ${to.length > 1 ? `all ${to.length} lords` : esc(p.name)}. It's in the gift box beside the minimap.</p>`);
+          this.log.info(`Owner page: sent the package ${pkgName} to ${to.length} lord(s)`);
+        }
+      }
+      if (query.has('ticker')){
+        const t = this.setTicker(query.get('ticker'));
+        said.push(t ? `<p class="ok">The news ticker now reads "${esc(t)}". The game picks it up within 5 minutes (or log in again).</p>` : '<p class="ok">The news ticker is off.</p>');
+        this.log.info(`Owner page: news ticker ${t ? 'set' : 'cleared'}`);
+      }
       if (said.length) note += said.join('');
+      if (query.get('perf') === 'reset' && this.perf){ this.perf.reset(); note += '<p class="ok">Server speed counters cleared. Play a while, then reload this page.</p>'; }
       const fill = Math.floor(Number(query.get('fill')));
       if (fill > 0 && fill <= 1000000000){
         const now = this.now();
@@ -649,12 +720,21 @@ class Game {
          <form><input type="hidden" name="user" value="${esc(name)}"><select name="star"><option value="all">All gear</option>${gearTypes.map(t => `<option value="${t}">${esc(eq.techs[t].name)}</option>`).join('')}</select>
          <select name="sl">${levels(15, 15)}</select> <button class="btn">Set stars</button></form>
          <p>${link('tech=all&tl=10&gear=all&gl=10&star=all&sl=15', 'Max everything (research 10, gear 10, 15 stars)')}</p>
+         ${this.perfHtml(name, esc)}
+         <h2>News ticker</h2><p>The scrolling line at the top of the game screen, for every lord. Leave it empty to turn it off.</p>
+         <form><input type="hidden" name="user" value="${esc(name)}"><input name="ticker" value="${esc(this.ticker())}" placeholder="Welcome to the server!" style="width:360px"> <button class="btn">Set ticker</button></form>
+         <h2>Gift package</h2><p>Puts a package in the gift box beside the minimap (My Package Locker), to claim from there. One item per line, with * and a count.</p>
+         <form><input type="hidden" name="user" value="${esc(name)}"><input name="pkg" placeholder="Package name" value="Gift Package" style="width:260px"><br>
+         <textarea name="pitems" rows="3" placeholder="Aries Amulet * 2&#10;Speaker * 10" style="width:360px;margin:6px 0;padding:7px;border-radius:4px;border:1px solid #666;background:#2b2722;color:#eee"></textarea><br>
+         <input name="pdesc" placeholder="Description (optional)" style="width:260px"> <input name="pdays" type="number" min="0" max="365" placeholder="Days to claim (0 = no limit)" style="width:200px"><br>
+         <label><input type="checkbox" name="pall" value="1" style="width:auto"> Every lord on the server</label> <button class="btn">Send package</button></form>
          <h2>Items</h2><p>Puts any item from the client's item table into your inventory, including event chests the shop doesn't sell. Type part of the name.</p>
          <form><input type="hidden" name="user" value="${esc(name)}"><input name="give" list="itemlist" placeholder="Item name" style="width:260px"> <input name="n" type="number" min="1" max="9999" value="1" style="width:70px"> <button class="btn">Give</button>
          <datalist id="itemlist">${[...new Set(Object.values(this.data.items).filter(i => !/^hero\.taskitem\./.test(i.id)).map(i => i.name.trim()))].sort().map(x => `<option value="${esc(x)}">`).join('')}</datalist></form>`;
     return `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Debug menu</title><style>body{font:15px Arial,sans-serif;background:#1d1a16;color:#eee;padding:40px;max-width:600px}
       h2{font-size:17px;margin:28px 0 6px;color:#e6c27a}input,select{padding:7px;border-radius:4px;border:1px solid #666;background:#2b2722;color:#eee;width:160px}select{width:auto;margin-right:4px}
-      .btn{display:inline-block;background:#b8860b;color:#111;padding:8px 14px;border-radius:4px;text-decoration:none;font-weight:bold;margin:4px 6px 4px 0;border:0;cursor:pointer;font:bold 14px Arial,sans-serif}.ok{color:#9be29b}.bad{color:#f29b9b}</style></head>
+      .btn{display:inline-block;background:#b8860b;color:#111;padding:8px 14px;border-radius:4px;text-decoration:none;font-weight:bold;margin:4px 6px 4px 0;border:0;cursor:pointer;font:bold 14px Arial,sans-serif}.ok{color:#9be29b}.bad{color:#f29b9b}
+      table{border-collapse:collapse;font-size:14px}td{padding:4px 10px 4px 0;vertical-align:top}td:first-child{color:#e6c27a;white-space:nowrap}</style></head>
       <body><h1>Debug menu</h1><p>This is your local server, so coins, resources, troops, items, research and gear are free here.</p>${body}</body></html>`;
   }
 }

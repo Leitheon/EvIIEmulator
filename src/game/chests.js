@@ -47,6 +47,12 @@ const OVERRIDES = {
   'player.builders.tools': [[{ kind: 'item', id: 'player.queue.building.luban', min: 1, max: 1 }]],   // "Gundalf's Compass (125 Cent value)"
   // Angel / Devil token (no description; its twin .141 says "one angel or devil token randomly").
   'player.box.present.money.99': [[{ kind: 'item', id: 'player.box.present.money.143', min: 1, max: 1 }], [{ kind: 'item', id: 'player.box.present.money.142', min: 1, max: 1 }]],
+  // Devil's Pact: "one of the following ... randomly": Opportunist's Plague x2, Lost in the Wastes x3, Poisoned Feast x3,
+  // Broken Gates x3 (its description lists them with their effects, which the reader can't follow).
+  'player.box.present.money.73': [74, 75, 76, 77].map((n, i) => [{ kind: 'item', id: `player.box.present.money.${n}`, min: i ? 3 : 2, max: i ? 3 : 2 }]),
+  // The Devil token and the Angel token: one of those items, picked at random.
+  'player.box.present.money.142': [77, 74, 75, 76].map(n => [{ kind: 'item', id: `player.box.present.money.${n}`, min: 1, max: 1 }]),
+  'player.box.present.money.143': [70, 71, 72].map(n => [{ kind: 'item', id: `player.box.present.money.${n}`, min: 1, max: 1 }]),
 };
 // Troop names as descriptions write them (singular and plural).
 const TROOP_WORDS = {

@@ -210,7 +210,7 @@ class Combat {
     const hDef = hero ? attr('int') * this.rules.heroDefencePerIntelligence * led : 0;
     // War Horn / Corselet: +20% to the troops' attack or defence (player buffs, set by Game).
     const buff = this.playerBuff ? this.playerBuff(p) : { attack: 0, defence: 0 };
-    return { attack: e(TECH.ATTACK) + hAtk + buff.attack, defence: e(TECH.DEFENCE) + hDef + buff.defence, life: e(TECH.MEDICINE) + (opts.life || 0), range: e(TECH.ARCHERY) + this.wallRange(opts.walls), wall: this.wallRange(opts.walls),
+    return { attack: e(TECH.ATTACK) + hAtk + buff.attack, defence: e(TECH.DEFENCE) + hDef + buff.defence, life: e(TECH.MEDICINE) + (opts.life || 0) + (buff.life || 0), range: e(TECH.ARCHERY) + this.wallRange(opts.walls), wall: this.wallRange(opts.walls),
       fortLife: e(TECH.ENGINEERING), speedFoot: e(TECH.COMPASS), speedHorse: e(TECH.HORSEBACK) };
   }
 }

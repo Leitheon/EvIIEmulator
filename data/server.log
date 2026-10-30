@@ -2097,3 +2097,879 @@
 2026-10-27 05:20:22 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 9354, loyalty 75
 2026-10-27 05:20:24 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1684, loyalty 72
 2026-10-27 05:20:29 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 3949, loyalty 70
+2026-10-27 18:17:02 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 18:17:25 INFO  Leitheon disconnected
+2026-10-27 18:17:55 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-27 18:19:53 INFO  leitheon2 disconnected
+2026-10-28 00:00:18 INFO  Leitheon completed the quest Daily Amulet
+2026-10-28 00:10:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:10:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:10:56 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:10:56 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:10:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:10:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:10:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:10:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:10:59 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:11:25 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:11:30 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:11:31 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:11:32 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:11:34 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:11:37 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:11:38 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:11:39 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:11:50 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:13:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:13:21 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:13:21 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:13:22 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:13:22 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:13:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:13:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:13:23 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:13:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:13:51 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:13:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:13:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:13:58 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:14:00 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:14:02 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:14:03 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:14:05 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:14:16 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:14:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:14:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:14:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:14:34 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:14:36 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:14:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:14:46 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:14:46 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:14:49 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:15:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:15:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:15:09 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:15:11 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:15:11 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:15:19 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:15:20 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:15:27 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:15:28 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:15:43 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:15:45 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:15:46 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:15:46 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:15:48 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:15:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:16:04 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-28 00:16:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:16:10 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:16:18 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 4 rounds
+2026-10-28 00:16:18 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:16:20 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:16:21 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-28 00:16:21 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:16:35 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:16:48 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:16:50 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:16:52 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:16:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:16:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:16:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:16:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:16:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:17:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:17:17 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:17:30 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:17:31 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:17:32 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:17:33 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:17:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:17:34 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:17:47 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:17:51 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:17:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:07 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:18:09 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:18:09 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:18:10 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:18:12 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:14 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:18:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:18:43 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:18:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:46 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:18:46 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:18:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:18:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:19:12 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:19:18 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:19:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:19:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:19:21 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:19:37 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:39 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:39 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:19:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:50 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:19:54 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:19:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:56 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:19:57 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:20:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:20:18 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:20:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:20:29 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:20:30 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:20:30 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:20:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:20:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:20:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:20:46 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:20:59 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:01 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:05 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:21:05 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:07 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:21:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:08 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:21:26 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:21:27 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:21:40 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:21:42 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:21:44 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:21:44 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:21:45 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:21:45 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:21:46 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:21:53 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:22:07 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:22:15 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:22:17 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 6 rounds
+2026-10-28 00:22:19 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:22:20 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:22:20 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:22:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:22:26 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:22:34 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 7 rounds
+2026-10-28 00:22:49 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:22:51 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:22:53 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:22:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:22:57 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:23:03 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 9 rounds
+2026-10-28 00:23:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:23:14 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 10 rounds
+2026-10-28 00:23:17 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:23:26 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 5 rounds
+2026-10-28 00:23:28 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-28 00:23:30 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 8 rounds
+2026-10-28 00:23:30 INFO  Leitheon attacked Washington, D.C.(100,100): lost in 11 rounds
+2026-10-28 00:23:32 INFO  Leitheon attacked Washington, D.C.(100,100): won in 24 rounds, loot 2482080, loyalty 87
+2026-10-28 00:23:40 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:23:49 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 19819380, loyalty 83
+2026-10-28 00:23:59 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 7438, loyalty 80
+2026-10-28 00:24:02 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:24:04 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:24:06 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:24:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:24:08 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:24:12 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:24:18 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 15522, loyalty 76
+2026-10-28 00:24:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:24:33 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:24:38 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 14383, loyalty 74
+2026-10-28 00:24:40 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1546, loyalty 72
+2026-10-28 00:24:41 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:24:42 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1547, loyalty 70
+2026-10-28 00:24:44 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1945, loyalty 68
+2026-10-28 00:24:54 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 7380, loyalty 66
+2026-10-28 00:24:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:25:02 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 6125, loyalty 63
+2026-10-28 00:25:02 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 528, loyalty 60
+2026-10-28 00:25:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:25:14 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 8863, loyalty 58
+2026-10-28 00:25:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:25:17 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:25:19 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:25:22 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 6669, loyalty 55
+2026-10-28 00:25:32 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:25:35 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:25:36 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 10864, loyalty 52
+2026-10-28 00:25:48 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 9677, loyalty 49
+2026-10-28 00:25:50 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1546, loyalty 47
+2026-10-28 00:25:52 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1545, loyalty 44
+2026-10-28 00:25:54 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1547, loyalty 42
+2026-10-28 00:25:55 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 53s
+2026-10-28 00:25:56 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:26:02 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 5038, loyalty 39
+2026-10-28 00:26:04 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:26:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 38s
+2026-10-28 00:26:17 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 11991, loyalty 36
+2026-10-28 00:26:24 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:26:26 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:26:29 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:26:31 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 29s
+2026-10-28 00:26:37 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 15988, loyalty 35
+2026-10-28 00:26:45 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 6247, loyalty 32
+2026-10-28 00:26:49 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 2616, loyalty 30
+2026-10-28 00:26:53 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 3635, loyalty 27
+2026-10-28 00:26:58 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 41s
+2026-10-28 00:27:00 INFO  Leitheon attacked Washington, D.C.(100,100): won in 12 rounds, loot 5043, loyalty 24
+2026-10-28 00:27:00 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 76, loyalty 22
+2026-10-28 00:27:02 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1514, loyalty 19
+2026-10-28 00:27:04 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1578, loyalty 16
+2026-10-28 00:27:40 INFO  Leitheon attacked Washington, D.C.(100,100): won in 13 rounds, loot 27601, loyalty 15
+2026-10-28 00:32:12 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 35s
+2026-10-28 00:32:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 31s
+2026-10-28 00:32:13 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 26s
+2026-10-28 00:32:14 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 33s
+2026-10-28 00:32:14 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 26s
+2026-10-28 00:32:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 33s
+2026-10-28 00:32:15 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 33s
+2026-10-28 00:32:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 33s
+2026-10-28 00:32:16 INFO  Leitheon sent an army (mission 5) to Washington, D.C.(100,100), arriving in 28s
+2026-10-28 00:32:40 INFO  Leitheon attacked Washington, D.C.(100,100): won in 14 rounds, loot 232328, loyalty 15
+2026-10-28 00:32:41 INFO  Leitheon attacked Washington, D.C.(100,100): won in 7 rounds, loot 785, loyalty 13
+2026-10-28 00:32:45 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 2701, loyalty 10
+2026-10-28 00:32:45 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 377, loyalty 7
+2026-10-28 00:32:48 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 1909, loyalty 5
+2026-10-28 00:32:48 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 423, loyalty 2
+2026-10-28 00:32:49 INFO  Leitheon conquered Washington, D.C.(100,100)
+2026-10-28 00:32:49 INFO  Leitheon attacked Washington, D.C.(100,100): won in 10 rounds, loot 374, loyalty 0
+2026-10-28 03:36:57 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-28 03:36:57 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-28 03:36:57 INFO  Placed 1,938 Historic Cities on the map
+2026-10-28 03:36:57 INFO  Socket policy server listening on 843
+2026-10-28 03:36:57 INFO  Game server listening on 9443
+2026-10-28 03:36:57 INFO  Web server: open http://127.0.0.1:8080/ in Basilisk, or http://127.0.0.1:8080/ruffle.html in any browser (Ruffle, no Flash)
+2026-10-28 03:40:56 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 03:41:09 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 03:42:10 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 03:43:09 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 03:44:11 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 03:50:30 INFO  Leitheon disconnected
+2026-10-28 16:08:01 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-28 16:08:01 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-28 16:08:01 INFO  Placed 1,938 Historic Cities on the map
+2026-10-28 16:08:01 INFO  Socket policy server listening on 843
+2026-10-28 16:08:01 INFO  Game server listening on 9443
+2026-10-28 16:08:01 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-28 16:08:36 INFO  New client connected (/json)
+2026-10-28 16:08:36 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 16:08:50 INFO  Leitheon disconnected
+2026-10-28 16:09:08 INFO  New client connected (/json)
+2026-10-28 16:09:08 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 16:10:59 INFO  Leitheon used Aries Amulet: 5 Iron Ore
+2026-10-28 16:11:06 INFO  Leitheon used Aries Amulet: 1 Holy Water (5 pieces package)
+2026-10-28 16:11:13 INFO  Leitheon used Aries Amulet: 1 Leather Helm of Robinhood
+2026-10-28 16:14:31 INFO  Leitheon voted for Leitheon
+2026-10-28 16:14:45 INFO  New client connected (/json)
+2026-10-28 16:14:45 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-28 16:14:52 INFO  New client connected (/json)
+2026-10-28 16:14:52 INFO  leitheon3 logged in from ::ffff:127.0.0.1
+2026-10-28 16:15:05 INFO  New client connected (/json)
+2026-10-28 16:15:05 INFO  leitheon4 logged in from ::ffff:127.0.0.1
+2026-10-28 16:17:04 INFO  leitheon3 voted for Leitheon
+2026-10-28 16:17:07 INFO  leitheon4 voted for Leitheon
+2026-10-28 16:17:36 INFO  Leitheon disconnected
+2026-10-28 16:17:36 INFO  leitheon2 disconnected
+2026-10-28 16:17:36 INFO  leitheon3 disconnected
+2026-10-28 16:17:37 INFO  leitheon4 disconnected
+2026-10-28 16:17:49 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 16:19:19 INFO  Leitheon disconnected
+2026-10-28 16:56:20 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-28 16:56:21 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-28 16:56:21 INFO  Placed 1,938 Historic Cities on the map
+2026-10-28 16:56:21 INFO  Socket policy server listening on 843
+2026-10-28 16:56:21 INFO  Game server listening on 9443
+2026-10-28 16:56:21 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-28 16:56:39 INFO  New client connected (/json)
+2026-10-28 16:56:39 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 16:58:18 INFO  Leitheon disconnected
+2026-10-28 16:58:33 INFO  New client connected (/json)
+2026-10-28 16:58:33 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 17:01:44 INFO  Leitheon disconnected
+2026-10-28 17:01:45 INFO  New client connected (/json)
+2026-10-28 17:01:45 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 17:03:33 INFO  Leitheon disconnected
+2026-10-28 17:03:33 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 17:05:42 INFO  Leitheon disconnected
+2026-10-28 17:41:56 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-28 17:41:56 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-28 17:41:56 INFO  Placed 1,938 Historic Cities on the map
+2026-10-28 17:41:56 INFO  Socket policy server listening on 843
+2026-10-28 17:41:56 INFO  Game server listening on 9443
+2026-10-28 17:41:56 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-28 17:42:42 INFO  New client connected (/json)
+2026-10-28 17:42:42 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 17:44:36 INFO  Leitheon used Aries Amulet: 9 Speaker
+2026-10-28 17:46:32 INFO  The war between leitheon3 and leitheon2 is over
+2026-10-28 17:46:51 INFO  Leitheon disconnected
+2026-10-28 17:47:02 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-28 17:47:38 INFO  Leitheon used Aries Amulet: 5 Wood
+2026-10-28 17:48:30 INFO  Leitheon disconnected
+2026-10-29 02:36:48 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 02:36:48 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 02:36:48 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 02:36:48 INFO  Socket policy server listening on 843
+2026-10-29 02:36:48 INFO  Game server listening on 9443
+2026-10-29 02:36:48 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 02:37:23 INFO  New client connected (/json)
+2026-10-29 02:37:23 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 02:37:32 INFO  Leitheon completed the quest National Flag
+2026-10-29 02:37:35 INFO  Leitheon completed the quest Daily Amulet
+2026-10-29 02:37:39 INFO  Leitheon used Aries Amulet: 5 Thoroughbred
+2026-10-29 02:37:51 INFO  Leitheon disconnected
+2026-10-29 02:37:53 INFO  New client connected (/json)
+2026-10-29 02:37:53 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 02:38:18 INFO  New client connected (/json)
+2026-10-29 02:38:18 INFO  leitheon2 logged in from ::ffff:127.0.0.1
+2026-10-29 02:38:48 INFO  [World] Leitheon: hi
+2026-10-29 02:38:56 INFO  [World] leitheon2: hello
+2026-10-29 02:43:46 INFO  Leitheon disconnected
+2026-10-29 02:43:51 INFO  New client connected (/json)
+2026-10-29 02:43:51 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 02:44:06 INFO  Leitheon disconnected
+2026-10-29 02:44:07 INFO  New client connected (/json)
+2026-10-29 02:44:07 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 02:45:15 INFO  leitheon2 disconnected
+2026-10-29 02:45:17 INFO  Leitheon disconnected
+2026-10-29 03:08:19 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 03:08:20 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 03:08:20 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 03:08:20 INFO  Socket policy server listening on 843
+2026-10-29 03:08:20 INFO  Game server listening on 9443
+2026-10-29 03:08:20 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 03:08:36 INFO  New client connected (/json)
+2026-10-29 03:08:36 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 03:09:12 INFO  Leitheon used Aries Amulet: 1 Senior Guidelines
+2026-10-29 03:09:22 INFO  Leitheon used Aries Amulet: 3 Flawless gem
+2026-10-29 03:09:38 INFO  Leitheon completed the quest Chat Box
+2026-10-29 03:09:53 INFO  Leitheon used Stygandr’s Tools: 10 Stygandr’s Banner of the Horde, 3 War Teleporter, 1 On War, 1 Stone of Finding, 1 Angel / Devil token, 1 Excalibur, 1 Corselet, 50,000,000 food, 50,000,000 lumber, 50,000,000 stone, 50,000,000 iron
+2026-10-29 03:11:20 INFO  Leitheon sent an army (mission 2) to GoldAmulet(101,100), arriving in 33s
+2026-10-29 03:12:15 INFO  Leitheon teleported GoldAmulet from (101,100) to (100,301)
+2026-10-29 03:13:31 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 35s
+2026-10-29 03:14:07 INFO  Leitheon attacked Prague(100,300): lost in 9 rounds
+2026-10-29 03:15:01 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:15:32 INFO  Leitheon attacked Prague(100,300): lost in 10 rounds
+2026-10-29 03:16:29 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:16:44 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:16:47 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:16:51 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:16:54 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:16:57 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:16:57 INFO  Leitheon attacked Prague(100,300): lost in 10 rounds
+2026-10-29 03:17:00 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:17:03 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:17:06 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:17:09 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:17:18 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:19 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:23 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:24 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:27 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:34 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:35 INFO  Leitheon attacked Prague(100,300): lost in 6 rounds
+2026-10-29 03:17:36 INFO  Leitheon attacked Prague(100,300): lost in 7 rounds
+2026-10-29 03:17:43 INFO  Leitheon attacked Prague(100,300): lost in 7 rounds
+2026-10-29 03:18:36 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:19:05 INFO  Leitheon attacked Prague(100,300): won in 14 rounds, loot 22300000, loyalty 87
+2026-10-29 03:19:56 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:20:22 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 60663, loyalty 83
+2026-10-29 03:21:45 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:21:50 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:21:54 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:22:11 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 84147, loyalty 81
+2026-10-29 03:22:26 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 11432, loyalty 79
+2026-10-29 03:22:28 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1810, loyalty 77
+2026-10-29 03:23:34 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:23:36 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:23:39 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:23:41 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:23:45 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:23:46 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:23:48 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:23:49 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:23:52 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:23:53 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:24:01 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 71789, loyalty 75
+2026-10-29 03:24:03 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1402, loyalty 74
+2026-10-29 03:24:14 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 9308, loyalty 73
+2026-10-29 03:24:15 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 500, loyalty 70
+2026-10-29 03:24:16 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 867, loyalty 68
+2026-10-29 03:24:17 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 395, loyalty 65
+2026-10-29 03:24:17 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 127, loyalty 63
+2026-10-29 03:24:18 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 710, loyalty 61
+2026-10-29 03:24:25 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 5501, loyalty 58
+2026-10-29 03:24:26 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1135, loyalty 55
+2026-10-29 03:24:53 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:24:55 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:24:57 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:25:00 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:25:01 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:25:03 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:25:05 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:25:07 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:25:08 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:25:11 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:25:19 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 40605, loyalty 53
+2026-10-29 03:25:23 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 3038, loyalty 50
+2026-10-29 03:25:26 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 2304, loyalty 48
+2026-10-29 03:25:29 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1842, loyalty 46
+2026-10-29 03:25:36 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 6142, loyalty 43
+2026-10-29 03:25:37 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 356, loyalty 40
+2026-10-29 03:25:39 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1727, loyalty 38
+2026-10-29 03:25:40 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 437, loyalty 36
+2026-10-29 03:25:41 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 866, loyalty 34
+2026-10-29 03:25:42 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 764, loyalty 32
+2026-10-29 03:26:19 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:26:22 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:26:23 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:26:25 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:26:26 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:26:30 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:26:31 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:26:34 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:26:35 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:26:38 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:26:46 INFO  Leitheon attacked Prague(100,300): won in 17 rounds, loot 49261, loyalty 29
+2026-10-29 03:26:54 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 6488, loyalty 27
+2026-10-29 03:26:55 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 1065, loyalty 24
+2026-10-29 03:26:58 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 2031, loyalty 21
+2026-10-29 03:26:58 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 61, loyalty 19
+2026-10-29 03:27:01 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 2568, loyalty 18
+2026-10-29 03:27:04 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 2074, loyalty 16
+2026-10-29 03:27:04 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 239, loyalty 14
+2026-10-29 03:27:08 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 2713, loyalty 11
+2026-10-29 03:27:09 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 758, loyalty 10
+2026-10-29 03:29:38 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:29:43 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 28s
+2026-10-29 03:29:48 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:29:53 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:29:56 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:30:00 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 33s
+2026-10-29 03:30:04 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:30:06 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 26s
+2026-10-29 03:30:08 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 38s
+2026-10-29 03:30:11 INFO  Leitheon sent an army (mission 5) to Prague(100,300), arriving in 31s
+2026-10-29 03:30:11 INFO  Leitheon attacked Prague(100,300): won in 13 rounds, loot 141803, loyalty 9
+2026-10-29 03:30:11 INFO  Leitheon attacked Prague(100,300): won in 7 rounds, loot 88, loyalty 6
+2026-10-29 03:30:22 INFO  Leitheon attacked Prague(100,300): won in 12 rounds, loot 7295, loyalty 3
+2026-10-29 03:30:22 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 580, loyalty 1
+2026-10-29 03:30:27 INFO  Leitheon conquered Prague(100,300)
+2026-10-29 03:30:27 INFO  Leitheon attacked Prague(100,300): won in 10 rounds, loot 3129, loyalty 0
+2026-10-29 03:31:28 INFO  Leitheon sent an army (mission 2) to GoldAmulet(100,301), arriving in 33s
+2026-10-29 03:32:51 INFO  Leitheon teleported GoldAmulet from (100,301) to (0,799)
+2026-10-29 03:33:01 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 03:33:06 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 33s
+2026-10-29 03:33:27 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 03:33:39 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:34:27 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 03:34:33 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 33s
+2026-10-29 03:34:36 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 28s
+2026-10-29 03:34:40 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 38s
+2026-10-29 03:34:41 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 03:34:44 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 03:34:46 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 03:34:48 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 03:34:49 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 03:34:52 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 33s
+2026-10-29 03:34:54 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 03:35:05 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:35:07 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:35:08 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:35:16 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:35:16 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 03:35:18 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 03:35:18 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 03:35:20 INFO  Leitheon attacked Atlantis(0,0): lost in 10 rounds
+2026-10-29 03:35:26 INFO  Leitheon attacked Atlantis(0,0): won in 14 rounds, loot 22300000, loyalty 87
+2026-10-29 03:41:14 INFO  Leitheon sent an army (mission 5) to Desert Lv.10(3,799), arriving in 80s
+2026-10-29 03:42:34 INFO  Leitheon attacked Desert Lv.10(3,799): won in 2 rounds, valley taken
+2026-10-29 03:43:41 INFO  Leitheon completed the quest Queen
+2026-10-29 03:43:43 INFO  Leitheon completed the quest Valleys Conquer
+2026-10-29 03:44:36 INFO  Leitheon teleported GoldAmulet from (0,799) to (92,98), giving up 1 valley
+2026-10-29 03:44:46 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:45:37 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 03:45:38 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 03:45:38 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 03:45:38 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 03:45:38 INFO  Socket policy server listening on 843
+2026-10-29 03:45:38 INFO  Game server listening on 9443
+2026-10-29 03:45:38 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 03:45:39 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 11400000, loyalty 87
+2026-10-29 03:45:51 INFO  New client connected (/json)
+2026-10-29 03:45:51 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 03:46:18 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:46:19 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 35s
+2026-10-29 03:46:20 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:46:21 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:46:22 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:46:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:46:24 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:46:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:46:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:46:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 29s
+2026-10-29 03:46:44 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 36198, loyalty 83
+2026-10-29 03:46:47 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1168, loyalty 79
+2026-10-29 03:46:48 INFO  Leitheon attacked Barbarian's city(91,98): won in 9 rounds, loot 332, loyalty 77
+2026-10-29 03:46:49 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 587, loyalty 74
+2026-10-29 03:46:51 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 741, loyalty 72
+2026-10-29 03:46:52 INFO  Leitheon attacked Barbarian's city(91,98): won in 7 rounds, loot 163, loyalty 70
+2026-10-29 03:46:54 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1018, loyalty 68
+2026-10-29 03:46:56 INFO  Leitheon attacked Barbarian's city(91,98): won in 9 rounds, loot 564, loyalty 66
+2026-10-29 03:46:57 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 334, loyalty 64
+2026-10-29 03:46:58 INFO  Leitheon attacked Barbarian's city(91,98): won in 7 rounds, loot 416, loyalty 62
+2026-10-29 03:51:41 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:51:42 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 35s
+2026-10-29 03:51:43 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:51:44 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:51:45 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:51:46 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:51:47 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:51:48 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:51:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:51:49 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 29s
+2026-10-29 03:52:08 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 122694, loyalty 61
+2026-10-29 03:52:11 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1171, loyalty 58
+2026-10-29 03:52:12 INFO  Leitheon attacked Barbarian's city(91,98): won in 10 rounds, loot 379, loyalty 56
+2026-10-29 03:52:13 INFO  Leitheon attacked Barbarian's city(91,98): won in 9 rounds, loot 332, loyalty 54
+2026-10-29 03:52:14 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 648, loyalty 51
+2026-10-29 03:52:15 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 262, loyalty 48
+2026-10-29 03:52:18 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1203, loyalty 46
+2026-10-29 03:52:18 INFO  Leitheon attacked Barbarian's city(91,98): won in 5 rounds, loot 175, loyalty 45
+2026-10-29 03:52:19 INFO  Leitheon attacked Barbarian's city(91,98): won in 5 rounds, loot 161, loyalty 42
+2026-10-29 03:52:20 INFO  Leitheon attacked Barbarian's city(91,98): won in 9 rounds, loot 485, loyalty 39
+2026-10-29 03:55:23 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:55:25 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 35s
+2026-10-29 03:55:26 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:55:27 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:55:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:55:29 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:55:29 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:55:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:55:31 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:55:33 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 29s
+2026-10-29 03:55:50 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 83001, loyalty 38
+2026-10-29 03:55:53 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1342, loyalty 35
+2026-10-29 03:55:54 INFO  Leitheon attacked Barbarian's city(91,98): won in 10 rounds, loot 377, loyalty 32
+2026-10-29 03:55:55 INFO  Leitheon attacked Barbarian's city(91,98): won in 10 rounds, loot 376, loyalty 29
+2026-10-29 03:55:57 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 676, loyalty 27
+2026-10-29 03:55:57 INFO  Leitheon attacked Barbarian's city(91,98): won in 5 rounds, loot 149, loyalty 26
+2026-10-29 03:56:00 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 1161, loyalty 23
+2026-10-29 03:56:01 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 327, loyalty 20
+2026-10-29 03:56:02 INFO  Leitheon attacked Barbarian's city(91,98): won in 7 rounds, loot 429, loyalty 19
+2026-10-29 03:56:02 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 237, loyalty 16
+2026-10-29 03:56:28 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:56:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:56:30 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:56:31 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:56:32 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:56:33 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 26s
+2026-10-29 03:56:34 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:56:35 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 31s
+2026-10-29 03:56:36 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 29s
+2026-10-29 03:56:37 INFO  Leitheon sent an army (mission 5) to Barbarian's city(91,98), arriving in 35s
+2026-10-29 03:56:55 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 20620, loyalty 13
+2026-10-29 03:56:56 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 514, loyalty 10
+2026-10-29 03:56:58 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 688, loyalty 7
+2026-10-29 03:56:59 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 348, loyalty 4
+2026-10-29 03:57:00 INFO  Leitheon attacked Barbarian's city(91,98): won in 6 rounds, loot 330, loyalty 1
+2026-10-29 03:57:02 INFO  Leitheon conquered New city(91,98), capturing Wolfram
+2026-10-29 03:57:02 INFO  Leitheon attacked Barbarian's city(91,98): won in 11 rounds, loot 954, loyalty 0
+2026-10-29 05:16:44 INFO  Leitheon disconnected
+2026-10-29 05:29:37 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 05:29:37 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 05:29:37 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 05:29:37 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 05:29:37 INFO  Socket policy server listening on 843
+2026-10-29 05:29:37 INFO  Game server listening on 9443
+2026-10-29 05:29:37 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 05:29:53 INFO  New client connected (/json)
+2026-10-29 05:29:53 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 05:39:01 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 05:39:01 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 05:39:01 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 05:39:01 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 05:39:01 INFO  Socket policy server listening on 843
+2026-10-29 05:39:01 INFO  Game server listening on 9443
+2026-10-29 05:39:01 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 05:39:05 INFO  New client connected (/json)
+2026-10-29 05:39:05 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 05:40:59 INFO  Leitheon completed the quest Queen
+2026-10-29 05:41:01 INFO  Leitheon completed the quest Queen
+2026-10-29 05:41:07 INFO  Leitheon completed the quest Acquire Capital City
+2026-10-29 05:45:55 INFO  Leitheon sent an army (mission 2) to GoldAmulet(92,98), arriving in 6s
+2026-10-29 05:46:10 INFO  Leitheon abandoned New city; it is now a level 8 barbarian city
+2026-10-29 05:46:31 INFO  Leitheon teleported GoldAmulet from (92,98) to (0,799)
+2026-10-29 05:47:18 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:47:45 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 05:52:29 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:52:46 INFO  Leitheon used Stygandr’s Tools of the Destroyer: 3 Stygandr’s Banner of the Horde, 3 War Teleporter, 1 On War, 1 Stone of Finding, 1 Angel / Devil token, 1 Excalibur, 1 Corselet
+2026-10-29 05:52:51 INFO  Leitheon used Stygandr’s Tools of the Destroyer: 3 Stygandr’s Banner of the Horde, 3 War Teleporter, 1 On War, 1 Stone of Finding, 1 Angel / Devil token, 1 Excalibur, 1 Corselet
+2026-10-29 05:52:53 INFO  Leitheon used Stygandr’s Tools of the Destroyer: 3 Stygandr’s Banner of the Horde, 3 War Teleporter, 1 On War, 1 Stone of Finding, 1 Angel / Devil token, 1 Excalibur, 1 Corselet
+2026-10-29 05:52:55 INFO  Leitheon used Stygandr’s Tools: 10 Stygandr’s Banner of the Horde, 3 War Teleporter, 1 On War, 1 Stone of Finding, 1 Angel / Devil token, 1 Excalibur, 1 Corselet, 50,000,000 food, 50,000,000 lumber, 50,000,000 stone, 50,000,000 iron
+2026-10-29 05:52:56 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 05:53:03 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 35s
+2026-10-29 05:53:06 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:53:09 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:53:11 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 05:53:14 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:53:16 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 05:53:19 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 05:53:22 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 05:53:32 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 05:53:32 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 05:53:35 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 05:53:38 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 05:53:40 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 05:53:43 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 05:53:47 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 05:53:48 INFO  Leitheon attacked Atlantis(0,0): won in 15 rounds, loot 6350751, loyalty 87
+2026-10-29 05:53:53 INFO  Leitheon attacked Atlantis(0,0): won in 10 rounds, loot 4006, loyalty 85
+2026-10-29 05:53:58 INFO  Leitheon attacked Atlantis(0,0): won in 10 rounds, loot 3652, loyalty 82
+2026-10-29 05:56:47 INFO  Leitheon disconnected
+2026-10-29 15:47:49 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 15:47:50 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 15:47:50 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 15:47:50 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 15:47:50 INFO  Socket policy server listening on 843
+2026-10-29 15:47:50 INFO  Game server listening on 9443
+2026-10-29 15:47:50 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 15:48:43 INFO  New client connected (/json)
+2026-10-29 15:48:43 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 16:04:55 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 35s
+2026-10-29 16:04:57 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:04:57 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:04:58 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:04:59 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 16:05:00 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:05:01 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 16:05:02 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:05:03 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 16:05:23 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:24 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:25 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:26 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:28 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:28 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:30 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:31 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:05:34 INFO  Leitheon attacked Atlantis(0,0): lost in 4 rounds
+2026-10-29 16:08:43 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 35s
+2026-10-29 16:08:47 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:08:47 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:08:48 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:08:49 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 16:08:50 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:08:52 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 16:08:53 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 16:08:54 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 16:09:14 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 16:09:14 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 16:09:15 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 16:09:17 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 16:09:19 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 16:09:19 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 16:09:20 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 16:09:22 INFO  Leitheon attacked Atlantis(0,0): won in 23 rounds, loot 19961920, loyalty 88
+2026-10-29 16:09:26 INFO  Leitheon attacked Atlantis(0,0): won in 10 rounds, loot 2340915, loyalty 84
+2026-10-29 17:35:10 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 17:35:11 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 17:35:11 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 17:35:11 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 17:35:11 INFO  Socket policy server listening on 843
+2026-10-29 17:35:11 INFO  Game server listening on 9443
+2026-10-29 17:35:11 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 17:35:27 INFO  New client connected (/json)
+2026-10-29 17:35:27 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 18:20:13 INFO  Leitheon disconnected
+2026-10-29 18:20:36 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 18:20:36 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 18:20:36 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 18:20:36 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 18:20:36 INFO  Socket policy server listening on 843
+2026-10-29 18:20:36 INFO  Game server listening on 9443
+2026-10-29 18:20:36 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 18:21:04 INFO  New client connected (/json)
+2026-10-29 18:21:04 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 18:38:19 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 33s
+2026-10-29 18:38:52 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 18:39:51 INFO  Owner page: gave Leitheon 500 x Stygandr’s Banner of the Horde
+2026-10-29 18:40:04 INFO  Owner page: gave Leitheon 500 x War Ensign
+2026-10-29 18:40:18 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 18:40:50 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 18:41:42 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 18:42:13 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 18:43:17 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 18:43:47 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:45:00 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 28s
+2026-10-29 18:45:28 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:46:57 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:47:24 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 18:48:18 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:48:44 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 18:49:29 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:49:56 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:50:35 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:51:01 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:51:57 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:52:24 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:53:04 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:53:30 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 18:54:10 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:54:36 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 18:55:43 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:56:10 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 18:56:53 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:57:20 INFO  Leitheon attacked Atlantis(0,0): lost in 13 rounds
+2026-10-29 18:57:52 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 18:58:19 INFO  Leitheon attacked Atlantis(0,0): won in 13 rounds, loot 7553304, loyalty 87
+2026-10-29 19:36:39 INFO  Leitheon disconnected
+2026-10-29 20:06:51 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 20:06:51 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 20:06:51 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 20:06:51 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 20:06:51 INFO  Socket policy server listening on 843
+2026-10-29 20:06:51 INFO  Game server listening on 9443
+2026-10-29 20:06:51 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 20:09:06 INFO  New client connected (/json)
+2026-10-29 20:09:06 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 20:09:39 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-29 20:10:10 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 20:14:23 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 20:14:52 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 20:39:21 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 28s
+2026-10-29 20:39:49 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-29 20:42:14 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 20:42:40 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 20:50:31 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 20:50:57 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 20:53:14 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 20:53:40 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 20:54:03 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 20:54:29 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 20:55:27 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 20:55:54 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 21:21:43 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 21:22:09 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 21:25:45 INFO  Leitheon disconnected
+2026-10-29 21:27:01 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 21:27:01 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 21:27:01 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 21:27:01 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 21:27:01 INFO  Socket policy server listening on 843
+2026-10-29 21:27:01 INFO  Game server listening on 9443
+2026-10-29 21:27:01 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 21:27:18 INFO  New client connected (/json)
+2026-10-29 21:27:18 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 21:31:40 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 29s
+2026-10-29 21:32:10 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 21:32:45 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 28s
+2026-10-29 21:33:13 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-29 21:42:36 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 21:42:36 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 21:42:36 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 21:42:36 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 21:42:36 INFO  Socket policy server listening on 843
+2026-10-29 21:42:36 INFO  Game server listening on 9443
+2026-10-29 21:42:36 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 21:43:09 INFO  New client connected (/json)
+2026-10-29 21:43:09 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 21:43:54 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 21:44:20 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 21:45:11 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 21:45:38 INFO  Leitheon attacked Atlantis(0,0): won in 21 rounds, loot 6815433, loyalty 86, found The Lost Armor Script, Michelangelo's Script
+2026-10-29 21:51:24 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 21:51:51 INFO  Leitheon attacked Atlantis(0,0): won in 12 rounds, loot 289018, loyalty 85, found Nation Medal, Michelangelo's Script
+2026-10-29 22:00:07 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:00:33 INFO  Leitheon attacked Atlantis(0,0): won in 12 rounds, loot 404692, loyalty 84, found The Lost Armor Script, Michelangelo's Script
+2026-10-29 22:04:27 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:04:54 INFO  Leitheon attacked Atlantis(0,0): won in 18 rounds, loot 201380, loyalty 82
+2026-10-29 22:06:14 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:06:40 INFO  Leitheon attacked Atlantis(0,0): won in 12 rounds, loot 83045, loyalty 80
+2026-10-29 22:07:15 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:07:41 INFO  Leitheon attacked Atlantis(0,0): won in 12 rounds, loot 47025, loyalty 76
+2026-10-29 22:20:27 INFO  Leitheon disconnected
+2026-10-29 22:22:18 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 22:22:18 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 22:22:18 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 22:22:18 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 22:22:18 INFO  Socket policy server listening on 843
+2026-10-29 22:22:18 INFO  Game server listening on 9443
+2026-10-29 22:22:18 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 22:25:41 INFO  New client connected (/json)
+2026-10-29 22:25:41 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 22:42:23 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:42:50 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-29 22:46:05 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:46:31 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-29 22:50:39 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 22:51:05 INFO  Leitheon attacked Atlantis(0,0): won in 18 rounds, loot 1986367, loyalty 86, found Michelangelo's Script
+2026-10-29 22:59:49 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 23:00:16 INFO  Leitheon attacked Atlantis(0,0): won in 13 rounds, loot 425924, loyalty 85, found Michelangelo's Script
+2026-10-29 23:13:22 INFO  Leitheon disconnected
+2026-10-29 23:13:51 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-29 23:13:51 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-29 23:13:51 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-29 23:13:51 INFO  Placed 1,938 Historic Cities on the map
+2026-10-29 23:13:51 INFO  Socket policy server listening on 843
+2026-10-29 23:13:51 INFO  Game server listening on 9443
+2026-10-29 23:13:51 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-29 23:13:58 INFO  New client connected (/json)
+2026-10-29 23:13:58 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-29 23:14:17 INFO  Leitheon voted for Leitheon
+2026-10-29 23:18:49 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-29 23:19:15 INFO  Leitheon attacked Atlantis(0,0): won in 18 rounds, loot 883139, loyalty 86, found Nation Medal, The Lost Armor Script
+2026-10-30 00:29:45 INFO  Leitheon disconnected
+2026-10-30 00:30:59 INFO  Loaded 20 buildings, 19 research topics, 12 troop types from the client
+2026-10-30 00:30:59 WARN  Washington, D.C. sits on a Historic City tile (100,100).
+2026-10-30 00:30:59 WARN  Prague sits on a Historic City tile (100,300).
+2026-10-30 00:30:59 INFO  Placed 1,938 Historic Cities on the map
+2026-10-30 00:30:59 INFO  Socket policy server listening on 843
+2026-10-30 00:30:59 INFO  Game server listening on 9443
+2026-10-30 00:30:59 INFO  Web server: open http://127.0.0.1:8080/play in any browser (the new client, no Flash), http://127.0.0.1:8080/ in Basilisk (Flash), or http://127.0.0.1:8080/ruffle.html (Ruffle)
+2026-10-30 00:32:45 INFO  New client connected (/json)
+2026-10-30 00:32:45 INFO  Leitheon logged in from ::ffff:127.0.0.1
+2026-10-30 00:36:02 INFO  Leitheon completed the quest Daily Amulet
+2026-10-30 00:37:00 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:37:26 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-30 00:40:01 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:40:27 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-30 00:42:36 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:43:02 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-30 00:44:22 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:44:48 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-30 00:45:24 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:45:50 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-30 00:47:54 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:48:21 INFO  Leitheon attacked Atlantis(0,0): lost in 8 rounds
+2026-10-30 00:49:01 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 26s
+2026-10-30 00:49:27 INFO  Leitheon attacked Atlantis(0,0): won in 14 rounds, loot 22300000, loyalty 87, found Justice Medal, Nation Medal, The Lost Armor Script, Michelangelo's Script
+2026-10-30 00:49:56 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 53s
+2026-10-30 00:50:50 INFO  Leitheon attacked Atlantis(0,0): lost in 9 rounds
+2026-10-30 00:51:16 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 44s
+2026-10-30 00:52:01 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-30 00:52:35 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 41s
+2026-10-30 00:53:16 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-30 00:53:35 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 41s
+2026-10-30 00:54:16 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-30 00:54:27 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 41s
+2026-10-30 00:55:08 INFO  Leitheon attacked Atlantis(0,0): lost in 6 rounds
+2026-10-30 00:55:40 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 38s
+2026-10-30 00:56:19 INFO  Leitheon attacked Atlantis(0,0): won in 16 rounds, loot 316356, loyalty 86, found Michelangelo's Script
+2026-10-30 00:59:26 INFO  Leitheon sent an army (mission 5) to Atlantis(0,0), arriving in 31s
+2026-10-30 00:59:57 INFO  Leitheon attacked Atlantis(0,0): lost in 7 rounds
+2026-10-30 01:02:01 INFO  Leitheon teleported GoldAmulet from (0,799) to (100,499)
+2026-10-30 01:02:09 INFO  Leitheon sent an army (mission 5) to Paris(100,500), arriving in 29s
+2026-10-30 01:02:39 INFO  Leitheon attacked Paris(100,500): lost in 9 rounds
+2026-10-30 01:03:57 INFO  Leitheon sent an army (mission 5) to Paris(100,500), arriving in 28s
+2026-10-30 01:04:25 INFO  Leitheon attacked Paris(100,500): lost in 10 rounds
+2026-10-30 01:37:55 INFO  Leitheon disconnected

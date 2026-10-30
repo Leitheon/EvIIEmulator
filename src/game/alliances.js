@@ -104,7 +104,13 @@ class Alliances {
     this.g.log.info(`${p.name} founded the alliance ${name}`);
     return { alliance: a };
   }
-  enter(a, q, level = RANK.MEMBER){ a.members = [...new Set([...(a.members || []), q.id])]; q.allianceId = a.id; q.allianceLevel = level; }
+  enter(a, q, level = RANK.MEMBER){ a.members = [...new Set([...(a.members || []), q.id])]; q.allianceId = a.id; q.allianceLevel = level; this.questFlags(a, q); }
+  // The Alliance quests: Join Alliance, and Member Enrichment at 5, 10, 20 ... 100 members (for every member).
+  questFlags(a, q){
+    const Q = this.g.quests; if (!Q) return;
+    Q.flag(q, 'joinAlliance');
+    for (const n of [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]) if (a.members.length >= n) for (const id of a.members){ const m = this.g.db.players[id]; if (m) Q.flag(m, `allianceMembers${n}`); }
+  }
   // A lord's open application and the invitations he holds end when he joins an alliance.
   dropPending(q){
     for (const a of this.list()){ a.applications = (a.applications || []).filter(x => x.playerId !== q.id); a.invites = (a.invites || []).filter(x => x.playerId !== q.id); }

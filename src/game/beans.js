@@ -15,8 +15,10 @@ class Beans {
     return { positionId: Number(pos), typeId: b.typeId, level: b.level, status: b.status, startTime: b.startTime || 0, endTime: b.endTime || 0,
       name: this.logic.typeName(b.typeId), appearance: 0, help: 0 };
   }
+  // increaseRate is the gross output: the client takes troopCostFood (and adds colony and supply food) itself, both
+  // for the numbers it shows and for counting the food up between updates (Context.timerHandler).
   resourceInfo(c, p, k, r){
-    const prod = k === 'food' ? r.food - r.foodUpkeep : r[k];
+    const prod = r[k];
     return { amount: Math.floor(c.res[k]), increaseRate: Math.round(prod * this.logic.speed), max: this.logic.capacity(c, p, k), storeRercent: 100, workPeople: 0 };
   }
   resource(c, p){
@@ -40,8 +42,8 @@ class Beans {
     // powerlevel 4 is an ordinary city (FieldConstants.POWER_NORMAL); 0-3 are captured Historic Cities, which
     // the client gives higher resource field caps, Policies on the map and a bigger Rally Spot limit.
     return {
-      id: c.id, name: c.name, fieldId: c.fieldId, zoneId: world.zoneOf(c.fieldId), icon: c.icon || 0, logUrl: '', status: 0, powerlevel: c.powerLevel ?? 4,   // (an amulet city is an ordinary city, 4, on the live server: Fox's capture)
-      allowAlliance: c.allowAlliance !== false, canChangeIcon: true, goOutForBattle: !!c.goOut, hasEnemy: this.game.armies.incoming(c).length > 0, colonization: this.game.colonies.colonization(c), usePACIFY_SUCCOUR_OR_PACIFY_PRAY: 0,
+      id: c.id, name: c.name, fieldId: c.fieldId, zoneId: world.zoneOf(c.fieldId), icon: c.icon || 0, logUrl: c.logUrl || null, status: 0, powerlevel: c.powerLevel ?? 4,   // (an amulet city is an ordinary city, 4, on the live server: Fox's capture)
+      allowAlliance: c.allowAlliance !== false, canChangeIcon: true, goOutForBattle: this.game.armies.gateOpen(c), hasEnemy: this.game.armies.incoming(c).length > 0, colonization: this.game.colonies.colonization(c), usePACIFY_SUCCOUR_OR_PACIFY_PRAY: 0,
       buildings, buildingQueues: this.game.buildQueue.beans(c), resource: this.resource(c, p), troop: this.troop(c), strTroop: this.troopStr(c), fortification: this.forts(c),
       heros: (c.heroes || []).map(h => this.game.heroes.bean(h)), fields: (c.valleys || []).map(id => this.game.armies.fieldBean(world.tileAt(this.game.store, id))),
       buffs: [], trades: this.game.market.ordersOf(c).map(o => this.game.market.tradeBean(o)), transingTrades: this.game.market.shipsOf(c).map(s => this.game.market.shipBean(s)), colonyBeans: this.game.colonies.beans(c), mercenaryBeans: [],
@@ -67,14 +69,14 @@ class Beans {
     return {
       playerInfo: this.playerInfo(p, castles), castles: castles.map(c => this.castle(c, p)),
       currentTime: now, currentDateTime: dateTime(now), mapSizeX: world.SIZE, mapSizeY: world.SIZE, gameSpeed: Math.max(1, Math.round(this.logic.speed)),
-      tutorialStepId: 999, freshMan: this.game.war.beginner(p, now), isEvonyMember: !!p.evonyMember, isSetSecurityCode: this.game.account.isSet(p, now), changedFace: !!p.changedFace,
+      tutorialStepId: p.tutorialStep ?? 999, freshMan: this.game.war.beginner(p, now), isEvonyMember: !!p.evonyMember, isSetSecurityCode: this.game.account.isSet(p, now), changedFace: !!p.changedFace,
       furlough: !!this.game.account.vacation(p, now), furloughDay: p.furlough?.days || 0, autoFurlough: !!p.furlough?.auto, autoHeal: !!p.autoHeal, isReceiveIncomingAttack: p.receiveIncomingAttack !== false, finishedQuestCount: 0, effortPoint: p.effort?.points || 0, redCount: 0, disconnectvotes: 0,
       ...this.mailCounts(p), ...this.reportCounts(p),
-      emailAddress: p.email || '', headline: p.headline || '', digiId: '', gamblingItemIndex: 0, returnReport: false,
+      emailAddress: p.email || '', headline: p.headline || '', digiId: '', gamblingItemIndex: 0, returnReport: !!p.returnReport,
       items: this.items.itemBeans(p), buffs: this.items.buffBeans(p, now), saleItemBeans: this.items.saleItems(), saleTypeBeans: this.items.saleTypes(),
-      troopConfigBeans: Object.entries(p.troopConfigs || {}).map(([name, x]) => ({ name, time: x.time, troop: this.troop({ troops: x.troop }) })), selfArmys: this.game.armies.beans(p), friendArmys: this.game.armies.friends(p), enemyArmys: this.game.armies.enemies(p), friendBeans: [], blockBeans: [], castleSignBean: this.game.signs(p), declaredWarBeans: this.game.war.beans(p, now),
+      troopConfigBeans: Object.entries(p.troopConfigs || {}).map(([name, x]) => ({ name, time: x.time, troop: this.troop({ troops: x.troop }) })), selfArmys: this.game.armies.beans(p), friendArmys: this.game.armies.friends(p), enemyArmys: this.game.armies.enemies(p), friendBeans: this.game.friends.beans(p, 'friend'), blockBeans: this.game.friends.beans(p, 'block'), castleSignBean: this.game.signs(p), declaredWarBeans: this.game.war.beans(p, now),
       equipments: this.game.equipment.types().map(t => ({ equipmenttechid: t, lv: this.game.equipment.level(p, t) })),
-      gemstoneinpos: [], packageBean: [], randomEvents: [], setshowinfro: this.game.heroes.shownOf ? this.game.heroes.shownOf(p) : [],
+      gemstoneinpos: [], packageBean: this.game.packages.beans(p, now), randomEvents: [], setshowinfro: this.game.heroes.shownOf ? this.game.heroes.shownOf(p) : [],
     };
   }
 }

@@ -8,7 +8,186 @@ Nothing from the game ships in this folder. Building costs, build times, troop s
 research data are read at startup from **your** copy of the client, and art is fetched from
 Evony's CDN on demand and cached in `cache/`, the same way your browser cache holds it.
 
-## What works (milestone 3.77)
+## What works (milestone 3.101)
+
+- New client: an item's tooltip shows its whole name (Flex never makes a Label in a row narrower than its text, so
+  the name's 50% next to the price's 100% only shares out the room left over), and a tooltip widens when a long name
+  and its price need more than its 300 pixels, as Flash's grew to fit.
+
+## What works (milestone 3.100)
+
+- New client, wider than the original (Fox): the Statistics Hero tab gives a hero's name most of the room (ranking
+  60, hero 340, lord 125, level 48, politics 62, attack 55, intelligence 88), so names of up to about 36 letters
+  show whole; a longer one shows whole when the mouse is over it.
+
+## What works (milestone 3.99)
+
+- New client, from the Flex code compiled into the client:
+  - Lists size their columns as Flex 3.5's DataGrid does: when every column has a width, they are all scaled in
+    proportion to fill the list (before, the last column took all the room left over: Statistics' Intelligence and
+    Population columns); columns without a width share what the others leave.
+  - Drop-down boxes are as tall as Flex makes them (a line of text + 6 + the border: 25 at the usual size), the
+    skin picture stretched to fit, rather than the picture's own 31: Statistics' no longer runs over the list.
+
+## What works (milestone 3.98)
+
+- The royal hero follows the lord (Fox): a lord gets a Queen and a lady a King, whichever Gold Helm is used, and the
+  last Queen quest gives a lord the Gold Helm of Queen and a lady the Gold Helm of King. The King or Queen has the
+  live game's own portrait (images/icon/player/king.png or queen.png), and a royal hero from an earlier version is
+  put right when the server starts.
+
+## What works (milestone 3.97)
+
+- New client: a list that grows after it opens (the Hero Attributes window's, made taller in 3.89) draws all its
+  rows, not only as many as fit its first size: every hero in the city shows again.
+
+## What works (milestone 3.96)
+
+- New client: the chat's background picture is drawn at its own size again (3.95 stretched it with the window on
+  wide screens, so a band of it showed above the chat).
+
+## What works (milestone 3.95)
+
+- New client:
+  - The hero window's one-click set menu shows its three sets: as in Flash, a button made see-through (alpha 0
+    until the mouse is over it) still shows a label in a system font.
+  - The experience item picker (the green + by a hero's experience) lists Anabasis, Epitome of Military Science and
+    On War: a box with no height of its own now grows to hold a list pinned to its edges.
+  - Lists sort by a click on a column's header, ascending then descending, where the original allows it (Player
+    Info's heroes by level, attack, politics or intelligence).
+  - The divider lines (a 183-pixel picture) are drawn at their own length from the left, as Flash did, instead of
+    stretched to whatever holds them (Player Info and other windows).
+
+## What works (milestone 3.94)
+
+- A lost attack has no march home, as live (Fox): the hero, and any troops left, are back in the city the moment
+  the battle is over. Only a won attack marches home with its loot.
+
+## What works (milestone 3.93)
+
+- Troop upkeep overflows as on the original server (Fox): each troop type's upkeep (count x upkeep, with the allied
+  troops of that type the city feeds) is a 32-bit integer, so past 2^31 it turns negative and that type feeds the
+  city instead, turning back at each 2^32, a type at a time. Both clients show it, as they take the upkeep from the
+  server.
+- A city holds at most 2,147,483,647 of each kind of troop (on the original the count could turn negative and break
+  the city): training past it is refused, and troops arriving, returning, drafted or from items stop there.
+- New client:
+  - The Reports tabs are as wide as their labels need, as live, so the report counts sit on the Army, Scout,
+    Trade and Others tabs.
+  - A battle report grows the window only far enough to show the battle, its summary (prestige, honor,
+    experience, loyalty, treasure) and the conquest lines; what was plundered and carried home scrolls.
+  - My Items and the Shop are two rows of items taller (the Shop shows 15 to a page), kept centred, where the
+    browser window has the room.
+
+## What works (milestone 3.92)
+
+- Battle treasure follows Fox's drop table (`rules.battleDrops`), replacing 3.91's guessed rates:
+  - Only a won battle in which the attacker killed at least a tenth of the place's full troops gives anything (an
+    NPC city's, Historic City's or valley's full garrison; at a lord's city, the troops that fought), so the waves
+    that wear down a city already emptied of troops find nothing. Fortifications don't count.
+  - Each item is rolled on its own, so one battle can turn up several.
+  - Valleys (a flat counts as one) give medals, gear materials and Delicate gems; NPC cities medals, Delicate and
+    Flawless gems and, from level 6 and 10, The Lost Armor Script and Michelangelo's Script; Historic Cities Justice
+    and Nation Medals and both scripts; a lord's city an Aries Amulet (10%), an Adv City Teleporter (5%), a War
+    Teleporter (5%) or Stygandr's Tools of the Destroyer (1%).
+  - The achievements' treasure bonus raises every chance.
+
+## What works (milestone 3.91)
+
+- Won attacks on valleys and flats turn up medals too, not only NPC and Historic Cities (Fox).
+- Won attacks on any of them can also turn up gear materials (Iron Ore, Wood, Crude Gemstone, Thoroughbred, Fabric,
+  one or two at a time), Delicate and Flawless gems, Michelangelo's Script and The Lost Armor Script (Fox), each
+  rolled on its own, more often the higher the place's level, and more with the achievements' treasure bonus. They
+  show in the battle report under "Treasure Acquired", in the report's title when it has its own, and in the server
+  log (rates replaced in 3.92).
+
+## What works (milestone 3.90)
+
+- A medal found in a won attack on an NPC or Historic City shows in the battle report again, as "Treasure
+  Acquired:" with the medal (it was only named in the report's title, which 3.88 changed to "Attack Reports").
+
+## What works (milestone 3.89)
+
+- A lord's King or Queen (from the Queen quests' helm) never takes a Feasting Hall seat: ten heroes and the King or
+  Queen as an eleventh. The helm works with a full hall, and the King or Queen always moves into a city it
+  reinforces.
+- A barbarian city's hero has a portrait in battle reports, as live: one of the generic hero portraits, the same all
+  day (scout reports keep it without one, as live). The barbarians' side shows no lord's name, and a battle at an NPC
+  city has no "Castle: ..." line on either side, as live.
+- New client: an ordinary hero's portrait in a battle report is small (34 x 34), as live, while a Historic City's
+  King or Queen is full size; the line between the two sides of a battle report runs their full height; empty rows
+  of a list are striped like the filled ones, as in Flash.
+- New client, bigger than the original (Fox's request): a report opened in the Reports window grows the window to
+  show the whole report, as far as the browser window allows (a short report and the report list keep the normal
+  size); the Hero Attributes window's hero list shows 11 heroes instead of 4.
+
+## What works (milestone 3.88)
+
+- The Queen's "Conquer a level 8 NPC city" and "Conquer a level 10 NPC city" quests finish: taking an NPC city now
+  counts, and so does one taken before this version that you still hold (a Historic City counts as level 10).
+- Battle reports read as the live game's: titled "Attack Reports" (a conquest, colonization, taken valley or
+  captured hero keeps its own title); the army coming home shows its hero, what it carries back and a Troops /
+  Remain table, without the "Troops return automatically" heading.
+- New client: the report's plundered and carried-back resources sit in a row (icon, name, amount) instead of in a
+  pile; the white page holds the whole report; the "Troops are returning to ..." line is gone, as live; the report
+  dividers are the original's thin blue lines fading at each end, in every window that uses them.
+
+## What works (milestone 3.87)
+
+- The King's and Queen's report portraits are the live game's (king.png, queen.png).
+
+## What works (milestone 3.86)
+
+- A Historic City's King or Queen has a portrait in battle and scout reports: the live game's own king.png and
+  queen.png (images/icon/player/ on the art server, fetched into the cache the first time).
+- The march window drops a hero from its list as soon as the hero is sent, and picks the next free one, so a row of
+  attacks can be sent one after another without picking each hero by hand (in Basilisk and the new client: the
+  server now reports the hero as marching before it confirms the march).
+
+## What works (milestone 3.85)
+
+- New client (`/play`) fixes: moving the mouse over My Items no longer blanks the page (an item's tooltip kept
+  resizing itself; a window or tooltip that fails now just closes, and the rest of the game carries on); the city
+  list's tooltip is its proper small size again; the city panel's hero list shows the panel's blue behind it, with
+  rows as tall as in the Flash client.
+
+## What works (milestone 3.84)
+
+- New client (`/play`), third round: no more faint lines across buttons, tabs and window frames at display scales
+  like 125% (9-slice pictures are now drawn in one piece); the Quests list has its tick and warning icons and the
+  skin's colours; the Wheel of Fortune is drawn from the game's own turnTable.swf board; the Statistics drop-down
+  and table headers wear the skin; city names in the city list have their white glow; text and pictures take
+  Flash's glow and shadow filters.
+
+## What works (milestone 3.83)
+
+- New client (`/play`), second round of fixes: tab bars (My Items, the Shop, Quests, Reports and the rest, and the
+  city panel's resources / heroes / troops / defences tabs) wear the skin's tab pictures and colours as in the
+  Flash client; long item lists scroll inside their window; the "Buy Game Coins" buttons show; the Quests, Reports
+  and Mail counters stay in place on their buttons; the world map shows its grass and rivers as soon as it opens;
+  flag letters sit on the city banners; the chat box has its parchment background; button labels no longer get cut
+  short by their picture's edges.
+
+## What works (milestone 3.82)
+
+- New client (`/play`) fixes from the first round of testing: the Polling Booth button sits above the chat (it
+  covered the Map button), the city list switches cities, the menu at the bottom right (Shop, Alliance, Quests,
+  Reports, Options, Achievements, Statistics, Mail) and the honor, rank and prestige panel at the bottom left are
+  drawn, and the resources, heroes, troops and defences tabs work. Animations that Flash showed through a mask
+  (field and building animations) no longer show the whole strip of frames, a button no longer loses its first
+  click while its pressed picture loads, and the city list shows its empty slots.
+
+## What works (milestone 3.81)
+
+- **New: a client that needs no Flash** (`/play`, see "The new client" under Setup). It is a
+  rewrite of the Evony client in JavaScript that draws the same screens from your own
+  `EvonyClient1921.swf` and art cache, and talks to this server directly.
+- Speed-up and other item buttons buy the item first when you don't have one and have the coins,
+  as the live client did (shop price).
+- The resource panel's hourly income counts the troops' food upkeep once (it was taken off twice).
+- City flags and signs: a sign put on a city tile is saved against the city.
+- A city picture chosen when renaming the city is kept.
+
 
 - Log in through the client's own login panel. The first login with a new name creates the
   account and your lord.
@@ -331,6 +510,48 @@ Evony's CDN on demand and cached in `cache/`, the same way your browser cache ho
   - The member list, alliance info, events, the **Military Situation** (members' battles with other lords, newest
     first), the alliance list and the **Alliance ranking** by prestige. Marches to an ally's city get the Relief
     Station's speed, as the march window shows.
+- **New in 3.80: every command the client sends now has an answer.** What was left:
+  - **Commission Quests** (Quests, Commission tab; the client's only kind is Anti-Colonization). Issue one on your
+    own colony for a reward in cents: it starts the uprising at once (24 hours, or what's left of one you started,
+    not under an hour). Other lords accept it and send troops (Add Troops any time), which camp in the colony on
+    their own upkeep and can only come home by giving the quest up. When the uprising ends the suzerain's
+    suppression army fights the bidders one at a time, highest Army's Experience first, each behind the colony's
+    walls; the first to win frees the city and is paid. If none does, the rest of the suppression army fights the
+    colony as usual and you get the cents back. This is my reading of the client's own texts.
+  - **Buying resources with cents** (the city window's Buy button): 1 cent buys 2,000 food or lumber, 1,500 stone or
+    1,250 iron, up to 2, 2, 1.5 and 1.25 million a day in each city (`buyResources` in the rules; **the rates are my
+    guess**, the client doesn't hold them).
+  - **Angel and Devil items** work as their item texts say: Fleet Feet, Endurance of the Immortals and Alchemist's
+    Amplifier on another lord; Opportunist's Plague, Lost in the Wastes, Poisoned Feast and Broken Gates on another
+    lord's city (Broken Gates on your own unjams them), never on a lord under Beginner's Protection, a Truce or on
+    vacation. The target gets a report. Devil's Pact, the Devil token and the Angel token open into them.
+  - **Gates**: the Rally Spot's "Open gate to fight" now matters. Closed, a city's own troops and the allies stationed
+    there stay inside, and only the walls and defenses fight (and scouts meet nobody). Cities start with the gates
+    open (**my guess**; switch it in the Rally Spot).
+  - **Friends List and BlockList** (Friends List button, a lord's name in chat or rankings, Block in a mail). A lord
+    on your blocklist can't reach you by mail, whisper or alliance chat (he isn't told; his mail sits in his Sent
+    box); world chat can't be blocked, as the client says.
+  - **Gift packages** (the box beside the minimap, My Package Locker): the debug menu sends a package of any items
+    to one lord or everyone; claim it from the locker.
+  - **News ticker**: the debug menu sets the scrolling line at the top of the screen (data/movingText.txt).
+  - **The Alliance quests** (Join Alliance, Chatting, Member Enrichment) are on.
+  - The tutorial remembers its step if you log out halfway, Turn off return reports is remembered, and the "Add to
+    favorites" quest has its button (the page can only suggest Ctrl+D). Gem socketing and smelting say that gems add stars in the
+    Workshop instead (this version of the game has no sockets).
+  - **No window of this client sends** the GM tools (use the debug menu), lord renaming, restarting, the old
+    stratagem command or quest packets; Facebook features (visits, Facebook heroes) and guest accounts aren't on
+    this server. Those commands now get a plain answer saying so.
+- **Fixed in 3.79: RoboEvony levels historic heroes to 150.** RoboEvony decides a hero's top level from its
+  HeroBean: 150 when "ability" is above 0, 120 for a Ring hero, 100 otherwise; and a hero with isHero 1 but no
+  ability counts as royal (always loyal). The server sent ability 0 for everyone, so the bot stopped historic
+  heroes at 100 and never rewarded their loyalty. Historic heroes now carry ability 1; the Flash client ignores
+  the field, and levelling by hand in the game already went to 150.
+- **New in 3.78: is the lag the server or the client?** The debug menu (Get More Coins) has a Server speed section:
+  how fast the server answered each kind of command, whether anything held it up, the once-a-second timers,
+  saving world.json, how many messages it sent, and how the art was served, with a plain verdict. Anything that
+  takes over a quarter of a second is also logged ("Slow: ..."). The launch page takes drawing options for Flash:
+  http://127.0.0.1:8080/?quality=medium (or low) and &wmode=direct (or gpu). Art the art server doesn't have is now
+  answered at once instead of being asked for again every time the client wants it.
 - **Fixed in 3.77: RoboEvony logs in again.** The server zipped every message over 16 KB, which the Flash client
   unpacks but RoboEvony can't ("invalid package size -2147475778" at login once a lord's login reply grew past
   16 KB). Messages now go out plain, as live sent them to RoboEvony; only one over the clients' 1 MB limit would be
@@ -709,15 +930,9 @@ Evony's CDN on demand and cached in `cache/`, the same way your browser cache ho
   - NPC cities regain their stores over 8 hours and are full again after the daily reset.
 - **Barracks**, **shop**, **coins** and the **debug menu**, as before.
 
-Items that need systems this server doesn't have yet say so when used: socketing gems.
-
-Still to come: Commission Quests, buying resources with cents, and gems
-(and the quests that need them). Until then:
-- screens that only *read* data open empty;
-- actions show "This server doesn't support that yet (command name)".
-
-Every unsupported command is written to `data/unhandled.log`. That file is the to-do list for
-the next milestone.
+Every command this client sends has a handler now. RoboEvony or another tool may send others; any command the
+server doesn't know is written to `data/unhandled.log`, a screen that only *reads* it opens empty, and an action
+shows "This server doesn't support that yet (command name)".
 
 ### What's exact and what's my estimate
 
@@ -838,7 +1053,8 @@ the next milestone.
 2. Copy your `EvonyClient1921.swf` into the `client` folder.
 3. Double-click `start.bat` (or run `npm start` in this folder). Leave the window open.
    If Windows Firewall asks about Node.js, you can cancel; everything stays on your PC.
-4. In Basilisk, open **http://127.0.0.1:8080/**
+4. In Basilisk, open **http://127.0.0.1:8080/** (or, with no Flash, **http://127.0.0.1:8080/play** in any
+   browser: see "The new client" below)
 5. In the client's login panel:
    - Account: any name
    - Password: anything
@@ -862,6 +1078,25 @@ Ruffle doesn't implement all of Flash yet (Flex, which the client is built on, i
 spots), so a screen may draw wrong or a click may do nothing. Basilisk stays the reference. When
 something breaks in Ruffle only, note the screen and send the browser console (F12) along with
 `data/server.log`.
+
+### The new client (no Flash, new in 3.81)
+
+Open **http://127.0.0.1:8080/play** in any current browser (Chrome, Edge, Firefox). It is the
+Evony client rewritten in JavaScript: the same windows, buttons and city, field and world map
+views, drawn with WebGL and HTML instead of Flash. It reads the art (skins, fonts, buildings, map
+tiles and animations) from your `EvonyClient1921.swf` and the server's `cache` folder at run time,
+so it looks like the Flash client, and it talks to the server over a WebSocket (`/json`). Log in
+with the same account and password as in the Flash client; both can be used at the same time.
+
+It draws only when something changes, so a busy lord with ten cities, building, training and
+marching costs a few percent of one CPU core. The window and screen layouts come from the
+original client, and each screen's code was ported from it; where a screen still behaves
+differently from the Flash client, Basilisk stays the reference. Please report such screens with
+the browser console (F12) and `data/server.log`.
+
+Pictures the cache doesn't have yet are fetched from Evony's art server when `assetCdn` is set,
+as for the Flash client; a building picture that is still missing shows the same building at
+another level.
 
 ## Settings (`config.json`)
 
@@ -895,6 +1130,12 @@ the live game's build menu. Then put just what differs in `data/rules.json`, for
 - **Black screen or stuck loading.** Check the server window. If no "logged in" line appears,
   Basilisk isn't reaching the game socket. Make sure ports 843 and 9443 aren't used by
   anything else.
+- **The game is laggy.** Open Get More Coins and look at Server speed after playing a while. If it says the
+  server is keeping up, the lag is Flash drawing the game: in Windows Task Manager, Basilisk (or its plugin
+  container) will be the busy one, not node.exe. Try http://127.0.0.1:8080/?quality=medium, then ?quality=low
+  (no smoothing, fastest), and &wmode=direct, e.g. http://127.0.0.1:8080/?quality=low&wmode=direct; a smaller
+  browser window also helps, since Flash redraws every pixel of it. If it says the server held things up, send
+  that section and `data/server.log`.
 - **Logged in but a screen is blank or broken.** Send `data/server.log` and
   `data/unhandled.log` along with a description of what you clicked.
 - **An icon or picture is missing.** The server log has a `Missing art:` line for each file the
@@ -910,5 +1151,6 @@ the live game's build menu. Then put just what differs in `data/rules.json`, for
 - Code layout:
   - `src/net.js`: socket framing, AMF3 and the Flash policy.
   - `src/http.js`: launch page, `config2.xml` and the art cache.
+  - `src/perf.js`: the Server speed measurements on the debug menu.
   - `src/ws.js`: the WebSocket bridge Ruffle's page uses for the game socket (`public/ruffle.html`).
   - `src/game/`: game logic and command handlers.

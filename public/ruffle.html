@@ -18,7 +18,7 @@
   function SetIeTitle(t){ document.title = t + ' (local server)'; }
   function getClientSize(){ return document.body.clientWidth + ',' + document.body.clientHeight; }
   function adt_log(){} function log_user_action(){} function TrackPageView(){} function _FLL(){}
-  function tour_by_flash(){} function socialBar(){} function addFavorite(){} function processHandler(){}
+  function tour_by_flash(){} function socialBar(){} function addFavorite(t, u){ setTimeout(function(){ alert('Press Ctrl+D (Cmd+D on a Mac) to bookmark ' + (u || location.href)); }, 0); } function processHandler(){}
   function loadUPScript(){} function displayUP(){} function promptSaveGame(){} function showScreenShotString(){}
   function callByIngameUse(){} function callByIngameBuy(){} function openmail(){} function facebook(){}
   function getFbReturnValue(){ return ''; } function getFbFriendListByJs(){ return 'connection timeout'; }
